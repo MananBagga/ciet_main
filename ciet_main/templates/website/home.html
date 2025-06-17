@@ -291,9 +291,9 @@
           technologies viz. radio,TV, films, Satellite communications and cyber
           media either separately or in combinations...
         </p>
-        <a href="#" class="read-more">Read More</a>
+        <a href="{% url "about_us" %}" class="read-more">Read More</a>
       </div>
-      <div class="right-column">
+      {% comment %} <div class="right-column">
         <div class="Director_content">
           <div class="director-header">
             <img
@@ -313,7 +313,7 @@
           </p>
           <a href="#" class="read-more">Read More</a>
         </div>
-      </div>
+      </div> {% endcomment %}
     </section>
 
     {% comment %}
@@ -324,138 +324,151 @@
       <h2 class="section-title">DIGITAL EDUCATION INITIATIVES</h2>
 
       <div class="carousel-container">
-        {% comment %} <button class="nav-arrow prev-arrow" aria-label="Previous"></button>  {% endcomment %}
+        {% comment %}
+        <button class="nav-arrow prev-arrow" aria-label="Previous"></button>
+        {% endcomment %}
         <div class="carousel-track-container">
           <div class="carousel-track">
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/DIKSHA_circle_image.jpg' %}"
-                  alt="MOOCs on SWAYAM logo"
-                />
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/DIKSHA_circle_image.jpg' %}"
+                    alt="MOOCs on SWAYAM logo"
+                  />
+                </div>
+                <p class="item-label">DIKSHA</p>
               </div>
-              <p class="item-label">DIKSHA</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/epathshala_circle_image.png' %}"
-                  alt="NISHTHA logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/epathshala_circle_image.png' %}"
+                    alt="NISHTHA logo"
+                  />
+                </div>
+                <p class="item-label">ePATHSHALA</p>
               </div>
-              <p class="item-label">ePATHSHALA</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/evidya_circle_image.png' %}"
-                  alt="NCF Tech Platform logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/evidya_circle_image.png' %}"
+                    alt="NCF Tech Platform logo"
+                  />
+                </div>
+                <p class="item-label">PM eVIDYA</p>
               </div>
-              <p class="item-label">PM eVIDYA</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/swayam_circle_image.png' %}"
-                  alt="ICT Curriculum logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/swayam_circle_image.png' %}"
+                    alt="ICT Curriculum logo"
+                  />
+                </div>
+                <p class="item-label">MOOCs on SWAYAM</p>
               </div>
-              <p class="item-label">MOOCs on SWAYAM</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/nishtha_circle_image.png' %}"
-                  alt="Accessibility in School Curriculum logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/nishtha_circle_image.png' %}"
+                    alt="Accessibility in School Curriculum logo"
+                  />
+                </div>
+                <p class="item-label">NISHTHA</p>
               </div>
-              <p class="item-label">NISHTHA</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/ncf_circle_image.png' %}"
-                  alt="Circle 6 logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/ncf_circle_image.png' %}"
+                    alt="Circle 6 logo"
+                  />
+                </div>
+                <p class="item-label">NCF Tech Platform</p>
               </div>
-              <p class="item-label">NCF Tech Platform</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/ict_circle_image.png' %}"
-                  alt="Circle 7 logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/ict_circle_image.png' %}"
+                    alt="Circle 7 logo"
+                  />
+                </div>
+                <p class="item-label">ICT Curriculum</p>
               </div>
-              <p class="item-label">ICT Curriculum</p>
-            </div>
-            <div class="carousel-item">
-              <div class="circle-wrapper">
-                <img
-                  src="{% static 'images/Accessbility_circle_image.png' %}"
-                  alt="Circle 8 logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static 'images/Accessbility_circle_image.png' %}"
+                    alt="Circle 8 logo"
+                  />
+                </div>
+                <p class="item-label">Accessibility in School Curriculum</p>
               </div>
-              <p class="item-label">Accessibility in School Curriculum</p>
-            </div>
+            </a>
 
-
-            <div class="carousel-item cloned">
-              <div class="circle-wrapper">
-                <img src="images/swayam.png" alt="MOOCs on SWAYAM logo" />
+            {% comment %} <a href="#">
+              <div class="carousel-item cloned">
+                <div class="circle-wrapper">
+                  <img src="{% static 'images/swayam_circle_image.png' %}" alt="MOOCs on SWAYAM logo" />
+                </div>
+                <p class="item-label">MOOCs on SWAYAM</p>
               </div>
-              <p class="item-label">MOOCs on SWAYAM</p>
-            </div>
-            <div class="carousel-item cloned">
-              <div class="circle-wrapper">
-                <img src="images/nishtha.png" alt="NISHTHA logo" />
+            </a> 
+            <a href="#">
+              <div class="carousel-item cloned">
+                <div class="circle-wrapper">
+                  <img src="{% static "images/nishtha_circle_image.png" %}" alt="NISHTHA logo" />
+                </div>
+                <p class="item-label">NISHTHA</p>
               </div>
-              <p class="item-label">NISHTHA</p>
-            </div>
-            <div class="carousel-item cloned">
-              <div class="circle-wrapper">
-                <img src="images/ncf_tech.png" alt="NCF Tech Platform logo" />
+            </a>
+            <a href="#">
+              <div class="carousel-item cloned">
+                <div class="circle-wrapper">
+                  <img src="{% static "images/ncf_circle_image.png" %}" alt="NCF Tech Platform logo" />
+                </div>
+                <p class="item-label">NCF Tech Platform</p>
               </div>
-              <p class="item-label">NCF Tech Platform</p>
-            </div>
-            <div class="carousel-item cloned">
-              <div class="circle-wrapper">
-                <img
-                  src="images/ict_curriculum.png"
-                  alt="ICT Curriculum logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item cloned">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static "images/ict_circle_image.png" %}"
+                    alt="ICT Curriculum logo"
+                  />
+                </div>
+                <p class="item-label">ICT Curriculum</p>
               </div>
-              <p class="item-label">ICT Curriculum</p>
-            </div>
-            <div class="carousel-item cloned">
-              <div class="circle-wrapper">
-                <img
-                  src="images/accessibility.png"
-                  alt="Accessibility in School Curriculum logo"
-                />
+            </a>
+            <a href="#">
+              <div class="carousel-item cloned">
+                <div class="circle-wrapper">
+                  <img
+                    src="{% static "images/Accessbility_circle_image.png" %}"
+                    alt="Accessibility in School Curriculum logo"
+                  />
+                </div>
+                <p class="item-label">Accessibility in School Curriculum</p>
               </div>
-              <p class="item-label">Accessibility in School Curriculum</p>
-            </div>
+            </a> {% endcomment %}
           </div>
-
-        {% comment %} </div>
-        <button class="nav-arrow next-arrow" aria-label="Next"></button>
-      </div> {% endcomment %}
-
-      {% comment %} <div class="carousel-dots">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
-        <span class="dot" data-index="3"></span>
-        <span class="dot" data-index="4"></span>
-        <span class="dot" data-index="5"></span>
-        <span class="dot" data-index="6"></span>
-        <span class="dot" data-index="7"></span>
-      </div> {% endcomment %}
-
+        </div>
+      </div>
       <div class="view-more-container">
-        <button class="view-more-button">View More</button>
+        <a href="{% url "majorProjects" %}"><button class="view-more-button">View More</button></a>
       </div>
     </section>
 
@@ -545,7 +558,7 @@
 
       <div class="hexagon-grid">
         <!-- Hexagon 1: E-TEXT BOOKS -->
-        <a href="#" class="hexagon-item">
+        <a href="https://ncert.nic.in/textbook.php" class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/resourse_pentagon_image.png' %}"
@@ -578,7 +591,7 @@
         </a>
 
         <!-- Hexagon 4: DIKSHA -->
-        <a href="#" class="hexagon-item">
+        <a href="https://diksha.gov.in/" class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/diksha_pentagon_image.png' %}"

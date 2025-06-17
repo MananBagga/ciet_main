@@ -236,13 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselTrack.addEventListener('mouseleave', startAutoScroll);
     }
 
-    // For the "View More" button
-    if (viewMoreButton) {
-        viewMoreButton.addEventListener('click', () => {
-            alert('View More clicked! You can redirect to another page or show more content here.');
-        });
-    }
-
     // Initial setup
     const initializeCarousel = () => {
         calculateItemWidth();
