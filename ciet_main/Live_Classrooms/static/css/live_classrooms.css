@@ -1,0 +1,98 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .intro-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    color: #1E90FF;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .schedule-title {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-timings {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-timings strong {
+    font-weight: bold;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-table th,
+  .training-table th,
+  .completed-table th {
+    background-color: #E6F0FA;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: left;
+  }
+  
+  .schedule-table th:nth-child(2),
+  .schedule-table th:nth-child(3) {
+    text-align: center;
+  }
+  
+  .schedule-table td,
+  .training-table td,
+  .completed-table td {
+    background-color: #F0F8FF;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #000;
+    vertical-align: top;
+  }
+  
+  .schedule-table td:first-child,
+  .training-table td:first-child {
+    width: 10%;
+    font-weight: bold;
+  }
+  
+  .training-table th:last-child,
+  .training-table td:last-child {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .completed-table th,
+  .completed-table td {
+    text-align: center;
+  }
+  
+  .training-table th {
+    background-color: #FF69B4;
+    color: #000;
+  }
+  
+  a {
+    color: #FF4500;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

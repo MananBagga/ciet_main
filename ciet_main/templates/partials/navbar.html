@@ -1,0 +1,206 @@
+{% load static %}
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="date-icon">&#128197;</span>
+    <span class="date-text" id="current-date"></span>
+  </div>
+  <div class="topbar-right">
+    <a href="#main-content" class="skip-link">Skip to main content</a> |
+    <a href="#navigation" class="skip-link">Skip to navigation</a> |
+    <a href="#screen-reader" class="skip-link">Screen Reader Access</a> |
+    <span class="text-size-label">Text Size:</span>
+    <span class="text-size-controls">
+      <a href="#" class="text-size-btn" data-action="decrease">A-</a>
+      <a href="#" class="text-size-btn" data-action="normal">A</a>
+      <a href="#" class="text-size-btn" data-action="increase">A+</a>
+    </span>
+    |
+    <div class="language-dropdown-wrapper">
+      <select id="language-select">
+        <option value="" disabled selected>Language</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+      </select>
+    </div>
+    <span class="toggle-icon">&#9432;</span>
+  </div>
+</div>
+
+{% comment %}
+<nav class="navbar" id="navigation">
+  <div class="navbar-left">
+    <a href="{% url 'home' %}">
+      <img
+        src="{% static 'images/ciet_logo.png' %}"
+        alt="CIET Logo"
+        class="ciet-logo"
+      />
+    </a>
+  </div>
+  <div class="navbar-right">
+    <a
+      href="{% url 'home' %}"
+      class="nav-link {% if request.path == '/' %}active{% endif %}"
+      >Home</a
+    >
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'about' in request.path %}active{% endif %}"
+        >About</a
+      >
+      <div class="dropdown-content">
+        <a href="{% url 'people' %}">People</a>
+        <a href="{% url 'about_us' %}">About Us</a>
+        <a href="#">Advisory board</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'departments' in request.path %}active{% endif %}"
+        >Departments</a
+      >
+      <div class="dropdown-content">
+        <a href="#">Department of ICT & Training</a>
+        <a href="#">Media Production Division</a>
+        <a href="#">Planning & research Division</a>
+        <a href="#">Enginnering Division</a>
+        <a href="#">Administration & accounts</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'initiatives' in request.path %}active{% endif %}"
+        >Initiatives</a
+      >
+      <div class="dropdown-content">
+        <a href="{% url 'majorProjects' %}">Major Projects</a>
+        <a href="#">PAC Projects</a>
+        <a href="#">PAB Projects</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'activities' in request.path %}active{% endif %}"
+        >Activities</a
+      >
+      <div class="dropdown-content">
+        <a href="#">Calender</a>
+        <a href="#">Webinar on ICT Tools</a>
+        <a href="{% url 'ICT_Awards' %}">ICT Award</a>
+        <a href="#">Conference</a>
+        <a href="#">NISHTHA online</a>
+        <a href="#">Summer Camp</a>
+        <a href="#">Counselling Services</a>
+        <a href="#">Live Inclusive classrooms</a>
+        <a href="#">eContent Competition</a>
+        <a href="#">SRG Orientation on eContent 2022-2023</a>
+        <a href="#">TV Channels</a>
+        <a href="#">Workshops/Training</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'resources' in request.path %}active{% endif %}"
+        >Resources</a
+      >
+      <div class="dropdown-content">
+        <a href="#">Resource 1</a>
+        <a href="#">Resource 2</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a
+        href="#"
+        class="nav-link dropdown-toggle {% if 'more' in request.path %}active{% endif %}"
+        >More</a
+      >
+      <div class="dropdown-content">
+        <a href="#">More Option 1</a>
+        <a href="#">More Option 2</a>
+      </div>
+    </div>
+    <a href="#" class="search-icon">&#128269;</a>
+  </div>
+</nav>
+{% endcomment %}
+
+<nav class="navbar" id="navigation">
+  <div class="navbar-left">
+    <a href="{% url 'home' %}">
+      <img
+        src="{% static 'images/ciet_logo.png' %}"
+        alt="CIET Logo"
+        class="ciet-logo"
+      />
+    </a>
+  </div>
+  <div class="navbar-right">
+    <a
+      href="{% url 'home' %}"
+      class="nav-link {% if request.path == '/' %}active{% endif %}"
+      >Home</a
+    >
+
+    <select
+      style="max-width: 150px"
+      class="nav-link nav-select"
+      onchange="if (this.value) window.location.href=this.value;"
+    >
+      <option selected disabled>About</option>
+      <option value="{% url 'people' %}">People</option>
+      <option value="{% url 'about_us' %}">About Us</option>
+      <option value="{% url 'advisory_board' %}">Advisory board</option>
+    </select>
+
+    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
+      <option selected disabled>Departments</option>
+      <option value="{% url 'dept_ict_training' %}">Department of ICT & Training</option>
+      <option value="{% url "media_production_division" %}">Media Production Division</option>
+      <option value="{% url "planning_research_division" %}">Planning & research Division</option>
+      <option value="{% url "engineering_division" %}">Enginnering Division</option>
+      <option value="#">Administration & accounts</option>
+    </select>
+
+    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
+      <option selected disabled>Initiatives</option>
+      <option value="{% url 'majorProjects' %}">Major Projects</option>
+      <option value="{% url "pac_projects" %}">PAC Projects</option>
+      <option value="{% url "pab_projects" %}">PAB Projects</option>
+    </select>
+
+    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
+      <option selected disabled>Activities</option>
+      <option value="{% url 'calender' %}">Calender</option>
+      <option value="{% url "webinars" %}">Webinar on ICT Tools</option>
+      <option value="{% url 'ICT_Awards' %}">ICT Award</option>
+      <option value="{% url "conference" %}">Conference</option>
+      <option value="{% url "nishtha" %}">NISHTHA online</option>
+      <option value="#">Summer Camp</option>
+      <option value="{% url "counselling_services" %}">Counselling Services</option>
+      <option value="{% url "live_classrooms" %}">Live Inclusive classrooms</option>
+      <option value="#">eContent Competition</option>
+      <option value="{% url "srg" %}">SRG Orientation on eContent 2022-2023</option>
+      <option value="#">TV Channels</option>
+      <option value="#">Workshops/Training</option>
+    </select>
+
+    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
+      <option selected disabled>Resources</option>
+      <option value="#">Resource 1</option>
+      <option value="#">Resource 2</option>
+    </select>
+
+    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
+      <option selected disabled>More</option>
+      <option value="#">More Option 1</option>
+      <option value="#">More Option 2</option>
+    </select>
+
+    <a href="#" class="search-icon">&#128269;</a>
+  </div>
+</nav>

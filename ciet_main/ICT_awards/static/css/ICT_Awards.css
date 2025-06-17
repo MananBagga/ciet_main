@@ -1,0 +1,112 @@
+.ict-award-container {
+    font-family: Montserrat, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-bar {
+    background-color: #b3e5fc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.title-bar h1 {
+    margin: 0;
+    color: #f08162;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.important-dates h2 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.important-dates ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+.important-dates li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.important-dates li:last-child {
+    border-bottom: none;
+}
+
+.important-dates .bullet {
+    margin-right: 10px;
+}
+
+.important-dates .date {
+    color: #f0627e;
+    font-weight: bold;
+}
+
+.national-ict-website {
+    margin: 20px 0;
+}
+
+.national-ict-website p {
+    color: #f08162;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.archive-section h2 {
+    color: #2196f3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.archive-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.archive-year {
+    flex: 1 1 45%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.archive-year h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.archive-year ul {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-year li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.archive-year .bullet {
+    margin-right: 10px;
+}
+
+.archive-year a {
+    color: #f08162;
+    text-decoration: none;
+}
+
+.archive-year a:hover {
+    text-decoration: none;
+}

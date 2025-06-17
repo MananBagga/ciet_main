@@ -1,0 +1,564 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Directory</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/people.css' %}" />
+  </head>
+  <body>
+    {% include 'partials/navbar.html' %}
+
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-button active" onclick="showTab('academic')">
+          ACADEMIC
+        </button>
+        <button class="tab-button" onclick="showTab('administration')">
+          ADMINISTRATION
+        </button>
+        <button class="tab-button" onclick="showTab('technical')">
+          TECHNICAL
+        </button>
+      </div>
+
+      <!-- Academic Section -->
+      <div id="academic" class="tab-content active">
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Amarendra P Behera</h3>
+          <p>Joint Director</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (226)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/Biodata_Short_Dr_Behera.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Poonam Agrawal</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (239)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/PoonamAgrawal.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Rajendra Pal</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (240)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/BiodataRajendraPal.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Shashi Prabha</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (241)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/BiodataProfShashiPrabha.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Indu Kumar</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (242)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/ProfIndu%20Kumar.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Sh. Rajesh Kr Nimesh</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (243)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/BiodataRKNimesh.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Bharti</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (244)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/biodata-DrBharti.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Abhay Kumar</h3>
+          <p>Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (245)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/abhay_CV_01102020_NCERT.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Rizvanul Haque</h3>
+          <p>Assistant Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (246)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/DrRIZVANULHAQUE.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Rejaul Karim Barbhuiya</h3>
+          <p>Assistant Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (247)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/biodata-Rejaul.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Angel Rathnabai S</h3>
+          <p>Assistant Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (248)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/DrAngel_Profile.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Amit Ranjan</h3>
+          <p>Assistant Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (249)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/DrAmitBiodata.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Dr. Neel kanth</h3>
+          <p>Assistant Professor</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (250)</p>
+          <a
+            href="https://dev.ncert.org.in/storage/app/public/photos/9/bio-data/Neelkanthkumar.pdf"
+            class="view-profile-button"
+            >View Profile</a
+          >
+        </div>
+      </div>
+
+      <!-- Administration Section -->
+      <div id="administration" class="tab-content">
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 1</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (301)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 2</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (302)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 3</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (303)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 4</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (304)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 5</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (305)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 6</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (306)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 7</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (307)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 8</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (308)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 9</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (309)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 10</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (310)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 11</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (311)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 12</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (312)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 13</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (313)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 14</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (314)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 15</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (315)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 16</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (316)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 17</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (317)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 18</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (318)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 19</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (319)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 20</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (320)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 21</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (321)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 22</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (322)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 23</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (323)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 24</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (324)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Admin Person 25</h3>
+          <p>Administrator</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (325)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+      </div>
+
+      <!-- Technical Section -->
+      <div id="technical" class="tab-content">
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 1</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (401)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 2</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (402)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 3</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (403)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 4</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (404)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 5</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (405)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 6</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (406)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 7</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (407)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 8</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (408)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 9</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (409)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 10</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (410)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 11</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (411)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 12</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (412)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 13</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (413)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 14</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (414)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 15</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (415)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 16</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (416)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 17</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (417)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 18</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (418)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 19</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (419)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 20</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (420)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 21</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (421)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 22</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (422)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 23</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (423)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 24</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (424)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 25</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (425)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+        <div class="profile-card">
+          <div class="profile-image"></div>
+          <h3>Tech Person 26</h3>
+          <p>Technical Staff</p>
+          <p>Extn. Number<br />+91-11-26864801-10 (426)</p>
+          <a href="#" class="view-profile-button">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+    {% include 'partials/footer.html' %}
+
+    <script>
+      function showTab(tabId) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Remove active class from all buttons
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        // Show the selected tab content
+        document.getElementById(tabId).classList.add("active");
+
+        // Add active class to the clicked button
+        document
+          .querySelector(`button[onclick="showTab('${tabId}')"]`)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of PAB Approved Proposals</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/pab_projects.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <h1>List of PAB approved proposals funded by DSEL, MOE</h1>
+        
+        <div class="table-header">
+            <span class="col1">PAC Code</span>
+            <span class="col2">Title of the Programme</span>
+            <span class="col3">Category</span>
+            <span class="col4">Programme Coordinator(s)</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.17</span>
+            <span class="col2">DIKSHA/ICT Excellence Award for School Teachers, Teacher Educators and States/UTs (ongoing)</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Prof. Indu Kumar</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.18</span>
+            <span class="col2">Organization of Festival, ICT Mela, contests of digital contents and coordination with States /UTs</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Dr. Abhay Kumar</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.19</span>
+            <span class="col2">Management of PM e-VIDYA (One Class, One Channel, Radio, BROADCAST, PODCASTS)</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Dr. Abhay Kumar</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.20</span>
+            <span class="col2">DIKSHA - One Nation One Digital Platform</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Prof. Indu Kumar<br>Dr. Rejaul Karim Barbhuiya</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.21</span>
+            <span class="col2">Development of National Curriculum Frameworks - Tech Platform</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Dr. Rejaul Karim Barbhuiya</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.22</span>
+            <span class="col2">NISHTHA</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Dr. Angel Ratnabai</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.23</span>
+            <span class="col2">Development of Skill e-Learning Lab</span>
+            <span class="col3">New</span>
+            <span class="col4">Prof. Shashi Prabha</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.24</span>
+            <span class="col2">Development of Virtual Lab</span>
+            <span class="col3">New</span>
+            <span class="col4">Prof. Shashi Prabha</span>
+        </div>
+
+        <h2>PROJECTS FUNDED BY DHE, MOE</h2>
+
+        <div class="table-row">
+            <span class="col1">20.25</span>
+            <span class="col2">SWAYAM MOOCs</span>
+            <span class="col3">On-going</span>
+            <span class="col4">Dr. Angel Ratnabai</span>
+        </div>
+
+        <div class="table-row">
+            <span class="col1">20.26</span>
+            <span class="col2">Swayam Prabha DTH Channel</span>
+            <span class="col3"></span>
+            <span class="col4">Shri Rajesh Kumar Nimesh</span>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIET - PAC/IAB</title>
+    <link rel="stylesheet" href="{% static 'css/advisory_board.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include 'partials/navbar.html' %}
+
+    <div class="container">
+        <h1>PAC NCERT</h1>
+        <p>
+            <a href="#" class="link">Re-Constitution of the Institute Advisory Board (IABs) of CIET, New Delhi; PSSCIVE, Bhopal; and Regional Institutes of Education at Ajmer, Bhopal, Bhubaneswar, Mysore NERIE, Umiam(Shillong).</a>
+        </p>
+
+        <h1>IAB (CIET)</h1>
+        <p>
+            <a href="#" class="link">Constitute of IAB</a>
+        </p>
+
+        <h1>Schedule of Meetings</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name of Meeting</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="link-orange">Institute Advisory Board Meeting of CIET (29th IAB)</a></td>
+                    <td>25.04.2024</td>
+                    <td>Committee Room, 1st Floor, Chintan Bhawan, NCERT, New Delhi</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="link-orange">Programme Advisory Committee Meeting (42nd PAC)</a></td>
+                    <td>24.04.2024</td>
+                    <td>Committee Room, 1st Floor, Chintan Bhawan, NCERT, New Delhi</td>
+                </tr>
+                <tr>
+                    <td>Institute Advisory Board Meeting of CIET (28th IAB)</td>
+                    <td>27.04.2023</td>
+                    <td>Committee Room, 1st Floor, Chintan Bhawan, NCERT, New Delhi</td>
+                </tr>
+                <tr>
+                    <td>Programme Advisory Committee Meeting (41st PAC)</td>
+                    <td>26.04.2023</td>
+                    <td>Committee Room, 1st Floor, Chintan Bhawan, NCERT, New Delhi</td>
+                </tr>
+                <tr>
+                    <td>Institute Advisory Board Meeting of CIET (27th IAB)</td>
+                    <td>04.05.2022</td>
+                    <td>Online Mode through Google Meet</td>
+                </tr>
+                <tr>
+                    <td>Programme Advisory Committee Meeting (40th PAC)</td>
+                    <td>03.05.2022</td>
+                    <td>Online Mode through Google Meet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    {% include 'partials/footer.html' %}
+
+</body>
+</html>

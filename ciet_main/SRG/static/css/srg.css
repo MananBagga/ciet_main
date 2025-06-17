@@ -1,0 +1,169 @@
+.heading{
+    text-align: center;
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.objective-box {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.objective-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.objective-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.objective-box li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.training-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.training-left, .training-right {
+    width: 48%;
+}
+
+.training-left h2, .training-right h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.training-table th, .training-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.training-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.training-right p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.training-right strong {
+    color: #007bff;
+}
+
+.programme-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.programme-table th, .programme-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.programme-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.programme-table td {
+    vertical-align: top;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.content-table th, .content-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.content-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-table td {
+    vertical-align: middle;
+}
+
+.content-table img {
+    width: 30px;
+    height: auto;
+}
+
+h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.archive-box {
+    
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.archive-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.archive-box a:hover{
+    color: brown;
+}

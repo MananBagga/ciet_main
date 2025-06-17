@@ -1,0 +1,356 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Page</title>
+    <link rel="stylesheet" href="{% static "css/calender.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+
+    {% include 'partials/navbar.html' %}
+
+    <div class="container">
+        <h2>Ongoing Activities</h2>
+        <p class="no-activity">No Activity Found..</p>
+
+        <h2>Upcoming Activities</h2>
+        <p class="no-activity">No Activity Found..</p>
+
+        <h2>Past Activities</h2>
+        <div id="activitiesContainer">
+            <!-- Page 1: Activities 1 to 6 -->
+            <div class="activities-grid" data-page="1">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 1">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 1</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 2">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 2</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 3">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 3</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 4">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 4</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 5">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 5</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 6">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 6</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 2: Activities 7 to 12 -->
+            <div class="activities-grid" data-page="2" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 7">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 7</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 8">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 8</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 9">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 9</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 10">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 10</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 11">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 11</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 12">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 12</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 3: Activities 13 to 18 -->
+            <div class="activities-grid" data-page="3" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 13">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 13</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 14">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 14</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 15">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 15</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 16">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 16</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 17">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 17</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 18">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 18</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 4: Activities 19 to 24 -->
+            <div class="activities-grid" data-page="4" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 19">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 19</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 20">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 20</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 21">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 21</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 22">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 22</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 23">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 23</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 24">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 24</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 5: Activities 25 to 30 -->
+            <div class="activities-grid" data-page="5" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 25">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 25</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 26">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 26</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 27">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 27</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 28">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 28</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 29">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 29</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 30">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 30</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 6: Activities 31 to 36 -->
+            <div class="activities-grid" data-page="6" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 31">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 31</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 32">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 32</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 33">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 33</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 34">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 34</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 35">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 35</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 36">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 36</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Page 7: Activities 37 to 42 -->
+            <div class="activities-grid" data-page="7" style="display: none;">
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 37">
+                    <p class="date">14 July 2022 to 20 July 2022</p>
+                    <h3>ICT AWARD 37</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 38">
+                    <p class="date">14 November 2022 to 16 December 2022</p>
+                    <h3>SRG ORIENTATION on eContents 2022-2023 38</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 39">
+                    <p class="date">15 November 2022 to 31 December 2022</p>
+                    <h3>All India Children's Educational eContent Competition (AIEECC) 39</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 40">
+                    <p class="date">17 January 2022 to 25 February 2022</p>
+                    <h3>SRG Orientation on eContents 2021-22 40</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 41">
+                    <p class="date">24 March 2021 to 26 March 2021</p>
+                    <h3>Conference 41</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="activity-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Activity 42">
+                    <p class="date">31 October 2016 to 04 November 2016</p>
+                    <h3>International ICT Conference 42</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn"><</button>
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+            <button class="page-btn" data-page="4">4</button>
+            <button class="page-btn" data-page="5">5</button>
+            <button class="page-btn" data-page="6">6</button>
+            <button class="page-btn" data-page="7">7</button>
+            <button id="nextBtn">></button>
+        </div>
+    </div>
+
+    {% include 'partials/footer.html' %}
+
+    <script>
+        const pages = document.querySelectorAll('.activities-grid');
+        const pageButtons = document.querySelectorAll('.page-btn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentPage = 1;
+
+        function showPage(page) {
+            pages.forEach(grid => {
+                grid.style.display = grid.getAttribute('data-page') == page ? 'grid' : 'none';
+            });
+            pageButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-page') == page);
+            });
+            currentPage = page;
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === pages.length;
+        }
+
+        pageButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const page = parseInt(btn.getAttribute('data-page'));
+                showPage(page);
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < pages.length) {
+                showPage(currentPage + 1);
+            }
+        });
+
+        showPage(1);
+    </script>
+</body>
+</html>

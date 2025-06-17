@@ -1,0 +1,168 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Page</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/webinars.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <div class="header">
+            <h1>Fight COVID-19: Join us on Webinar</h1>
+            <p>
+                To fight COVID-19, enabling learning from Home and Practice Social Distancing, CIET-NCERT is organizing a month-long Webinar starting from 07 April, 2020 for the enrichment and professional development of the students, teachers, teacher educators and researchers. The webinar intends to cover various themes related to Educational Technology (ET) and Information and Communication Technology (ICT) in education. The webinar will encompass topics related to creation and dissemination of e-contents, Content-Pedagogy-Technology integration, use of ICT in teaching-learning and assessment, OER, use of various ICT tools, creation of AR/VR contents, mobile app and AI based platforms etc. Being a premier institution working in the field of ET and ICT for school education and teacher education, CIET invites the learners to join us in the Webinar which will be held daily. This series of interactive sessions will hopefully be a stepping stone in the enhancement of knowledge and skill of those working in the field of education.
+            </p>
+        </div>
+        <div class="how-to-join">
+            <h2>How to join Webinar?</h2>
+            <p>
+                JOIN US for the live webinar from 04:00 pm to 05:00 pm, Monday to Friday on NCERT OFFICIAL YouTube channel. Subscribe the channel for regular notification. You can watch the webinar telecast through:
+            </p>
+            <ul>
+                <li>PM eVidhya Channel</li>
+                <li>DD FreeDish #128</li>
+                <li>DishTV #950</li>
+                <li>TataSky #756</li>
+                <li>Airtel #440</li>
+                <li>Videocon #477</li>
+                <li>Sundirect #793 and</li>
+                <li>Jio TV Mobile app</li>
+            </ul>
+            <p>
+                Webinar will be conducted in English and Hindi. For further queries contact training@ciet.nic.in
+            </p>
+        </div>
+        <div class="webinar-section">
+            <h2 class="section-title">Upcoming Webinars</h2>
+            <div class="no-webinar">
+                <p>No Webinar Found..</p>
+                <div class="pagination">
+                    <button class="prev"><</button>
+                    <button class="page active">1</button>
+                    <button class="next">></button>
+                </div>
+            </div>
+        </div>
+        <div class="webinar-section">
+            <h2 class="section-title">Ongoing Webinars</h2>
+            <div class="no-webinar">
+                <p>No Webinar Found..</p>
+                <div class="pagination">
+                    <button class="prev"><</button>
+                    <button class="page active">1</button>
+                    <button class="next">></button>
+                </div>
+            </div>
+        </div>
+        <div class="webinar-section">
+            <h2 class="section-title">Past Webinars</h2>
+            <div class="webinar-grid" id="webinar-grid"></div>
+            <div class="pagination" id="pagination">
+                <button class="prev" onclick="changePage(-1)"><</button>
+                <button class="page active" onclick="goToPage(1)">1</button>
+                <button class="page" onclick="goToPage(2)">2</button>
+                <button class="page" onclick="goToPage(3)">3</button>
+                <button class="page" onclick="goToPage(4)">4</button>
+                <button class="page" onclick="goToPage(5)">5</button>
+                <button class="page" onclick="goToPage(6)">6</button>
+                <button class="page" onclick="goToPage(7)">7</button>
+                <button class="page" onclick="goToPage(8)">8</button>
+                <button class="next" onclick="changePage(1)">></button>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+    <script>
+        const webinarsPerPage = 100;
+        const totalPages = 8;
+        let currentPage = 1;
+        const totalWebinars = (webinarsPerPage * (totalPages - 1)) + 1; // 701 webinars (100 per page for 7 pages + 1 on the 8th)
+
+        function generateWebinarCards(page) {
+            const webinarGrid = document.getElementById('webinar-grid');
+            webinarGrid.innerHTML = '';
+
+            // Calculate the number of cards for the current page
+            let cardsOnPage = webinarsPerPage;
+            if (page === totalPages) {
+                cardsOnPage = 1; // Only 1 card on the 8th page
+            }
+
+            // Calculate the starting index for the webinars on this page
+            const startIndex = (page - 1) * webinarsPerPage;
+            const endIndex = Math.min(startIndex + cardsOnPage, totalWebinars);
+
+            // Starting date: 29 July 2022
+            const startDate = new Date('2022-07-29');
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const webinarDate = new Date(startDate);
+                webinarDate.setDate(startDate.getDate() - i);
+
+                const card = document.createElement('div');
+                card.className = 'webinar-card';
+
+                const dateBadge = document.createElement('div');
+                dateBadge.className = 'date-badge';
+                dateBadge.textContent = webinarDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
+
+                const title = document.createElement('h3');
+                title.textContent = `Webinar Title ${i + 1}`;
+
+                const description = document.createElement('p');
+                description.textContent = 'Speaker Name, Designation, Organization';
+
+                const icons = document.createElement('div');
+                icons.className = 'icons';
+                icons.innerHTML = '<button class="icon pdf"></button><button class="icon video"></button>';
+
+                card.appendChild(dateBadge);
+                card.appendChild(title);
+                card.appendChild(description);
+                card.appendChild(icons);
+                webinarGrid.appendChild(card);
+            }
+        }
+
+        function updatePagination() {
+            const pages = document.querySelectorAll('#pagination .page');
+            pages.forEach((page, index) => {
+                const pageNumber = index + 1;
+                page.classList.toggle('active', pageNumber === currentPage);
+            });
+
+            const prevButton = document.querySelector('#pagination .prev');
+            const nextButton = document.querySelector('#pagination .next');
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === totalPages;
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            generateWebinarCards(currentPage);
+            updatePagination();
+        }
+
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            if (newPage < 1 || newPage > totalPages) return;
+            currentPage = newPage;
+            generateWebinarCards(currentPage);
+            updatePagination();
+        }
+
+        generateWebinarCards(currentPage);
+        updatePagination();
+    </script>
+</body>
+</html>

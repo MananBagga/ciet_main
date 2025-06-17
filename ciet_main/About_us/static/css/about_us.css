@@ -1,0 +1,38 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    padding: 20px 20px; /* Matches the spacing between text and screen edges */
+    text-align: left; /* Aligns text to the left as in the original */
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ff0000; /* Red color for headings */
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Space between heading and following paragraph/list */
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px; /* Reduced spacing between paragraphs to match original */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 5px; /* Reduced space above the list to match original */
+    margin-bottom: 15px; /* Space below the list */
+}
+
+li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 2px; /* Further reduced spacing between list items to match original */
+}

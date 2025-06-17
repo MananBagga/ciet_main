@@ -1,0 +1,116 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tab-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.tab-button.active {
+    background-color: #ff6200;
+    color: #fff;
+    border-color: #ff6200;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    background-color: #fff;
+    clip-path: polygon(50% 100%, 0 0, 100% 0); /* Creates the arrow shape */
+    z-index: 2;
+}
+
+.tab-content {
+    display: none;
+    background-color: #f5f5f5; /* Grey background for the profile cards container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+h3 {
+    color: #ff6200;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.view-profile-button {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-profile:hover {
+    background-color: #f0f0f0;
+}
