@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Channels</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/tv_channels.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="dth-container">
+    <div class="dth-header">
+      <h1>12 DTH TV Channels</h1> 
+    </div>
+    <div >
+        <p>One of the major components of PM eVidya initiative is 'One Class-One Channel' where 12 DTH television channels are dedicated for the transmission of educational contents for Class 1 to 12 based on NCERT curriculum.</p>
+    </div>
+    <div class="dth-description">
+        <h3>12 DTH Educational TV Channel Transmission Schedule (Current)</h3>
+        <h3>Important Info About 12 DTH TV Channels</h3>
+    </div>
+    <div class="dth-info">
+        
+      <p>Give your feedback on 12 eVidya channels on Toll Free number- 8800440559</p>
+      <p>You can also send your feedback by email- <a href="#">Click here for class-wise email id</a></p>
+    </div>
+  </div>
+
+  {% include "partials/footer.html" %}
+
+</body>

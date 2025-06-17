@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Academic Calendar</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/alternative_academic_calender.css" %}">
+</head>
+<body>
+
+
+    {% include "partials/navbar.html" %}
+
+    <div class="calendar-container">
+        <h1>Alternative Academic Calendar</h1>
+        <p>
+            In the period of Covid-19, which is declared a global pandemic, our teachers, parents, and students have to remain at homes to prevent its spread in the community. In this situation, it is our responsibility to provide them with multiple alternative ways of learning at home through the interesting activities. It is necessary because in the present environment of stress we have to not only keep our children busy but also to maintain continuity of their learning in their new classes. In this context, NCERT has developed an Alternative Academic Calendar for all the stages of school education.
+        </p>
+        <p>
+            <strong>Alternative Academic CALENDAR-</strong> <a href="#">Click Here</a>
+        </p>
+    </div>
+
+    {% include "partials/footer.html" %}
+    
+</body>
+</html>

@@ -293,6 +293,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // In your script.js file:
 
+
+// ---------------------------------------------------announcements_Messages--------------------------------------------------------------------
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const announcementContentBox = document.querySelector('.announcement-content-box');

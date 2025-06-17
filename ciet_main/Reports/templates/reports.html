@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/reports.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <h1>Research, Training & Extension</h1>
+        <div class="guidelines">
+            <p><a href="#" class="report-link">Online Course on Action Research in Education - Report 2018-19</a></p>
+            <p><a href="#" class="report-link">Exam Helpline Report</a></p>   
+        </div> 
+        <h1>State Report Cards</h1>
+        <div class="guidelines">
+            <p>ICT Report of Punjab</p>
+            <p>ICT Report of Meghalaya</p>
+            <p>ICT Report of Tamil Nadu</p>
+            <p>ICT Report of Uttar Pradesh</p>
+            <p>ICT Report of West Bengal</p>
+            <p>ICT Report of Karnataka</p>
+            <p>ICT Report of Kendriya Vidyalaya Sangathan</p>
+            <p>ICT Report of Assam</p>
+            <p>ICT@Schools Scheme Implementation in 10 States/UTs: A comparative analysis 2014</p>
+            <p>ICT Report of Sikkim</p>
+            <p>ICT Report of Himachal Pradesh</p>
+           
+            
+        </div>    
+    </div>
+
+    
+    </div>
+    {% include "partials/footer.html" %}
+</body>
+</html>

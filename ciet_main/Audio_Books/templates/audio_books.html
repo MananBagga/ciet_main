@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replica Webpage</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/audio_books.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <div class="dropdown-section">
+            <select class="dropdown">
+                <option>-- All Classes ---</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+                <option>Class 5</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+                <option>Class 9</option>
+                <option>Class 10</option>
+                <option>Class 11</option>
+                <option>CLASS 12</option>
+                <option>NEP 2020</option>
+                <option>Interactions - VI to X</option>
+                <option>Other</option>
+            </select>
+            <select class="dropdown">
+                <option>-- All Subjects ---</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Urdu</option>
+                <option>Sanskrit</option>
+                <option>Accountancy</option>
+                <option>Chemistry</option>
+                <option>Mathematics</option>
+                <option>Biology</option>
+                <option>Psychology</option>
+                <option>Geography</option>
+                <option>Physics</option>
+                <option>Sociology</option>
+                <option>Political Science</option>
+                <option>History</option>
+                <option>Economics</option>
+                <option>Business Studies</option>
+                <option>Computers and Communication Technology</option>
+                <option>Computer Science</option>
+                <option>Informatics Practice</option>
+                <option>Fine Art</option>
+                <option>Biotechnology</option>
+                <option>Home Science</option>
+                <option>Creative Writing and Translation</option>
+                <option>Sangeet</option>
+                <option>NEP 2020</option>
+                <option>Environmental Studies</option>
+                <option>Social Science</option>
+                <option>Science</option>
+                <option>Interactions</option>
+            </select>
+            <select class="dropdown">
+                <option>-- All Languages ---</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Urdu</option>
+            </select>
+            <button class="filter-btn">Filter</button>
+        </div>
+        <div class="button-grid">
+            <button class="grid-btn">Class I</button>
+            <button class="grid-btn">Class II</button>
+            <button class="grid-btn">Class III</button>
+            <button class="grid-btn">Class IV</button>
+            <button class="grid-btn">Class V</button>
+            <button class="grid-btn">Class VI</button>
+            <button class="grid-btn">Class VII</button>
+            <button class="grid-btn">Class VIII</button>
+            <button class="grid-btn">Class IX</button>
+            <button class="grid-btn">Class X</button>
+            <button class="grid-btn">Class XI</button>
+            <button class="grid-btn">Class XII</button>
+            <button class="grid-btn">NEP 2020</button>
+            <button class="grid-btn">Interactions - VI to X</button>
+            <button class="grid-btn">Archive</button>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+</body>
+</html>

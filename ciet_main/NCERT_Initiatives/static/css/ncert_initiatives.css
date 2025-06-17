@@ -1,0 +1,71 @@
+.training-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .current-title {
+    background-color: #f5c518;
+  }
+  
+  .upcoming-title {
+    background-color: #1e90ff;
+  }
+  
+  .completed-title {
+    background-color: #228b22;
+  }
+  
+  .activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-table th,
+  .activity-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .activity-table th {
+    background-color: #d4e4d4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .activity-table td {
+    background-color: #fff;
+  }
+  
+  .activity-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .program-link {
+    color: #ff4500;
+    text-decoration: none;
+  }
+  
+  .program-link:hover {
+    text-decoration: underline;
+  }

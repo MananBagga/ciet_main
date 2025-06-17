@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochure on ICT initiatives</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/brochure_ict_initiatives.css" %}">
+
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <h1>Brochure on ICT initiatives</h1>
+        <div class="guidelines">
+            <p>National Repository of Open Educational Resources (NROER)</p>
+            <p>ePathshala</p>
+            <p>SWAYAM</p>
+            <p>SWAYAM PRABHA</p>
+            <p>ICT Curriculum</p>
+            <p>Cyber Safety and Security</p>
+        </div>
+        
+    </div>
+    {% include "partials/navbar.html" %}
+</body>
+</html>

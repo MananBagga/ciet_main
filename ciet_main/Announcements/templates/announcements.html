@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcements</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+    <section class="announcements-section">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">ALL</button>
+        <button class="filter-btn" data-category="vacancies">VACANCIES</button>
+        <button class="filter-btn" data-category="notices">NOTICES</button>
+        <button class="filter-btn" data-category="miscellaneous">
+          MISCELLANEOUS
+        </button>
+      </div>
+
+      <div class="announcement-content-box">
+        <p class="no-announcement-message">No Announcement Found..</p>
+      </div>
+    </section>
+
+    {% comment %} <div class="partner-carousel">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <img src="path/to/ncert-logo.png" alt="NCERT Logo" />
+        </div>
+        <div class="carousel-card">
+          <img src="path/to/g20-logo.png" alt="G20 Logo" />
+        </div>
+        <div class="carousel-card">
+          <img src="path/to/moe-logo.png" alt="MoE Logo" />
+        </div>
+        <div class="carousel-card">
+          <img src="path/to/digital-india-logo.png" alt="Digital India Logo" />
+        </div>
+        <div class="carousel-card">
+          <img
+            src="path/to/azadi-logo.png"
+            alt="Azadi Ka Amrat Mahotsav Logo"
+          />
+        </div>
+        <div class="carousel-card">
+          <img src="path/to/unesco-logo.png" alt="UNESCO Logo" />
+        </div>
+      </div>
+    </div> {% endcomment %}
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

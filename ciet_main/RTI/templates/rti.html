@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTI</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"> <link
+    rel="stylesheet" href="{% static "css/rti.css" %}">
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+
+    <div class="rti-container">
+      <h2 class="rti-heading">Right to Information</h2>
+      <table class="rti-table">
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>Name of the Divisions/Sections/Institutes</th>
+            <th>Names & Designations of Officers</th>
+            <th>Telephone No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Academic, Production, Technical and Administrative leader</td>
+            <td>
+              Dr. A.P. Behera<br />
+              Joint Director
+            </td>
+            <td>
+              +91-11-26962580<br />
+              +91-11-26861441
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>CIET, Administration</td>
+            <td>
+              Mr. Naval Kishor<br />
+              Deputy Secretary
+            </td>
+            <td>
+              011 - 26560546(D)<br />
+              EPBX: 011 - 26864801-<br />
+              10<br />
+              Extn - 301
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>
+              Department of Information and Communication Technology (DICT) &
+              Training Division(TD)
+            </td>
+            <td>
+              Dr. Bharti<br />
+              Associate Professor and Head
+            </td>
+            <td>
+              011 - 26866389(D)<br />
+              EPBX: 011 - 26864801-<br />
+              10<br />
+              Extn - 217
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Media Production Division (MPD)</td>
+            <td>
+              Sh. Rajesh Kumar Nimesh<br />
+              Associate Professor and Head
+            </td>
+            <td>
+              011 - 26556578(D)<br />
+              EPBX: 011 - 26864801-<br />
+              10<br />
+              Extn - 152
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Planning and Research Division (PRD)</td>
+            <td>
+              Prof. Shashi Prabha<br />
+              Professor and Head
+            </td>
+            <td>
+              EPBX: 011 - 26864801-<br />
+              10<br />
+              Extn - 159
+            </td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Engineering Division</td>
+            <td>
+              Ms. Kunda Shamkuwar<br />
+              Head
+            </td>
+            <td>
+              011 - 26865676(D)<br />
+              EPBX: 011 - 26864801-<br />
+              10<br />
+              Extn - 213
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="rti-footer">
+        <a href="#">To see the Organizational Chart click here</a>
+      </p>
+    </div>
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

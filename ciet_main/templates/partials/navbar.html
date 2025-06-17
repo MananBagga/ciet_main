@@ -185,20 +185,35 @@
       <option value="{% url "live_classrooms" %}">Live Inclusive classrooms</option>
       <option value="#">eContent Competition</option>
       <option value="{% url "srg" %}">SRG Orientation on eContent 2022-2023</option>
-      <option value="#">TV Channels</option>
-      <option value="#">Workshops/Training</option>
+      <option value="{% url "tv_channels" %}">TV Channels</option>
+      <option value="{% url "workshop_training" %}">Workshops/Training</option>
     </select>
 
     <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
       <option selected disabled>Resources</option>
-      <option value="#">Resource 1</option>
-      <option value="#">Resource 2</option>
+      <option value="{% url "cyber_safety_security" %}">Cyber Safety & Security</option>
+      <option value="{% url "econtent_guidelines" %}">eContent Guidelines</option>
+      <option value="{% url "catalogue" %}">Catalogue</option>
+      <option value="{% url "brochure_ict_initiatives" %}">Brochure on ICT Initiatives</option>
+      <option value="{% url "journals" %}">Journals</option>
+      <option value="{% url "newsletter" %}">Newsletters</option>
+      <option value="{% url "econtent_eval" %}">eContent Evaluation</option>
+      <option value="{% url "reports" %}">Reports</option>
+      <option value="{% url "unesco" %}">UNESCO Resources</option>
+      <option value="#">Comics on Conservation of Environment - PCRA & NCERT (Hindi)</option>
+      <option value="{% url "learning_objects" %}">Learning Objectives</option>
+      <option value="{% url "ncert_initiatives" %}">NCERT Initiatives for Inclusive and Accessible Education</option>
+      <option value="{% url "audio_books" %}">Audio Books</option>
+      <option value="{% url "alternative_academic_calender" %}">Alternative Academic Calender</option>
     </select>
 
     <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
       <option selected disabled>More</option>
-      <option value="#">More Option 1</option>
-      <option value="#">More Option 2</option>
+      <option value="{% url "rti" %}">RTI</option>
+      <option value="{% url "announcements" %}">Announcements</option>
+      <option value="{% url "contact" %}">Contact</option>
+      <option value="#">Privacy Policy</option>
+      <option value="#">Customize</option>
     </select>
 
     <a href="#" class="search-icon">&#128269;</a>

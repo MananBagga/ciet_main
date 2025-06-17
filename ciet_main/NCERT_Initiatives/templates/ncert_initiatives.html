@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop/Training</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/ncert_initiatives.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+<div class="training-container">
+    <p class="intro-text">
+        Efforts toward equitable education and inclusive education aim to address educational needs that arise as a result of belonging to SEDG's as well as those that arise despite having no association with SEDGs. Addressing the special educational needs demands availability of resources in multiple modes and flexibility in content delivery for personalized adaptive learning. Mentioned below are the major initiatives taken by NCERT for making education accessible to all including children belonging to SEDG's, recognized in NEP 2020.
+   </p>
+   <ul>
+    <li>ePathshala</li>
+    <li>Barkhaa</li>
+    <li>Teaching Learning Resources in Indian Sign Language</li>
+    <li>Accessibility Concerns in NCERT Textbooks</li>
+    <li>Audio Books</li>
+    <li>Priya-The Accessibility Warrior</li>
+    <li>Bhasha Sangam</li>
+    <li>Teachers support material on Inclusive Education</li>
+    <li>PMeVidya</li>
+    <li>DIKSHA</li>
+    <li>SWAYAM on MOOCs</li>
+    <li>NISHTHA</li>
+    <li>Augmented Reality / Virtual Reality</li>
+    <li>Tactile map Book</li>
+   </ul> 
+  </div>
+
+{% include "partials/footer.html" %}
+
+</body>
+</html>

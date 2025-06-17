@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Safety</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/cyber_safety_security.css" %}">
+
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <h1 class="page-title">CIET-NCERT Resources</h1>
+        
+        <section class="resource-section">
+            <h2 class="section-title">English</h2>
+            <ul class="resource-list">
+                <li>Be Safe in Cyber World (for Teachers)</li>
+                <li>Be Safe in Cyber World (for Students)</li>
+                <li>Basics of Cyber Safety & Security</li>
+                <li>Safe Online Learning in Times of COVID-19</li>
+                <li>Cyber Safety & Security Guideline for Parents</li>
+                <li>Cyber Safety and Security Guideline for School</li>
+                <li>Handbook on Digital Safety (For Children)</li>
+                <li>Pocket Book on Cyber Safety Tips</li>
+            </ul>
+        </section>
+
+        <section class="resource-section">
+            <h2 class="section-title">Hindi</h2>
+            <ul class="resource-list">
+                <li>कोविड-19 के दौरान सुरक्षित तरीके से ऑनलाइन माध्यम द्वारा सीखना</li>
+                <li>साइबर जगत में सुरक्षा (शिक्षकों के लिए)</li>
+                <li>साइबर जगत में सुरक्षा (विद्यार्थियों के लिए)</li>
+                <li>साइबर जगत में सुरक्षा (विद्यालयों के लिए दिशा-निर्देश)</li>
+                <li>डिजिटल पेरेंटिंग (परवरिश)</li>
+                <li>साइबर सुरक्षा के दिशानिर्देश (अभिभावकों हेतु)</li>
+            </ul>
+        </section>
+
+        <section class="resource-section">
+            <h2 class="section-title">Other Resources</h2>
+            <ul class="resource-list">
+                <li>A Handbook for Adolescents/ Students on Cyber Safety</li>
+                <li>Cyber Safe Girl</li>
+            </ul>
+        </section>
+
+        <section class="resource-section">
+            <h2 class="section-title">Weekly tip Calendar</h2>
+            <ul class="resource-list">
+                <li>Safe Internet Day (<a href="#" class="link">PDF</a>)</li>
+                <li>Safe Internet Day (<a href="#" class="link">Flipbook</a>)</li>
+            </ul>
+        </section>
+    </div>
+    {% include "partials/navbar.html" %}
+</body>
+</html>

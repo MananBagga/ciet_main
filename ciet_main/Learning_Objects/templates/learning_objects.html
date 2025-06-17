@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eContent Evaluation</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/learning_objectives.css" %}">
+</head>
+<body>
+   {% include "partials/navbar.html" %}
+    <div class="sub-container">
+        <h1>eContent Evaluation</h1>
+        <ul>
+        <li><a href="#" class="journal-link">Mensuration</a>..........(15)</li>
+        <li><a href="#" class="journal-link">Triangle</a>.........(12)</li>
+        <li><a href="#" class="journal-link">Algebra</a>..........(10)</li>
+        
+    </ul></div>
+
+    {% include "partials/footer.html" %}
+</body>
+</html>

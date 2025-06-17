@@ -1,0 +1,38 @@
+.dth-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dth-header {
+    background-color: #b2f5ea;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .dth-description {
+    font-size: 16px;
+    color: #b2f5ea;;
+    margin-bottom: 20px;
+  }
+  
+  .dth-info h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .dth-info p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  .dth-info a {
+    color: #ff4500;
+    text-decoration: underline;
+  }
+  
+  .dth-info a:hover {
+    text-decoration: none;
+  }

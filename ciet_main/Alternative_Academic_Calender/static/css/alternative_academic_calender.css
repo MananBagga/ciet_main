@@ -1,0 +1,29 @@
+.calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.calendar-container h1 {
+    color: #ff6200;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.calendar-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.calendar-container a {
+    color: #ff6200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calendar-container a:hover {
+    text-decoration: underline;
+}

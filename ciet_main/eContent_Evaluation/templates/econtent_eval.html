@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eContent Evaluation</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/econtent_eval.css" %}">
+</head>
+<body>
+   {% include "partials/navbar.html" %}
+    <div class="sub-container">
+        <h1>eContent Evaluation</h1>
+        <ul>
+        <li><a href="#" class="journal-link">E-Content Evaluation Tool</a></li>
+        <li><a href="#" class="journal-link">Parameters for E-Content Evaluation</a></li>
+        <li><a href="#" class="journal-link">Assessment tool for E-Content</a></li>
+        <li><a href="#" class="journal-link">List of Econtent Reviewer</a></li>
+        <li><a href="#" class="journal-link">Click here to Submit Online Form</a></li>
+    </ul></div>
+
+    {% include "partials/footer.html" %}
+</body>
+</html>

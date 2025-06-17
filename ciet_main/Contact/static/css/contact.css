@@ -1,0 +1,152 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.contact-details {
+    background-color: #c84e2c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.contact-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.contact-details h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form {
+    width: 55%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 100px;
+    resize: none;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.captcha i {
+    cursor: pointer;
+    color: #c84e2c;
+}
+
+.captcha input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #c84e2c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a63e24;
+}
+
+.location-section {
+    margin: 20px;
+}
+
+.location-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO Resources</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/unesco.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="event-container">
+        <p>
+          The Digital India Programme of the Government of India envisions<br>
+          (i) digital infrastructure,<br>
+          (ii) governance and services on demand and<br>
+          (iii) digital empowerment of citizens.<br>
+          To promote such vision of the Government of India, National Council of Educational Research and Training (NCERT) in collaboration with UNESCO - International Bureau of Education (IBE), Geneva and UNESCO - International Institute of Technology for Education (IITE), Moscow have planned to organize an INTERNATIONAL FORUM/WORKSHOP on “adopting an ICT Perspective to Education and Learning” in New Delhi from October 31st, 2016 to November 4th, 2016. Shri Upendra Kushwaha, Honourable Minister of State for Human Resource Development, Government of India has kindly consented to inaugurate the Forum on October 31st 2016 at 10.00 a.m. at the Ashok, Chankyapuri, New Delhi. The subsequent activities will be held at Central Institute of Educational Technology (CIET), NCERT, New Delhi. The Forum targets mainly countries which are implementing the UNESCO’s General Education Quality Analysis Framework (GEQAF). The Forum sessions are designed to be interactive and will build on concrete cases of ICT integration. A host of countries is participating in this Forum along with several stakeholders from India.
+        </p>
+        <div class="event-links">
+          <div class="link-section">
+            <a href="#" class="orange-link">Schedule</a>
+          </div>
+          <div class="link-section">
+            <span>Participants (</span><a href="#" class="orange-link">National</a> / <a href="#" class="orange-link">International</a><span>)</span>
+          </div>
+          <div class="link-section">
+            <a href="#" class="orange-link">Compendium</a>
+          </div>
+        </div>
+        <div class="resources-section">
+          <h2>Resources</h2>
+          <div class="resources-links">
+            <a href="#" class="orange-link">Speech (</a><a href="#" class="orange-link">English</a> / <a href="#" class="orange-link">Hindi</a><a href="#">)</a>
+            <a href="#" class="orange-link">Presentation</a>
+            <a href="#" class="orange-link">Video</a>
+            <a href="#" class="orange-link">Audio</a>
+          </div>
+        </div>
+      </div>
+
+{% include "partials/footer.html" %}
+
+</body>
+</html>

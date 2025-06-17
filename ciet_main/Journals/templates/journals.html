@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/journals.css" %}">
+
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <h1>Journals</h1>
+        <div class="guidelines">
+            <p>IJET - Volume 5, Issue 1</p>
+            <p>IJET - Volume 4, Issue 1</p>
+            <p>IJET - Volume 4, Issue 2</p>
+            <p>IJET - Volume 3, Issue 2</p>
+            <p>IJET - Volume 3, Issue 1</p>
+            <p>IJET - Volume 2, Number 2</p>
+            <p>IJET - Volume 2, Issue 1</p>
+            <p>IJET - Volume 1, Issue 2</p>
+            <p>IJET - Volume 1, Issue 1</p>
+           
+            
+        </div>   
+    </div>
+    <div class="sub-container"><ul>
+        <li><a href="#" class="journal-link">UGC Care</a></li>
+        <li><a href="#" class="journal-link">Editorial Board</a></li>
+        <li><a href="#" class="journal-link">Notes for Contributors</a></li>
+    </ul></div>
+    {% include "partials/navbar.html" %}
+</body>
+</html>
