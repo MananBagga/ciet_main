@@ -74,6 +74,8 @@ INSTALLED_APPS = [
     'Alternative_Academic_Calender',
     'TV_Channels',
     'Workshop_Training',
+    'screen_reader_access',
+    'administration_accounts',
 ]
 
 MIDDLEWARE = [

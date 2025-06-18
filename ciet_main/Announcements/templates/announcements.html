@@ -24,33 +24,44 @@
         <p class="no-announcement-message">No Announcement Found..</p>
       </div>
     </section>
-
-    {% comment %} <div class="partner-carousel">
-      <div class="carousel-track">
-        <div class="carousel-card">
-          <img src="path/to/ncert-logo.png" alt="NCERT Logo" />
-        </div>
-        <div class="carousel-card">
-          <img src="path/to/g20-logo.png" alt="G20 Logo" />
-        </div>
-        <div class="carousel-card">
-          <img src="path/to/moe-logo.png" alt="MoE Logo" />
-        </div>
-        <div class="carousel-card">
-          <img src="path/to/digital-india-logo.png" alt="Digital India Logo" />
-        </div>
-        <div class="carousel-card">
-          <img
-            src="path/to/azadi-logo.png"
-            alt="Azadi Ka Amrat Mahotsav Logo"
-          />
-        </div>
-        <div class="carousel-card">
-          <img src="path/to/unesco-logo.png" alt="UNESCO Logo" />
-        </div>
-      </div>
-    </div> {% endcomment %}
-
     {% include "partials/footer.html" %}
+
+    <script src="{% static "js/script.js" %}">
+       document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const announcementContentBox = document.querySelector(
+    ".announcement-content-box"
+  );
+  const noAnnouncementMessage = document.querySelector(
+    ".no-announcement-message"
+  );
+
+  const announcementsData = {
+    all: "No Announcement Found..",
+    vacancies: "Currently no vacancies available.",
+    notices: "No new notices at this time.",
+    miscellaneous: "No miscellaneous announcements to display.",
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+      const category = button.dataset.category;
+      updateAnnouncementContent(category);
+    });
+  });
+
+  function updateAnnouncementContent(category) {
+    if (announcementsData[category]) {
+      noAnnouncementMessage.innerHTML = announcementsData[category];
+    } else {
+      noAnnouncementMessage.innerHTML =
+        "Content not available for this category.";
+    }
+  }
+  updateAnnouncementContent("all");
+});
+    </script>
   </body>
 </html>

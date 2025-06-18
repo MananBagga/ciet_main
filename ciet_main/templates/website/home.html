@@ -18,7 +18,10 @@
     />
   </head>
   <body>
-    {% include 'partials/navbar.html' %} {% comment %}
+
+    {% include "partials/navbar.html" %}
+
+    {% comment %}
     <div class="main-slider">
       <div class="slider-inner">
         <div class="slider-item" data-slide="0">
@@ -89,7 +92,7 @@
     </div>
     {% endcomment %}
 
-    <div
+    <div id="main-content"
       class="main-slider"
       style="
         position: relative;
@@ -293,27 +296,6 @@
         </p>
         <a href="{% url "about_us" %}" class="read-more">Read More</a>
       </div>
-      {% comment %} <div class="right-column">
-        <div class="Director_content">
-          <div class="director-header">
-            <img
-              class="Director_image"
-              src="{% static 'images/JD_image.jpg' %}"
-              alt="Joint Director"
-            />
-            <h2>
-              FROM THE DESK OF<br />
-              JOINT DIRECTOR
-            </h2>
-          </div>
-          <p>
-            "As the Joint Director of the CIET, a constituent unit of NCERT, I
-            take immense pleasure in welcoming you to our institute's website
-            and thank you for showing your interest in us..."
-          </p>
-          <a href="#" class="read-more">Read More</a>
-        </div>
-      </div> {% endcomment %}
     </section>
 
     {% comment %}
@@ -329,7 +311,7 @@
         {% endcomment %}
         <div class="carousel-track-container">
           <div class="carousel-track">
-            <a href="#">
+            <a href="https://diksha.gov.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -340,7 +322,7 @@
                 <p class="item-label">DIKSHA</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://epathshala.nic.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -351,7 +333,7 @@
                 <p class="item-label">ePATHSHALA</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://pmevidya.education.gov.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -362,7 +344,7 @@
                 <p class="item-label">PM eVIDYA</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://swayam.gov.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -373,7 +355,7 @@
                 <p class="item-label">MOOCs on SWAYAM</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://itpd.ncert.gov.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -384,7 +366,7 @@
                 <p class="item-label">NISHTHA</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ncf.ncert.gov.in/#/web/home" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -395,7 +377,7 @@
                 <p class="item-label">NCF Tech Platform</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ictcurriculum.gov.in/" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -406,7 +388,7 @@
                 <p class="item-label">ICT Curriculum</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ncert.nic.in/accessibility.php" target='__blank'>
               <div class="carousel-item">
                 <div class="circle-wrapper">
                   <img
@@ -418,7 +400,7 @@
               </div>
             </a>
 
-            {% comment %} <a href="#">
+            <a href="https://swayam.gov.in/" target='__blank'>
               <div class="carousel-item cloned">
                 <div class="circle-wrapper">
                   <img src="{% static 'images/swayam_circle_image.png' %}" alt="MOOCs on SWAYAM logo" />
@@ -426,7 +408,7 @@
                 <p class="item-label">MOOCs on SWAYAM</p>
               </div>
             </a> 
-            <a href="#">
+            <a href="https://itpd.ncert.gov.in/" target='__blank'>
               <div class="carousel-item cloned">
                 <div class="circle-wrapper">
                   <img src="{% static "images/nishtha_circle_image.png" %}" alt="NISHTHA logo" />
@@ -434,7 +416,7 @@
                 <p class="item-label">NISHTHA</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ncf.ncert.gov.in/#/web/home" target='__blank'>
               <div class="carousel-item cloned">
                 <div class="circle-wrapper">
                   <img src="{% static "images/ncf_circle_image.png" %}" alt="NCF Tech Platform logo" />
@@ -442,7 +424,7 @@
                 <p class="item-label">NCF Tech Platform</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ictcurriculum.gov.in/" target='__blank'>
               <div class="carousel-item cloned">
                 <div class="circle-wrapper">
                   <img
@@ -453,7 +435,7 @@
                 <p class="item-label">ICT Curriculum</p>
               </div>
             </a>
-            <a href="#">
+            <a href="https://ncert.nic.in/accessibility.php" target='__blank'>
               <div class="carousel-item cloned">
                 <div class="circle-wrapper">
                   <img
@@ -463,7 +445,7 @@
                 </div>
                 <p class="item-label">Accessibility in School Curriculum</p>
               </div>
-            </a> {% endcomment %}
+            </a>
           </div>
         </div>
       </div>
@@ -484,7 +466,7 @@
       </div>
 
       <div class="view-all-container">
-        <button class="view-all-button">View All Activity</button>
+        <a href="{% url "calender" %}" class="view-all-button">View All Activity</a>
       </div>
     </section>
 
@@ -493,9 +475,8 @@
 
       <div class="constituents-grid">
         <a
-          href="https://www.example.com/department/ict"
+          href="{% url "dept_ict_training" %}"
           class="constituent-block block-blue"
-          target="_blank"
         >
           <div class="block-icon">
             <i class="fas fa-laptop"></i>
@@ -504,9 +485,8 @@
         </a>
 
         <a
-          href="https://www.example.com/department/media"
+          href="{% url "media_production_division" %}"
           class="constituent-block block-blue"
-          target="_blank"
         >
           <div class="block-icon">
             <i class="fas fa-video"></i>
@@ -515,9 +495,8 @@
         </a>
 
         <a
-          href="https://www.example.com/department/research"
+          href="{% url "planning_research_division" %}"
           class="constituent-block block-blue"
-          target="_blank"
         >
           <div class="block-icon">
             <i class="fas fa-brain"></i>
@@ -526,9 +505,8 @@
         </a>
 
         <a
-          href="https://www.example.com/department/engineering"
+          href="{% url "engineering_division" %}"
           class="constituent-block block-blue"
-          target="_blank"
         >
           <div class="block-icon">
             <i class="fas fa-cogs"></i>
@@ -537,9 +515,8 @@
         </a>
 
         <a
-          href="https://www.example.com/department/admin"
+          href="{% url "administration_accounts" %}"
           class="constituent-block block-blue"
-          target="_blank"
         >
           <div class="block-icon">
             <i class="fas fa-calculator"></i>
@@ -558,7 +535,7 @@
 
       <div class="hexagon-grid">
         <!-- Hexagon 1: E-TEXT BOOKS -->
-        <a href="https://ncert.nic.in/textbook.php" class="hexagon-item">
+        <a href="https://ncert.nic.in/textbook.php" target='_blank' class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/resourse_pentagon_image.png' %}"
@@ -580,7 +557,7 @@
         </a>
 
         <!-- Hexagon 3: STUDIO -->
-        <a href="#" class="hexagon-item">
+        <a href="#" target='_blank' class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/studio1_pentagon_image.png' %}"
@@ -591,7 +568,7 @@
         </a>
 
         <!-- Hexagon 4: DIKSHA -->
-        <a href="https://diksha.gov.in/" class="hexagon-item">
+        <a href="https://diksha.gov.in/" target='_blank' class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/diksha_pentagon_image.png' %}"
@@ -602,7 +579,7 @@
         </a>
 
         <!-- Hexagon 5: TRANSMISSION -->
-        <a href="#" class="hexagon-item">
+        <a href="{% url "majorProjects" %}" class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/transmission_pentagon_image.png' %}"
@@ -613,7 +590,7 @@
         </a>
 
         <!-- Hexagon 6: JOURNAL -->
-        <a href="#" class="hexagon-item">
+        <a href="{% url "journals" %}" class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/oer_pentagon_image.png' %}"
@@ -624,7 +601,7 @@
         </a>
 
         <!-- Hexagon 7: NEWSLETTER -->
-        <a href="#" class="hexagon-item">
+        <a href="{% url "newsletter" %}" class="hexagon-item">
           <div class="hexagon-inner">
             <img
               src="{% static 'images/journal_pentagon_image.png' %}"
@@ -640,7 +617,7 @@
     -----------------------------------------------------------------------------------------------------------------------------------------------
     {% endcomment %}
 
-    <section class="announcements-section">
+     <section class="announcements-section">
       <div class="filter-buttons">
         <button class="filter-btn active" data-category="all">ALL</button>
         <button class="filter-btn" data-category="vacancies">VACANCIES</button>
@@ -682,20 +659,6 @@
     </div>
 
     {% include 'partials/footer.html' %}
-
-    <script>
-      // JavaScript for current date in top bar
-      document.addEventListener("DOMContentLoaded", function () {
-        const dateElement = document.getElementById("current-date");
-        if (dateElement) {
-          const today = new Date();
-          const options = { day: "2-digit", month: "short", year: "numeric" };
-          dateElement.textContent = today
-            .toLocaleDateString("en-GB", options)
-            .replace(/ /g, "/");
-        }
-      });
-    </script>
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

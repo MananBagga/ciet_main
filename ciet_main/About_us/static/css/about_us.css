@@ -11,28 +11,27 @@
     line-height: 1.6;
 }
 
-h1 {
-    color: #ff0000; /* Red color for headings */
+.about_heading {
+    color: #ff0000; 
     font-size: 24px;
     margin-top: 20px;
-    margin-bottom: 10px; /* Space between heading and following paragraph/list */
+    margin-bottom: 10px; 
 }
 
-p {
+.about_p {
     font-size: 16px;
     color: #333;
-    margin-bottom: 5px; /* Reduced spacing between paragraphs to match original */
+    margin-bottom: 5px; 
 }
-
-ul {
+.about_ul {
     list-style-type: disc;
     margin-left: 20px;
-    margin-top: 5px; /* Reduced space above the list to match original */
-    margin-bottom: 15px; /* Space below the list */
+    margin-top: 5px; 
+    margin-bottom: 15px; 
 }
 
-li {
+.about_li {
     font-size: 16px;
     color: #333;
-    margin-bottom: 2px; /* Further reduced spacing between list items to match original */
+    margin-bottom: 2px; 
 }

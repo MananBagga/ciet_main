@@ -57,4 +57,6 @@ urlpatterns = [
     path('tv_channels/', include('TV_Channels.urls')),
     path('workshop_training/', include('Workshop_Training.urls')),
     path('alternative_academic_calender/', include('Alternative_Academic_Calender.urls')),
+    path('screen_reader_access/', include('screen_reader_access.urls')),
+    path('administration_accounts/', include('administration_accounts.urls')),
 ]

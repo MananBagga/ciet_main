@@ -121,7 +121,7 @@ textarea {
     font-size: 16px;
 }
 
-button {
+.contact_button {
     background-color: #c84e2c;
     color: white;
     padding: 10px;
@@ -131,7 +131,7 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.contact_button:hover {
     background-color: #a63e24;
 }
 

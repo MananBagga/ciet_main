@@ -69,6 +69,7 @@ h2 {
     color: #ff6200;
     text-decoration: none;
     margin: 0 10px 10px;
+    background-color: white;
 }
 
 .activity-card .read-more:hover {
