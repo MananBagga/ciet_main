@@ -1,0 +1,33 @@
+.cyber-jaagrookta-header {
+    background-color: #ff9999;
+    padding: 10px;
+    text-align: center;
+}
+
+.section-title {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.session-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.session-table th {
+    background-color: #8a9b7e;
+    padding: 10px;
+    text-align: left;
+}
+
+.session-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.session-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

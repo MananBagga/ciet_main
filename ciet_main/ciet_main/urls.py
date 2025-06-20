@@ -59,4 +59,6 @@ urlpatterns = [
     path('alternative_academic_calender/', include('Resources.Alternative_Academic_Calender.urls')),
     path('screen_reader_access/', include('screen_reader_access.urls')),
     path('administration_accounts/', include('Departments.administration_accounts.urls')),
+    path('library/', include('Library.urls')),
+    path('cyber_jaagrookta/', include('cyber_jaagrookta.urls')),
 ]

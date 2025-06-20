@@ -1,0 +1,23 @@
+.section-title {
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.team-section, .library-collection, .library-services {
+    margin: 20px 0;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.team-member img {
+    margin-right: 10px;
+}
+
+.library-contact {
+    margin: 20px 0;
+}

@@ -76,6 +76,8 @@ INSTALLED_APPS = [
     'Activities.Workshop_Training',
     'screen_reader_access',
     'Departments.administration_accounts',
+    'Library',
+    'cyber_jaagrookta',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +96,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        # 'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
