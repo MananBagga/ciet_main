@@ -102,10 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     const carouselTrack = document.querySelector(".carousel-track");
-    if (!carouselTrack) {
-        console.error("Carousel track not found!");
-        return;
-    }
 
     // --- CORRECTION 1: Select the parent <a> tags for cloning ---
     // Instead of selecting '.carousel-item', we select the <a> tags within the track.
@@ -126,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Configuration
     const itemsPerView = 5;
-    const scrollIntervalTime = 3000;
+    const scrollIntervalTime = 5000;
     let currentIndex;
     let autoScrollInterval;
     let itemWidth;
