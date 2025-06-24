@@ -37,7 +37,6 @@
                     <div class="text-content">
                         <p>The division looks after implementing and monitoring all the academic programmes duly approved by the Institutional Advisory Board (IAB) and PAC-NCERT, PAB of DSEL, MOE-GOI, and other projects funded by National/International funding agencies. Additionally, we collaborate with MOE and other State Institutes of Educational Technology (SIETs) for projects in the field of educational technology.
 
-
                             With strategic planning, programme implementation, and rigorous monitoring the PRD department of CIET has created a niche in research and specialized training in educational technology.</p>
                         
                     </div>
@@ -55,11 +54,49 @@
 
         <section class="navigation-buttons">
             <div class="container">
-                <button class="nav-button">INDIAN JOURNAL OF EDUCATIONAL TECHNOLOGY (IJET)</button>
-                <button class="nav-button">CIET’S NEWSLETTER</button>
-                <button class="nav-button">AICEAVF & ICT MELA</button>
-                <button class="nav-button">PM EVIDYA CELL</button>
-                <button class="nav-button">EXPOSURE VISITS AND INTERNSHIPS</button>
+                <button class="nav-button" onclick="showContent('ijet-content')">INDIAN JOURNAL OF EDUCATIONAL TECHNOLOGY (IJET)</button>
+                <button class="nav-button" onclick="showContent('newsletter-content')">CIET’S NEWSLETTER</button>
+                <button class="nav-button" onclick="showContent('aiceavf-content')">AICEAVF & ICT MELA</button>
+                <button class="nav-button" onclick="showContent('pm-evidya-content')">PM EVIDYA CELL</button>
+                <button class="nav-button" onclick="showContent('library-content')">CIET' LIBRARY</button>
+                <button class="nav-button" onclick="showContent('exposure-content')">EXPOSURE VISITS AND INTERNSHIPS</button>
+            </div>
+        </section>
+
+        <section id="ijet-content" class="ijet-content">
+            <div class="container">
+              <p><a href="#">Indian Journal of Educational Technology(IJET)</a> - An online open access journal, Indian Journal of Educational Technology (IJET) ISSN 2581-8325, is published by CIET, bi-annually in English. The journal is a peer-reviewed journal which is listed in UGC’s CARE List-Group I. The first issue of the journal was published on CIET’s website in January 2019 and since then it is regularly being published with a wide reach among researchers, teachers, teacher educators and other stakeholders all across India .</p>
+             
+            </div>
+        </section>
+
+        <section id="newsletter-content" class="newsletter-content" style="display: none;">
+            <div class="container">
+                <p><a href="#">CIET’s Newsletter</a> -CIET publishes a quarterly newsletter in English where, the progress of all the activities undertaken by the institution is given on a quarterly basis. It also gives an account of the promotions, transfers and superannuation of the staff members of CIET. The first issue of CIET’s Newsletter was published in 2017 on its website and since then, the newsletter is being published regularly. </p>
+            </div>
+        </section>
+
+        <section id="aiceavf-content" class="aiceavf-content" style="display: none;">
+            <div class="container">
+                <p>All India Children’s Educational Audio Video Festival (AICEAVF) & ICT Mela- All India Children's Educational Audio Video Festival (AICEAVF) is organized every year to facilitate eContent development among the teachers, teacher educators and students. The 26th AICEAVF was held in a blended mode on 3 March 2022 at CIET, NCERT, New Delhi. A total number of 761 entries in various categories as per the stages of school education identified by the NEP 2020 were received. These entries were analysed by a group of jury members and winners were selected accordingly. The Valedictory Ceremony was held in a blended mode on 31 March 2022 at CIET, NCERT, New Delhi where the winners were conferred with awards in the form of certificate and cash prize.</p>
+            </div>
+        </section>
+
+        <section id="pm-evidya-content" class="pm-evidya-content" style="display: none;">
+            <div class="container">
+                <p>PM eVIDYA Cell - PM eVIDYA is a Program was announced by the Hon’ble Finance Minister, Government of India (GoI) on 17 May 2020 as part of Atma Nirbhar Bharat Abhiyaan. PM eVIDYA initiative aims to facilitate technology-driven education with equity post COVID-19. It offers multi-modal access to digital/online education for school and higher education. The constituents of the mega initiative include: DIKSHA as One Nation-One Digital Platform, 12 DTH TV Channels as One Class One Channel, SWAYAM courses in MOOCs format, <a href="#">Educational eContents for DIVYANG on DAISY</a> and in <a href="#">Sign language</a>, Community Radio and Podcast and <a href="#">IIT-PAL for IIT/JEE Preparation.</a></p>
+            </div>
+        </section>
+
+        <section id="library-content" class="library-content" style="display: none;">
+            <div class="container">
+                <p><a href="#">CIET’s library</a> is a storehouse of various books, journals, magazines, periodicals, etc. and also of media resources.</p>
+            </div>
+        </section>
+
+        <section id="exposure-content" class="exposure-content" style="display: none;">
+            <div class="container">
+                <p>Resource-cum-Activity Centre in ET/ICT for School and Teacher Education is a programme of CIET under which we organize the exposure visits and Internships for the students of various courses like B.El.Ed, B.Ed., M.Ed., M.Phil., B.Tech, BJMC, BA (Education), etc. This enables them to acquire knowledge about the various Digital Initiatives taken at the national level and the skills to use various ICT Tools which can be used in teaching-learning and other professional development. Along with this the attachment training programmes for Faculty members of various courses were also organized. We have Organized exposure visits and internship programmes for University of Delhi; NIEPA, Delhi; SCERT, Delhi; University of Nagaland; Regional Institute of Education, NCERT; Amity University, Noida; Jamia Millia Islamia, Delhi; Guru Gobind Singh Indraprastha University,Delhi; Manav Rachna University, Haryana; GD Goenka University, Haryana;Gautam Buddha University, Noida; Central University of Haryana; North Orissa University; Shri Lal Bahadur Shastri Rashtriya Sanskrit Vidyapeetha (SLBSRSV), New Delhi; Visva Bharati University, West Bengal; Galgotia University, Greater Noida; Bhartiya Shiksha Adhyapak Sansthan, Gandhi Nagar, Gujarat; Indira Gandhi Delhi Technical University for Women , Delhi;IIMC, Delhi; K.R Mangalam University, Gurugram, Haryana; Children's University, Gandhinagar, Gujarat; ISLRTC, New Delhi; Rishihood university, Sonipat; Central University of Jammu and many more.</p>
             </div>
         </section>
 
@@ -148,6 +185,22 @@
     </main>
 
     {% include 'partials/footer.html' %}
+
+    <script>
+        function showContent(section) {
+            const sections = ['ijet-content', 'newsletter-content', 'aiceavf-content', 'pm-evidya-content', 'library-content', 'exposure-content'];
+            sections.forEach(s => {
+                const content = document.getElementById(s);
+                if (content) {
+                    content.style.display = s === section ? 'block' : 'none';
+                }
+            });
+        }
+        // Show ijet-content by default on page load
+        window.onload = function() {
+            showContent('ijet-content');
+        };
+    </script>
     
 </body>
 </html>
