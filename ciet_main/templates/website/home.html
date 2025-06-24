@@ -18,441 +18,211 @@
     />
   </head>
   <body>
-
     {% include "partials/navbar.html" %}
 
-    {% comment %}
-    <div class="main-slider">
-      <div class="slider-inner">
-        <div class="slider-item" data-slide="0">
-          <img src="{% static 'images/econtent_banner.png' %}" alt="Slide 1" />
-        </div>
-        <div class="slider-item" data-slide="1">
-          <img
-            src="{% static 'images/fitindia_quiz_banner.jpeg' %}"
-            alt="Slide 2"
-          />
-        </div>
-        <div class="slider-item" data-slide="2">
-          <img src="{% static 'images/dishank_banner.jpeg' %}" alt="Slide 3" />
-        </div>
-        <div class="slider-item" data-slide="3">
-          <img
-            src="{% static 'images/ICT_initiatives_banner.png' %}"
-            alt="Slide 4"
-          />
-        </div>
-        <div class="slider-item" data-slide="4">
-          <img src="{% static 'images/PMeVIDYA_banner.jpg' %}" alt="Slide 5" />
-        </div>
-        <div class="slider-item" data-slide="5">
-          <img
-            src="{% static 'images/bhasha-sangam_banner.jpg' %}"
-            alt="Slide 6"
-          />
-        </div>
-        <div class="slider-item" data-slide="6">
-          <img
-            src="{% static 'images/constitution_banner.jpg' %}"
-            alt="Slide 7"
-          />
-        </div>
-        <div class="slider-item" data-slide="7">
-          <img
-            src="{% static 'images/constitution_banner.jpg' %}"
-            alt="Slide 8"
-          />
-        </div>
-        <div class="slider-item" data-slide="8">
-          <img src="{% static 'images/swayam_banner.jpg' %}" alt="Slide 9" />
-        </div>
-        <div class="slider-item" data-slide="9">
-          <img
-            src="{% static 'images/Diksha_Web_Banner.jpg' %}"
-            alt="Slide 10"
-          />
-        </div>
-      </div>
-
-      <button class="slider-arrow prev-arrow">&#8249;</button>
-      <button class="slider-arrow next-arrow">&#8250;</button>
-
-      <div class="slider-pagination">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-        <span class="dot" data-slide="3"></span>
-        <span class="dot" data-slide="4"></span>
-        <span class="dot" data-slide="5"></span>
-        <span class="dot" data-slide="6"></span>
-        <span class="dot" data-slide="7"></span>
-        <span class="dot" data-slide="8"></span>
-        <span class="dot" data-slide="9"></span>
-      </div>
+  <div id="main-content" class="main-slider">
+  <div class="slider-inner">
+    <div class="slider-item" data-slide="0">
+      <img src="{% static 'images/Ncert_Amazon_Banner.jpg' %}" alt="Slide 1" />
     </div>
-    {% endcomment %}
-
-    <div id="main-content"
-      class="main-slider"
-      style="
-        position: relative;
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        background-color: #4a90e2;
-      "
-    >
-      <div
-        class="slider-inner"
-        style="
-          display: flex;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.7s ease-in-out;
-        "
-      >
-        <div
-          class="slider-item"
-          data-slide="0"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/econtent_banner.png' %}"
-            alt="Slide 1"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="1"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/fitindia_quiz_banner.jpeg' %}"
-            alt="Slide 2"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="2"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/dishank_banner.jpeg' %}"
-            alt="Slide 3"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="3"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/ICT_initiatives_banner.png' %}"
-            alt="Slide 4"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="4"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/PMeVIDYA_banner.jpg' %}"
-            alt="Slide 5"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="5"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/bhasha-sangam_banner.jpg' %}"
-            alt="Slide 6"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="6"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/constitution_banner.jpg' %}"
-            alt="Slide 8"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="7"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/swayam_banner.jpg' %}"
-            alt="Slide 9"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-        <div
-          class="slider-item"
-          data-slide="8"
-          style="flex: 0 0 100%; height: 100%"
-        >
-          <img
-            src="{% static 'images/Diksha_Web_Banner.jpg' %}"
-            alt="Slide 10"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: fill;
-              object-position: center;
-              display: block;
-            "
-          />
-        </div>
-      </div>
-
-      <button class="slider-arrow prev-arrow">&#8249;</button>
-      <button class="slider-arrow next-arrow">&#8250;</button>
-
-      <div class="slider-pagination">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-        <span class="dot" data-slide="3"></span>
-        <span class="dot" data-slide="4"></span>
-        <span class="dot" data-slide="5"></span>
-        <span class="dot" data-slide="6"></span>
-        <span class="dot" data-slide="7"></span>
-        <span class="dot" data-slide="8"></span>
-      </div>
+    <div class="slider-item" data-slide="1">
+      <img src="{% static 'images/IJET_Journals_Banner.jpg' %}" alt="Slide 2" />
     </div>
+    <div class="slider-item" data-slide="2">
+      <img src="{% static 'images/SATHEE_BANNER.png' %}" alt="Slide 3" />
+    </div>
+    <div class="slider-item" data-slide="3">
+      <img src="{% static 'images/MissionLifeBanner.jpg' %}" alt="Slide 4" />
+    </div>
+    <div class="slider-item" data-slide="4">
+      <img src="{% static 'images/ncert-collage_banner.jpg' %}" alt="Slide 5" />
+    </div>
+    <div class="slider-item" data-slide="5">
+      <img src="{% static 'images/Diksha_Web_Banner.jpg' %}" alt="Slide 6" />
+    </div>
+  </div>
 
-    <section class="ciet-section">
-      <div class="left-column">
-        <h1>Central Institute of Educational Technology</h1>
-        <p>
-          Central Institute of Educational Technology(CIET), a constituent unit
-          of NCERT, came into existence in the year 1984 with the merger of
-          Center for Educational Technology(CET) and Department of Teaching
-          Aids(DTA). CIET is a premier national institute of educational
-          technology. Its major aim is to promote utilization of educational
-          technologies viz. radio,TV, films, Satellite communications and cyber
-          media either separately or in combinations...
-        </p>
-        <a href="{% url "about_us" %}" class="read-more">Read More</a>
-      </div>
-    </section>
+  <button class="slider-arrow prev-arrow">&#8249;</button>
+  <button class="slider-arrow next-arrow">&#8250;</button>
+
+  <div class="slider-pagination">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3"></span>
+    <span class="dot" data-slide="4"></span>
+    <span class="dot" data-slide="5"></span>
+  </div>
+</div> <!-- Close .slider-inner -->
+</div> <!-- Close .main-slider -->
+
+<section class="ciet-section">
+  <div class="left-column">
+    <h1>Central Institute of Educational Technology</h1>
+    <p>
+      Central Institute of Educational Technology(CIET), a constituent unit of
+      NCERT, came into existence in the year 1984 with the merger of Center for
+      Educational Technology(CET) and Department of Teaching Aids(DTA). CIET is
+      a premier national institute of educational technology. Its major aim is
+      to promote utilization of educational technologies viz. radio,TV, films,
+      Satellite communications and cyber media either separately or in
+      combinations...
+    </p>
+    <a href="{% url "about_us" %}" class="read-more">Read More</a>
+  </div>
+</section>
 
     {% comment %}
     ---------------------------------------------------------------------------------------------------------------------------------
     {% endcomment %}
 
-    <section class="digital-initiatives-section">
-      <h2 class="section-title">DIGITAL EDUCATION INITIATIVES</h2>
+<section class="digital-initiatives-section">
+  <h2 class="section-title">DIGITAL EDUCATION INITIATIVES</h2>
 
-      <div class="carousel-container">
-        {% comment %}
-        <button class="nav-arrow prev-arrow" aria-label="Previous"></button>
-        {% endcomment %}
-        <div class="carousel-track-container">
-          <div class="carousel-track">
-            <a href="https://diksha.gov.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/DIKSHA_circle_image.jpg' %}"
-                    alt="MOOCs on SWAYAM logo"
-                  />
-                </div>
-                <p class="item-label">DIKSHA</p>
-              </div>
-            </a>
-            <a href="https://epathshala.nic.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/epathshala_circle_image.png' %}"
-                    alt="NISHTHA logo"
-                  />
-                </div>
-                <p class="item-label">ePATHSHALA</p>
-              </div>
-            </a>
-            <a href="https://pmevidya.education.gov.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/evidya_circle_image.png' %}"
-                    alt="NCF Tech Platform logo"
-                  />
-                </div>
-                <p class="item-label">PM eVIDYA</p>
-              </div>
-            </a>
-            <a href="https://swayam.gov.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/swayam_circle_image.png' %}"
-                    alt="ICT Curriculum logo"
-                  />
-                </div>
-                <p class="item-label">MOOCs on SWAYAM</p>
-              </div>
-            </a>
-            <a href="https://itpd.ncert.gov.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/nishtha_circle_image.png' %}"
-                    alt="Accessibility in School Curriculum logo"
-                  />
-                </div>
-                <p class="item-label">NISHTHA</p>
-              </div>
-            </a>
-            <a href="https://ncf.ncert.gov.in/#/web/home" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/ncf_circle_image.png' %}"
-                    alt="Circle 6 logo"
-                  />
-                </div>
-                <p class="item-label">NCF Tech Platform</p>
-              </div>
-            </a>
-            <a href="https://ictcurriculum.gov.in/" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/ict_circle_image.png' %}"
-                    alt="Circle 7 logo"
-                  />
-                </div>
-                <p class="item-label">ICT Curriculum</p>
-              </div>
-            </a>
-            <a href="https://ncert.nic.in/accessibility.php" target='__blank'>
-              <div class="carousel-item">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static 'images/Accessbility_circle_image.png' %}"
-                    alt="Circle 8 logo"
-                  />
-                </div>
-                <p class="item-label">Accessibility in School Curriculum</p>
-              </div>
-            </a>
-
-            <a href="https://swayam.gov.in/" target='__blank'>
-              <div class="carousel-item cloned">
-                <div class="circle-wrapper">
-                  <img src="{% static 'images/swayam_circle_image.png' %}" alt="MOOCs on SWAYAM logo" />
-                </div>
-                <p class="item-label">MOOCs on SWAYAM</p>
-              </div>
-            </a> 
-            <a href="https://itpd.ncert.gov.in/" target='__blank'>
-              <div class="carousel-item cloned">
-                <div class="circle-wrapper">
-                  <img src="{% static "images/nishtha_circle_image.png" %}" alt="NISHTHA logo" />
-                </div>
-                <p class="item-label">NISHTHA</p>
-              </div>
-            </a>
-            <a href="https://ncf.ncert.gov.in/#/web/home" target='__blank'>
-              <div class="carousel-item cloned">
-                <div class="circle-wrapper">
-                  <img src="{% static "images/ncf_circle_image.png" %}" alt="NCF Tech Platform logo" />
-                </div>
-                <p class="item-label">NCF Tech Platform</p>
-              </div>
-            </a>
-            <a href="https://ictcurriculum.gov.in/" target='__blank'>
-              <div class="carousel-item cloned">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static "images/ict_circle_image.png" %}"
-                    alt="ICT Curriculum logo"
-                  />
-                </div>
-                <p class="item-label">ICT Curriculum</p>
-              </div>
-            </a>
-            <a href="https://ncert.nic.in/accessibility.php" target='__blank'>
-              <div class="carousel-item cloned">
-                <div class="circle-wrapper">
-                  <img
-                    src="{% static "images/Accessbility_circle_image.png" %}"
-                    alt="Accessibility in School Curriculum logo"
-                  />
-                </div>
-                <p class="item-label">Accessibility in School Curriculum</p>
-              </div>
-            </a>
+  <div class="carousel-container">
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+        <a href="https://diksha.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/DIKSHA_circle_image.jpg' %}"
+                alt="DIKSHA logo"
+              />
+            </div>
+            <p class="item-label">DIKSHA</p>
           </div>
-        </div>
+        </a>
+        <a href="https://epathshala.nic.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/epathshala_circle_image.png' %}"
+                alt="ePATHSHALA logo"
+              />
+            </div>
+            <p class="item-label">ePATHSHALA</p>
+          </div>
+        </a>
+        <a href="https://pmevidya.education.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/evidya_circle_image.png' %}"
+                alt="PM eVIDYA logo"
+              />
+            </div>
+            <p class="item-label">PM eVIDYA</p>
+          </div>
+        </a>
+        <a href="https://swayam.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/swayam_circle_image.png' %}"
+                alt="MOOCs on SWAYAM logo"
+              />
+            </div>
+            <p class="item-label">MOOCs on SWAYAM</p>
+          </div>
+        </a>
+        <a href="https://itpd.ncert.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/nishtha_circle_image.png' %}"
+                alt="NISHTHA logo"
+              />
+            </div>
+            <p class="item-label">NISHTHA</p>
+          </div>
+        </a>
+        <a href="https://ncf.ncert.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/ncf_circle_image.png' %}"
+                alt="NCF Tech Platform logo"
+              />
+            </div>
+            <p class="item-label">NCF Tech Platform</p>
+          </div>
+        </a>
+        <a href="https://ictcurriculum.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/ict_circle_image.png' %}"
+                alt="ICT Curriculum logo"
+              />
+            </div>
+            <p class="item-label">ICT Curriculum</p>
+          </div>
+        </a>
+        <a href="https://ncert.nic.in/accessibility.php" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/Accessbility_circle_image.png' %}"
+                alt="Accessibility in School Curriculum logo"
+              />
+            </div>
+            <p class="item-label">Accessibility in School Curriculum</p>
+          </div>
+        </a>
+        <a href="https://www.swayamprabha.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/eVidya_ISL_circle_image.png' %}"
+                alt="PM e-Vidya DTH ISL Channel logo"
+              />
+            </div>
+            <p class="item-label">PM e-Vidya DTH ISL Channel</p>
+          </div>
+        </a>
+        <a href="https://prashast.ncert.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/prashast_circle_image.jpg' %}"
+                alt="PRASHAST logo"
+              />
+            </div>
+            <p class="item-label">PRASHAST</p>
+          </div>
+        </a>
+        <a href="https://bharatonthemoon.ncert.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/bharatonthemoon_circle_image.png' %}"
+                alt="Bharat on the Moon logo"
+              />
+            </div>
+            <p class="item-label">Bharat on the Moon</p>
+          </div>
+        </a>
+        <a href="https://ejaaduipitara.ncert.gov.in/" target="__blank">
+          <div class="carousel-item">
+            <div class="circle-wrapper">
+              <img
+                src="{% static 'images/ejaadui_pitara_logo_circle_image.jpg' %}"
+                alt="eJaadui Pitara logo"
+              />
+            </div>
+            <p class="item-label">eJaadui Pitara</p>
+          </div>
+        </a>
       </div>
-      <div class="view-more-container">
-        <a href="{% url "majorProjects" %}"><button class="view-more-button">View More</button></a>
-      </div>
-    </section>
+    </div>
+  </div>
+  <div class="view-more-container">
+    <a href="{% url 'majorProjects' %}"
+      ><button class="view-more-button">View More</button></a
+    >
+  </div>
+</section>
 
     {% comment %}
     ------------------------------------------------------------------------------------------------------------------------------------------
@@ -512,16 +282,6 @@
             <i class="fas fa-cogs"></i>
           </div>
           <p class="block-label">ENGINEERING DIVISION</p>
-        </a>
-
-        <a
-          href="{% url "administration_accounts" %}"
-          class="constituent-block block-blue"
-        >
-          <div class="block-icon">
-            <i class="fas fa-calculator"></i>
-          </div>
-          <p class="block-label">ADMINISTRATION & ACCOUNTS</p>
         </a>
       </div>
     </section>

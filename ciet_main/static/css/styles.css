@@ -310,14 +310,6 @@ body {
   align-items: center;
 }
 
-/* Ensures every image fits perfectly inside one slide */
-.slider-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .slider-inner {
   display: flex;
   width: 100%;
@@ -330,6 +322,15 @@ body {
   height: 100%;
   position: relative; /* For absolute positioning of inner elements if needed */
   background-color: #4a90e2; /* Default slide background */
+}
+
+/* Ensures every image fits perfectly inside one slide */
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Changed from 'cover' based on inline style */
+  object-position: center;
+  display: block;
 }
 
 /* Slide Content Wrappers for different layouts */
@@ -654,14 +655,17 @@ body {
 
 .ciet-section .left-column,
 .ciet-section .right-column {
-  margin: 20px 20px 20px 20px; 
-  padding: 2px; 
+  margin: 20px; /* Combined margin */
+  padding: 2px;
   box-sizing: border-box;
 }
 
 .ciet-section .left-column {
   width: 52%;
-  padding: 40px 0 0 0; /* You can keep this if you want space inside left column */
+  padding-top: 40px; /* Kept specific padding as requested */
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 .ciet-section .right-column {
@@ -673,6 +677,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 320px;
+  padding: 0; /* Ensures no internal padding from this rule */
 }
 
 .ciet-section .right-inner {
@@ -706,6 +711,11 @@ body {
   color: #fff;
 }
 
+/* The existing .right-column rule already covers most of this.
+   Keeping this to ensure padding: 0 is explicitly applied if needed for override,
+   but it's redundant with the one above for .ciet-section .right-column
+*/
+/*
 .right-column {
   background-color: #fafafa;
   border-radius: 18px;
@@ -716,6 +726,7 @@ body {
   min-height: 320px;
   padding: 0;
 }
+*/
 
 .Director_content {
   display: flex;
@@ -782,7 +793,7 @@ body {
 .carousel-container {
   position: relative;
   width: 100%; /* Adjust as needed */
-  max-width: 1200px; /* Max width for larger screens */
+  /* max-width: 1200px;  */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -791,8 +802,9 @@ body {
 
 .carousel-track-container {
   width: 100%;
-  overflow: hidden; /* This is crucial to hide items outside the view */
+  overflow: visible;
   position: relative;
+  z-index: 1;
 }
 
 .carousel-container .nav-arrow {

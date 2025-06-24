@@ -61,7 +61,7 @@
       <option value="{% url "media_production_division" %}">Media Production Division</option>
       <option value="{% url "planning_research_division" %}">Planning & research Division</option>
       <option value="{% url "engineering_division" %}">Enginnering Division</option>
-      <option value="{% url "administration_accounts" %}">Administration & accounts</option>
+      {% comment %} <option value="{% url "administration_accounts" %}">Administration & accounts</option> {% endcomment %}
     </select>
 
     <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">

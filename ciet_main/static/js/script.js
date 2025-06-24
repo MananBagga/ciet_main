@@ -1,272 +1,260 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // --- Move variable declarations to the top of the scope ---
   const sliderInner = document.querySelector(".slider-inner");
   const sliderItems = document.querySelectorAll(".slider-item");
   const prevArrow = document.querySelector(".prev-arrow");
   const nextArrow = document.querySelector(".next-arrow");
-  const dots = document.querySelectorAll(".dot");
+  const dots = document.querySelectorAll(".slider-pagination .dot"); // More specific selector
+
+  // Now you can safely access sliderInner
+  sliderInner.style.transform = "translateX(0%)"; // <-- MOVED THIS LINE HERE
 
   let currentIndex = 0;
   const totalSlides = sliderItems.length;
   let slideInterval;
 
-  // Function to update the slider position
   function updateSliderPosition() {
-    const offset = -currentIndex * 100; // Each slide is 100% width
+    const offset = -currentIndex * 100;
     sliderInner.style.transform = `translateX(${offset}%)`;
 
-    // Update active dot
+    // Ensure all dots are deactivated first, then activate the current one
     dots.forEach((dot, index) => {
       if (index === currentIndex) {
         dot.classList.add("active");
       } else {
         dot.classList.remove("active");
+        // console.log(`[updateSliderPosition] Dot ${index} removed active class.`); // Uncomment for more verbosity
       }
     });
   }
 
-  // Function to show a specific slide
   function showSlide(index) {
-    if (index >= totalSlides) {
-      currentIndex = 0; // Loop back to the first slide
-    } else if (index < 0) {
-      currentIndex = totalSlides - 1; // Loop to the last slide
-    } else {
-      currentIndex = index;
-    }
+    const previousIndex = currentIndex;
+    currentIndex = (index + totalSlides) % totalSlides;
     updateSliderPosition();
   }
 
-  // Next slide
   function showNextSlide() {
     showSlide(currentIndex + 1);
   }
 
-  // Previous slide
   function showPrevSlide() {
     showSlide(currentIndex - 1);
   }
 
-  // Event Listeners for Arrows
-  nextArrow.addEventListener("click", () => {
-    showNextSlide();
-    resetAutoSlide();
-  });
-
-  prevArrow.addEventListener("click", () => {
-    showPrevSlide();
-    resetAutoSlide();
-  });
-
-  // Event Listeners for Dots
-  dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      const slideIndex = parseInt(dot.dataset.slide);
-      showSlide(slideIndex);
-      resetAutoSlide();
-    });
-  });
-
-  // Auto-slide functionality
   function startAutoSlide() {
-    slideInterval = setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+    clearInterval(slideInterval);
+    slideInterval = setInterval(showNextSlide, 5000);
   }
 
   function resetAutoSlide() {
-    clearInterval(slideInterval); // Clear existing interval
-    startAutoSlide(); // Start a new one
+    clearInterval(slideInterval);
+    startAutoSlide();
   }
 
-  // Initialize the slider
-  updateSliderPosition(); // Set initial position
-  startAutoSlide(); // Start auto-sliding
+  // Event Listeners
+  if (nextArrow) { // Add checks if these elements might not always exist on the page
+    nextArrow.addEventListener("click", () => {
+      showNextSlide();
+      resetAutoSlide();
+    });
+  }
 
-  // Optional: Pause on hover
-  sliderInner.addEventListener("mouseenter", () => {
-    clearInterval(slideInterval);
-  });
+  if (prevArrow) { // Add checks
+    prevArrow.addEventListener("click", () => {
+      showPrevSlide();
+      resetAutoSlide();
+    });
+  }
 
-  sliderInner.addEventListener("mouseleave", () => {
-    startAutoSlide();
-  });
+  if (dots.length > 0) { // Add check for dots as well
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const slideIndex = parseInt(dot.dataset.slide, 10);
+        showSlide(slideIndex);
+        resetAutoSlide();
+      });
+    });
+  }
+
+  if (sliderInner) { // Add check for sliderInner
+    sliderInner.addEventListener("mouseenter", () => {
+      clearInterval(slideInterval);
+    });
+
+    sliderInner.addEventListener("mouseleave", () => {
+      startAutoSlide();
+    });
+  }
+
+  if (dots.length > 0) {
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    showSlide(0); // This sets currentIndex to 0 and calls updateSliderPosition()
+
+    startAutoSlide(); // Start the automatic rotation
+  } else {
+    console.warn("No pagination dots found for the main slider. Check selector '.slider-pagination .dot'");
+  }
 });
 
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-  const carouselTrack = document.querySelector(".carousel-track");
-  const carouselItems = Array.from(
-    document.querySelectorAll(".carousel-item:not(.cloned)")
-  );
-  let allCarouselItems = Array.from(
-    document.querySelectorAll(".carousel-item")
-  );
-  const prevBtn = document.querySelector(".prev-arrow");
-  const nextBtn = document.querySelector(".next-arrow");
-  const dotsContainer = document.querySelector(".carousel-dots");
-  const dots = Array.from(document.querySelectorAll(".dot"));
-  const viewMoreButton = document.querySelector(".view-more-button");
-
-  // Configuration
-  const itemsPerView = 5; // How many items you want to see completely visible.
-  const scrollIntervalTime = 3000; // 3 seconds for automatic scroll
-  let currentIndex = 0; // Current logical index of the first visible item
-  let autoScrollInterval;
-  let itemWidth; // Will be calculated dynamically, includes margin
-
-  // Function to calculate item width based on the first item
-  const calculateItemWidth = () => {
-    if (carouselItems.length > 0) {
-      const itemStyle = getComputedStyle(carouselItems[0]);
-      itemWidth =
-        carouselItems[0].offsetWidth + parseFloat(itemStyle.marginRight); // Only consider margin-right
-    } else {
-      itemWidth = 250; // Fallback default (220px width + 30px margin-right from CSS)
+    const carouselTrack = document.querySelector(".carousel-track");
+    if (!carouselTrack) {
+        console.error("Carousel track not found!");
+        return;
     }
-  };
 
-  // Recalculate item width on window resize
-  window.addEventListener("resize", () => {
-    calculateItemWidth();
-    currentIndex = itemsPerView;
-    updateCarouselPosition(false);
-  });
+    // --- CORRECTION 1: Select the parent <a> tags for cloning ---
+    // Instead of selecting '.carousel-item', we select the <a> tags within the track.
+    const carouselLinks = Array.from(
+        carouselTrack.querySelectorAll("a")
+    );
 
-  // Function to update carousel position
-  const updateCarouselPosition = (useTransition = true) => {
-    if (!carouselTrack || !itemWidth) return;
+    // This gets the original items (divs) for width calculation.
+    const carouselItems = carouselLinks.map(link => link.querySelector('.carousel-item'));
 
-    const offset = -currentIndex * itemWidth;
-    carouselTrack.style.transition = useTransition
-      ? "transform 0.5s ease-in-out"
-      : "none";
-    carouselTrack.style.transform = `translateX(${offset}px)`;
-  };
 
-  // Function to update active dot
-  const updateDots = () => {
-    const originalItemIndex =
-      (currentIndex - itemsPerView) % carouselItems.length;
-    const dotIndex =
-      originalItemIndex < 0
-        ? originalItemIndex + carouselItems.length
-        : originalItemIndex;
+    let allCarouselItems = []; // Will contain original + clones
 
-    dots.forEach((dot, index) => {
-      dot.classList.toggle("active", index === dotIndex);
-    });
-  };
+    const prevBtn = document.querySelector(".prev-arrow");
+    const nextBtn = document.querySelector(".next-arrow");
+    const dotsContainer = document.querySelector(".carousel-dots");
+    let dots = [];
 
-  // Function for automatic scrolling
-  const startAutoScroll = () => {
-    stopAutoScroll(); // Clear any existing interval
-    autoScrollInterval = setInterval(() => {
-      nextSlide();
-    }, scrollIntervalTime);
-  };
+    // Configuration
+    const itemsPerView = 5;
+    const scrollIntervalTime = 3000;
+    let currentIndex;
+    let autoScrollInterval;
+    let itemWidth;
 
-  const stopAutoScroll = () => {
-    clearInterval(autoScrollInterval);
-  };
+    const calculateItemWidth = () => {
+        // We calculate width based on the .carousel-item div as before.
+        if (carouselItems.length > 0) {
+            const itemStyle = getComputedStyle(carouselItems[0]);
+            itemWidth =
+                carouselItems[0].offsetWidth + parseFloat(itemStyle.marginRight);
+        } else {
+            itemWidth = 250; // Fallback
+        }
+    };
 
-  // Handle next slide
-  const nextSlide = () => {
-    currentIndex++;
-    updateCarouselPosition(true);
-
-    if (currentIndex >= carouselItems.length) {
-      setTimeout(() => {
-        carouselTrack.style.transition = "none";
-        currentIndex = 0; // Reset to the first original item
+    window.addEventListener("resize", () => {
+        calculateItemWidth();
         updateCarouselPosition(false);
-      }, 500); // Match CSS transition duration
-    }
-    updateDots();
-  };
+    });
 
-  // Handle previous slide
-  const prevSlide = () => {
-    currentIndex--;
-    updateCarouselPosition();
+    const updateCarouselPosition = (useTransition = true) => {
+        if (!carouselTrack || !itemWidth) return;
+        const offset = -currentIndex * itemWidth;
+        carouselTrack.style.transition = useTransition
+            ? "transform 0.5s ease-in-out"
+            : "none";
+        carouselTrack.style.transform = `translateX(${offset}px)`;
+    };
 
-    if (currentIndex < itemsPerView) {
-      setTimeout(() => {
-        carouselTrack.style.transition = "none";
-        currentIndex = carouselItems.length + currentIndex; // Adjust index for jump back
+    // (The rest of the functions like updateDots, startAutoScroll, nextSlide, etc. remain the same)
+    const updateDots = () => {
+        if (!dotsContainer) return;
+        dots.forEach((dot, index) => {
+            const originalItemIndex = (currentIndex - itemsPerView + carouselItems.length) % carouselItems.length;
+            dot.classList.toggle("active", index === originalItemIndex);
+        });
+    };
+
+    const startAutoScroll = () => {
+        stopAutoScroll();
+        autoScrollInterval = setInterval(() => {
+            nextSlide();
+        }, scrollIntervalTime);
+    };
+
+    const stopAutoScroll = () => {
+        clearInterval(autoScrollInterval);
+    };
+
+    const nextSlide = () => {
+        currentIndex++;
+        updateCarouselPosition(true);
+        if (currentIndex >= carouselTrack.children.length - itemsPerView) {
+            setTimeout(() => {
+                carouselTrack.style.transition = "none";
+                currentIndex = itemsPerView;
+                updateCarouselPosition(false);
+            }, 500);
+        }
+        updateDots();
+    };
+
+    const prevSlide = () => {
+        currentIndex--;
+        updateCarouselPosition(true);
+        if (currentIndex < itemsPerView) {
+            setTimeout(() => {
+                carouselTrack.style.transition = "none";
+                currentIndex = carouselTrack.children.length - (itemsPerView * 2);
+                updateCarouselPosition(false);
+            }, 500);
+        }
+        updateDots();
+    };
+
+
+    // Initial setup
+    const initializeCarousel = () => {
+        if (carouselLinks.length === 0) return; // Exit if there are no items to clone
+
+        calculateItemWidth();
+
+        // Clear existing clones if this runs multiple times
+        document
+            .querySelectorAll(".cloned")
+            .forEach((clone) => clone.remove());
+
+        // --- CORRECTION 2: Clone the <a> tags (carouselLinks) ---
+        // 1. Prepend clones of the LAST 'itemsPerView' links
+        for (let i = carouselLinks.length - itemsPerView; i < carouselLinks.length; i++) {
+            if(!carouselLinks[i]) continue;
+            const clonedLink = carouselLinks[i].cloneNode(true);
+            // Add 'cloned' class to the div inside the cloned <a> tag
+            clonedLink.querySelector('.carousel-item').classList.add("cloned");
+            carouselTrack.prepend(clonedLink);
+        }
+
+        // 2. Append clones of the FIRST 'itemsPerView' links
+        for (let i = 0; i < itemsPerView; i++) {
+            if(!carouselLinks[i]) continue;
+            const clonedLink = carouselLinks[i].cloneNode(true);
+            clonedLink.querySelector('.carousel-item').classList.add("cloned");
+            carouselTrack.appendChild(clonedLink);
+        }
+        
+        // No need for a separate click handler if the <a> tags are correct
+        // The browser will handle the click automatically.
+
+        // Create dots dynamically
+        if (dotsContainer) {
+            dotsContainer.innerHTML = ''; // Clear existing dots
+            carouselItems.forEach((_, index) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dot.dataset.index = index;
+                dotsContainer.appendChild(dot);
+            });
+            dots = Array.from(document.querySelectorAll(".dot"));
+        }
+
+        // Initial position
+        currentIndex = itemsPerView;
         updateCarouselPosition(false);
-      }, 500); // Match CSS transition duration
-    }
-    updateDots();
-  };
+        updateDots();
+        startAutoScroll();
+    };
 
-  // Handle dot click
-  const goToSlide = (index) => {
-    currentIndex = itemsPerView + index;
-    updateCarouselPosition();
-    updateDots();
-    stopAutoScroll();
-    startAutoScroll();
-  };
-
-  // Event Listeners
-  if (prevBtn) {
-    prevBtn.addEventListener("click", () => {
-      stopAutoScroll();
-      prevSlide();
-      startAutoScroll();
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-      stopAutoScroll();
-      nextSlide();
-      startAutoScroll();
-    });
-  }
-
-  if (dotsContainer) {
-    dotsContainer.addEventListener("click", (e) => {
-      if (e.target.classList.contains("dot")) {
-        const index = parseInt(e.target.dataset.index, 10);
-        goToSlide(index);
-      }
-    });
-  }
-
-  // Pause/Resume auto-scroll on hover
-  if (carouselTrack) {
-    carouselTrack.addEventListener("mouseover", stopAutoScroll);
-    carouselTrack.addEventListener("mouseleave", startAutoScroll);
-  }
-
-  // Initial setup
-  const initializeCarousel = () => {
-    calculateItemWidth();
-
-    // Clear existing clones if this runs multiple times
-    document
-      .querySelectorAll(".carousel-item.cloned")
-      .forEach((clone) => clone.remove());
-
-    // Clone items for seamless loop:
-    // Append clones of the FIRST 'itemsPerView' original items to the end
-    for (let i = 0; i < itemsPerView; i++) {
-      const clonedItem = carouselItems[i].cloneNode(true);
-      clonedItem.classList.add("cloned");
-      carouselTrack.appendChild(clonedItem);
-    }
-
-    // After cloning, update allCarouselItems to include the new clones
-    allCarouselItems = Array.from(document.querySelectorAll(".carousel-item"));
-
-    // Initial position
-    currentIndex = 0;
-    updateCarouselPosition(false); // Set initial position without transition
-    updateDots();
-    startAutoScroll();
-  };
-
-  initializeCarousel();
+    initializeCarousel();
 });
 
 // ---------------------------------------------------announcements_Messages--------------------------------------------------------------------
