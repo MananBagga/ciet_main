@@ -1,0 +1,141 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOCs on SWAYAM</title>
+    <link rel="stylesheet" href="{% static 'css/moocs_on_swayam.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="moocs-container">
+        <h1 class="moocs-title">MOOCs on SWAYAM</h1>
+        <img src="{% static 'images/SWAYAM-web-portal-banner-English_29_12_23.jpg' %}" alt="MOOCs on SWAYAM Banner" class="moocs-banner">
+        <p class="moocs-description">NCERT MOOCs on SWAYAM</p>
+        <p class="moocs-description">The National Council of Educational Research and Training (NCERT) has been designated as National Coordinator (NC) for development and dissemination of Massive Open Online Courses (MOOCs) for School Education specifically catering to Classes IX to XII. These courses will be accessible through “SWAYAM” (Study Webs of Active - Learning for Young Aspiring Minds) portal and mobile app.</p>
+        <p class="moocs-description">SWAYAM is dedicated to bridging the digital divide, extending educational opportunities to students who have thus far been underserved by the digital revolution, thereby enabling them to participate more fully in the knowledge economy. The courses offered on SWAYAM MOOCs are interactive and meticulously curated by the nation's most esteemed educators, and the best part is that they are available FREE of charge to all learners.</p>
+        <p class="moocs-description">The courses featured on SWAYAM are structured across four distinct quadrants:</p>
+        <ul class="moocs-features">
+            <li>Video Lectures: Engaging video presentations that facilitate effective learning.</li>
+            <li>Specially crafted Reading Material: These materials can be conveniently downloaded and printed, providing accessibility for offline learning.</li>
+            <li>Self-Assessment Tools: Students can gauge their understanding through self-assessment tests and quizzes.</li>
+            <li>Online Discussion Forums: A platform for students to seek clarification from mentors, engage in discussions, and address doubts with their peers, thereby fostering interactive learning.</li>
+        </ul>
+        <p class="moocs-description">NCERT is dedicated towards reaching students through these courses, enriching their learning experiences, and ultimately helping them achieve the desired learning outcomes.</p>
+        <p class="moocs-description">We invite you to take advantage of these online courses at FREE of cost, and in doing so, expand your intellectual horizons.</p>
+        <div class="moocs-dates">
+            <h3>Important Dates</h3>
+            <p>Course Enrollment Start Date: April 16, 2025</p>
+            <p>Course Start Date: May 01, 2025</p>
+            <p>Course Enrollment End Date: September 01, 2025</p>
+            <p>Exam Registration Date: September 07-09, 2025</p>
+            <p>Final Exam Date: September 10-15, 2025</p>
+            <p>Course Close Date: September 15, 2025</p>
+        </div>
+        <div class="moocs-links">
+            <a href="#" class="moocs-link">SWAYAM Flyer: English</a>
+            <a href="#" class="moocs-link">SWAYAM Flyer: Hindi</a>
+            <a href="#" class="moocs-link">SWAYAM Brochure: English</a>
+            <a href="#" class="moocs-link">SWAYAM Brochure: Hindi</a>
+            <a href="#" class="moocs-link">SWAYAM Bookmark: English</a>
+        </div>
+        <div class="moocs-steps">
+            <h3>Five simple steps for joining online courses</h3>
+            <ul>
+                <li>Register on <a href="https://swayam.gov.in">https://swayam.gov.in</a></li>
+                <li>Access the course by clicking on the course link</li>
+                <li>Enroll in the course for FREE.</li>
+                <li>Learn the content and complete all activities</li>
+                <li>Take up the final assessment and get certified</li>
+            </ul>
+        </div>
+        <div class="moocs-support">
+            <h3>Support</h3>
+            <p>For any further queries, contact at-</p>
+            <a href="mailto:moocs.helpdesk@ciet.nic.in">moocs.helpdesk@ciet.nic.in</a>
+            <p>PMeVidya IVRS No.: 8800 440 559</p>
+        </div>
+        <p class="moocs-invite">Click on the below course titles to access the course on SWAYAM</p>
+        <div class="moocs-table">
+            <table>
+                <tr>
+                    <th>Class XI MOOCs</th>
+                    <th>Class XII MOOCs</th>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc01/preview">Accountancy, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc04/preview">Biology, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc02/preview">Biology, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc06/preview">Business Studies, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc03/preview">Biology, Part-II</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc09/preview">Chemistry, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc05/preview">Business Studies, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc11/preview">Economics, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc05/preview">Chemistry, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc12/preview">English, Part-I (APPEAR)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc08/preview">Chemistry, Part-II</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc15/preview">Geography, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc10/preview">Economics, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc16/preview">Geography, Part-II</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc13/preview">Geography, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc19/preview">Mathematics, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc14/preview">Geography, Part-II</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc22/preview">Physics, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc17/preview">Mathematics, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc23/preview">Physics, Part-II</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc18/preview">Mathematics, Part-II</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc26/preview">Psychology, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc20/preview">Physics, Part-I</a></td>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc28/preview">Sociology, Part-I</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc24/preview">Physics, Part-II</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc24/preview">Psychology, Part-I</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc25/preview">Psychology, Part-II</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="https://onlinecourses.swayam2.ac.in/nce25_sc27/preview">Sociology, Part-I</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

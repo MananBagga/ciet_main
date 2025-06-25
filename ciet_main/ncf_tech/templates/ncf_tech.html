@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCF Tech Platform</title>
+    <link rel="stylesheet" href="{% static 'css/ncf_tech.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="ncf-container">
+        <h1 class="ncf-title">NCF Tech Platform</h1>
+        <p class="ncf-description">As per the National Education Policy, 2020, following NCFs will be developed: National Curriculum Framework for Early Childhood Care and Education (NCFECCE) National Curriculum Framework for School Education (NCFSE) National Curriculum Framework for Teacher Education (NCFTE) and National Curriculum Framework for Adult Education (NCFAE) in this regard, a comprehensive curriculum has been worked out jointly by the Ministry of Education (MoE) and NCERT. As per this strategy, at the State level- all states/UTs will first prepare their State Curriculum Frameworks (SCFs) passing through the process of district level consultations, mobile app survey and development of position papers by the State Focus Groups in 25 areas/themes identified as per the NEP, 2020 including ECCE, Teacher Education and Adult Education. These draft SCFs will provide inputs to the development of NCFs. States/UTs and Autonomous organisation working under MoE, all will attempt this process to provide inputs for the NCFs. Recommendations of NEP, 2020 will be kept in view during the whole process.</p>
+        <p class="ncf-description">At the National level, NCERT will conduct a survey on MyGov Portal and get feedback from diverse stakeholders on issues related to curriculum implementation. NCERT will also conduct 2-3 district level consultation in each of the states/UTs for collecting feedback from the grassroots level. Analysing inputs received from the district level consultations, states and national level survey on MyGov portal, National Focus Groups will prepare 25 position papers in the identified areas. Drawing insights from these position papers and draft SCFs, four NCFs will be prepared. The whole process will be done using paperless approach including consultations and preparation of reports at all levels using Tech platform specially designed for the purpose. In view of this, a comprehensive Tech Platform will be developed by the NCERT and NIC, MoE. On this platform all the states/UTs will be provided with e-templates for the consultations, surveys, position papers, etc., and will continuously be supported by the nodal officers nominated at the central level. States will also nominate their nodal officers for smooth and speedy flow of this process. Draft NCFs will be translated in 22 languages given in VIII schedule of the Constitution and shared with the states/UTs for their comments. Taking care of their comments, the NCFs will be given final shape and will be placed before Ministry of Education for the approval processes. After approval, the documents will be disseminated to states/UTs for revising the draft SCFs and also for the implementation of NCFs.</p>
+        <a href="https://ncf.ncert.gov.in/" class="ncf-explore">Explore NCF</a>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

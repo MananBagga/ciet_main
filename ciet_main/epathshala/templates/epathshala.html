@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePathshala</title>
+    <link rel="stylesheet" href="{% static 'css/epathshala.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="epathshala-container">
+        <h1 class="epathshala-title">ePathshala</h1>
+        <p class="epathshala-description">The digital India campaign has promoted extensive use of ICTs in the teaching learning process. The ePathshala, a joint initiative of Ministry of Human Resource Development (MHRD), Govt. of India and National Council of Educational Research and Training (NCERT) has been developed in November 2015 for showcasing and disseminating all educational e-resources including textbooks, audio, video, periodicals, and a variety of other print and non-print materials. Students, Teachers, Educators and Parents can access eBooks through multiple technology platform that is mobile phones and tablets (as epub) and from the web through laptops and desktops (as Flipbook). ePathshala also allows user to carry us many books as their device supports. Features of these books allow users to pinch, select, zoom, bookmark, highlight, navigate, share and make notes digitally.</p>
+        <div class="epathshala-features">
+            <ul>
+                <li><a href="https://epathshala.nic.in/">Access eResources</a></li>
+                <li>Read Aloud Books on ePathshala by installing <a href="https://epathshala.nic.in//pages.php?id=download-app&ln=en">ePathshala Mobile App</a></li>
+                <li>Enable TTS to Listen to NCERT textbooks through ePathshala Mobile App</li>
+            </ul>
+        </div>
+        <div class="epathshala-video-container">
+            <iframe src="#" frameborder="0" allowfullscreen></iframe>
+            <iframe src="#" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="epathshala-image-container">
+            <a href="{% static "pdfs/epathshala_pdfs/UsingTTSinePathshalaApp.pdf" %}"><img src="{% static 'images/step by step.png' %}" alt="Step By Step Instruction"></a>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

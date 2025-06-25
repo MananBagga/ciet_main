@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of ICT & Training</title>
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/dept_ict_training.css" %}">
+    <link rel="stylesheet" href="{% static "css/planning_research_division.css" %}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -41,7 +41,7 @@
                         
                     </div>
                     <div class="head-message">
-                        <img src="head_image.png" alt="Head of Department">
+                        <img src="{% static "images/prdhead.jpg" %}" alt="Head of Department">
                         <div class="message-box">
                             <h3>FORM THE DESK OF THE HEAD</h3>
                             <p>"""The Division Of Planning And Research Is Dedicated To Planning And Preparing Agenda Items For CIET..."</p>
@@ -65,14 +65,14 @@
 
         <section id="ijet-content" class="ijet-content">
             <div class="container">
-              <p><a href="#">Indian Journal of Educational Technology(IJET)</a> - An online open access journal, Indian Journal of Educational Technology (IJET) ISSN 2581-8325, is published by CIET, bi-annually in English. The journal is a peer-reviewed journal which is listed in UGC’s CARE List-Group I. The first issue of the journal was published on CIET’s website in January 2019 and since then it is regularly being published with a wide reach among researchers, teachers, teacher educators and other stakeholders all across India .</p>
+              <p><a href="{% url "journals" %}">Indian Journal of Educational Technology(IJET)</a> - An online open access journal, Indian Journal of Educational Technology (IJET) ISSN 2581-8325, is published by CIET, bi-annually in English. The journal is a peer-reviewed journal which is listed in UGC’s CARE List-Group I. The first issue of the journal was published on CIET’s website in January 2019 and since then it is regularly being published with a wide reach among researchers, teachers, teacher educators and other stakeholders all across India .</p>
              
             </div>
         </section>
 
         <section id="newsletter-content" class="newsletter-content" style="display: none;">
             <div class="container">
-                <p><a href="#">CIET’s Newsletter</a> -CIET publishes a quarterly newsletter in English where, the progress of all the activities undertaken by the institution is given on a quarterly basis. It also gives an account of the promotions, transfers and superannuation of the staff members of CIET. The first issue of CIET’s Newsletter was published in 2017 on its website and since then, the newsletter is being published regularly. </p>
+                <p><a href="{% url "newsletter" %}">CIET’s Newsletter</a> -CIET publishes a quarterly newsletter in English where, the progress of all the activities undertaken by the institution is given on a quarterly basis. It also gives an account of the promotions, transfers and superannuation of the staff members of CIET. The first issue of CIET’s Newsletter was published in 2017 on its website and since then, the newsletter is being published regularly. </p>
             </div>
         </section>
 
@@ -84,7 +84,7 @@
 
         <section id="pm-evidya-content" class="pm-evidya-content" style="display: none;">
             <div class="container">
-                <p>PM eVIDYA Cell - PM eVIDYA is a Program was announced by the Hon’ble Finance Minister, Government of India (GoI) on 17 May 2020 as part of Atma Nirbhar Bharat Abhiyaan. PM eVIDYA initiative aims to facilitate technology-driven education with equity post COVID-19. It offers multi-modal access to digital/online education for school and higher education. The constituents of the mega initiative include: DIKSHA as One Nation-One Digital Platform, 12 DTH TV Channels as One Class One Channel, SWAYAM courses in MOOCs format, <a href="#">Educational eContents for DIVYANG on DAISY</a> and in <a href="#">Sign language</a>, Community Radio and Podcast and <a href="#">IIT-PAL for IIT/JEE Preparation.</a></p>
+                <p>PM eVIDYA Cell - PM eVIDYA is a Program was announced by the Hon’ble Finance Minister, Government of India (GoI) on 17 May 2020 as part of Atma Nirbhar Bharat Abhiyaan. PM eVIDYA initiative aims to facilitate technology-driven education with equity post COVID-19. It offers multi-modal access to digital/online education for school and higher education. The constituents of the mega initiative include: DIKSHA as One Nation-One Digital Platform, 12 DTH TV Channels as One Class One Channel, SWAYAM courses in MOOCs format, <a href="#">Educational eContents for DIVYANG on DAISY</a> and in <a href="#">Sign language</a>, Community Radio and Podcast and <a href="https://swayamprabha.gov.in/index.php/channel_profile/profile/22">IIT-PAL for IIT/JEE Preparation.</a></p>
             </div>
         </section>
 
@@ -105,60 +105,60 @@
                 <h2>OUR STAFF</h2>
                 <div class="staff-grid">
                     <div class="staff-member">
-                        <img src="dr_indu_kumar.png" alt="Dr. Shireesh P Singh">
+                        <img src="{% static "images/Prof_ShireeshSingh.png" %}" alt="Dr. Shireesh P Singh">
                         <p><strong>Dr. Shireesh P Singh</strong></p>
                         <p>Professor</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (239)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "pdfs/PRD_pdfs/Prof_ShireeshSingh.pdf" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_bharti.png" alt="Dr. Upasana Ray">
+                        <img src="{% static "images/PHOTO_Upasana_Ray.jpeg" %}" alt="Dr. Upasana Ray">
                         <p><strong>Dr. Upasana Ray</strong></p>
                         <p>Associate Professor</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (219)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "pdfs/PRD_pdfs/CV_Upasana_Ray.pdf" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_rejaul_karim_barbhuniya.png" alt="Dr. Tagaram Kondala Rao">
+                        <img src="{% static "images/PHOTO_DR-TAGARAM-KONDALA-RAO.jpg" %}" alt="Dr. Tagaram Kondala Rao">
                         <p><strong>Dr. Tagaram Kondala Rao</strong></p>
                         <p>Associate Professor</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (218)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "pdfs/PRD_pdfs/CV_DR-TAGARAM-KONDALA-RAO.pdf" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Dr. Abhay Kumar">
+                        <img src="{% static "images/DrAbhayKumar.jfif" %}" alt="Dr. Abhay Kumar">
                         <p><strong>Dr. Abhay Kumar</strong></p>
                         <p>Assistant Professor</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (235)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "pdfs/PRD_pdfs/abhay_CV_01102020_NCERT.pdf" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Sanjeev Kumar">
+                        <img src="{% static "images/Sanjeev_Library.jpeg" %}" alt="Sh. Sanjeev Kumar">
                         <p><strong>Sh. Sanjeev Kumar</strong></p>
                         <p>Professional Asstt.</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (244)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "#" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Dr. Deepak Kumar Kapoor">
+                        <img src="{% static "images/Deepak_lib.jpg" %}" alt="Dr. Deepak Kumar Kapoor">
                         <p><strong>Dr. Deepak Kumar Kapoor</strong></p>
                         <p>Professional Asstt.</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (244)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "#" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Parash Ram">
+                        <img src="{% static "images/Photo_page-0001.jpg" %}" alt="Sh. Parash Ram">
                         <p><strong>Sh. Parash Ram</strong></p>
                         <p>Section Officer/ PRD</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (242)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "#" %}" class="view-profile-button">View Profile</a>
                     </div>
                     
                 </div>
@@ -169,16 +169,16 @@
             <div class="container">
                 <h2>GALLERY</h2>
                 <div class="gallery-grid">
-                    <img src="gallery_1.jpg" alt="Gallery Image 1">
-                    <img src="gallery_2.jpg" alt="Gallery Image 2">
-                    <img src="gallery_3.jpg" alt="Gallery Image 3">
-                    <img src="gallery_4.jpg" alt="Gallery Image 4">
-                    <img src="gallery_5.jpg" alt="Gallery Image 5">
-                    <img src="gallery_6.jpg" alt="Gallery Image 6">
-                    <img src="gallery_7.jpg" alt="Gallery Image 7">
-                    <div class="placeholder-box"></div>
-                    <div class="placeholder-box"></div>
-                    <div class="placeholder-box"></div>
+                    <img src="{% static "images/workshop_PRD.jpg" %}" alt="Gallery Image 1">
+                    <img src="{% static "images/Ceremony_PRD.jpg" %}" alt="Gallery Image 2">
+                    <img src="{% static "images/AICE_PRD.jpg" %}" alt="Gallery Image 3">
+                    <img src="{% static "images/AICE2_PRD.jpg" %}" alt="Gallery Image 4">
+                    <img src="{% static "images/AICE3_PRD.jpg" %}" alt="Gallery Image 5">
+                    <img src="{% static "images/EBMIJET_PRD.jpg" %}" alt="Gallery Image 6">
+                    <img src="{% static "images/summer camp3_PRD.jpg" %}" alt="Gallery Image 7">
+                    <img src="{% static "#" %}" alt="Gallery Image 7">
+                    <img src="{% static "#" %}" alt="Gallery Image 7">
+                    <img src="{% static "#" %}" alt="Gallery Image 7">
                     </div>
             </div>
         </section>

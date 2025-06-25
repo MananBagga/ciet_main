@@ -106,7 +106,7 @@
 }
 
 .read-more {
-    color: #e67e22;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -132,7 +132,8 @@
 }
 
 .nav-button:hover {
-    background-color: #e0e0e0;
+    background-color: #c94e20;
+    color: white;
 }
 
 /* Our Staff Section */

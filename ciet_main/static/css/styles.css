@@ -322,6 +322,7 @@ body {
   height: 100%;
   position: relative; /* For absolute positioning of inner elements if needed */
   background-color: #4a90e2; /* Default slide background */
+  cursor: pointer;
 }
 
 /* Ensures every image fits perfectly inside one slide */
@@ -690,7 +691,7 @@ body {
   display: inline-block;
   padding: 14px 36px;
   background-color: #e15a2a;
-  color: #fff;
+  color: white;
   font-size: 1.15rem;
   font-weight: bold;
   border: none;
@@ -705,10 +706,10 @@ body {
 }
 
 .read-more:hover,
-.read-more:focus {
+.read-more{
   background-color: #c94e20;
   box-shadow: 0 4px 12px rgba(225, 90, 42, 0.18);
-  color: #fff;
+  color: white;
 }
 
 /* The existing .right-column rule already covers most of this.
