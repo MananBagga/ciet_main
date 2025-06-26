@@ -61,14 +61,11 @@ urlpatterns = [
     path('administration_accounts/', include('Departments.administration_accounts.urls')),
     path('library/', include('Library.urls')),
     path('cyber_jaagrookta/', include('cyber_jaagrookta.urls')),
-<<<<<<< HEAD
     path('digital_creativity/', include('digital_creativity.urls')),
-=======
     path('pm_evidya/', include('pmevidya.urls')),
     path('epathshala/', include('epathshala.urls')),
     path('diksha/', include('diksha.urls')),
     path('moocs_on_swayam/', include('moocs_on_swayam.urls')),
     path('nishtha/', include('nishtha.urls')),
     path('ncf_tech/', include('ncf_tech.urls')),
->>>>>>> 0044c106c80c1cefc2973e7bf6389c36a7b7fdc1
 ]
