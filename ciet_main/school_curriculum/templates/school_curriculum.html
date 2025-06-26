@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility in School Curriculum</title>
+    <link rel="stylesheet" href="{% static 'css/school_curriculum.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+      <div class="header">
+        <h1>Accessibility in School Curriculum</h1>
+      </div>
+      <div class="content">
+        <p>
+          Efforts toward equitable education and inclusive education aim to
+          address educational needs that arise as a result of belonging to
+          SEDG's as well as those that arise despite having no association with
+          SEDGs. Addressing the special educational needs demands availability
+          of resources in multiple modes and flexibility in content delivery for
+          personalizing adaptive learning. Mentioned below are the major
+          initiatives taken by NCERT for making education accessible to all
+          including children belonging to SEDG's, recognized in NEP 2020.
+        </p>
+        <div class="image-grid">
+          <div class="image-container">
+            <a href="{% url 'epathshala' %}"
+              ><img
+                src="{% static 'images/epathshala (1).jpg' %}"
+                alt="ePathshala"
+            /></a>
+            <p class="alt-text">ePathshala</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'barkhaa' %}"
+              ><img src="{% static 'images/barkhaa.jpg' %}" alt="Bhasha Sangam"
+            /></a>
+            <p class="alt-text">Bhasha Sangam</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'special_econtent' %}"
+              ><img
+                src="{% static 'images/sign lan.jpg' %}"
+                alt="Teaching Learning Resources in Indian Sign Language"
+            /></a>
+            <p class="alt-text">
+              Teaching Learning Resources in
+            </p>
+            <p class="alt-text">
+              Indian Sign Language
+            </p>
+          </div>
+          <div class="image-container">
+            <a
+              href="https://ciet.ncert.gov.in/storage/app/public/files/13/6.pdf"
+              ><img
+                src="{% static 'images/textbooks.jpg' %}"
+                alt="NCERT Textbooks"
+            /></a>
+            <p class="alt-text">NCERT Textbooks</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'audio_books' %}"
+              ><img src="{% static 'images/audio (1).jpg' %}" alt="Audio Books"
+            /></a>
+            <p class="alt-text">Audio Books</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'evidya_dth' %}"
+              ><img
+                src="{% static 'images/isl31.png' %}"
+                alt="PM e-Vidya DTH ISL Channel Number 31"
+            /></a>
+            <p class="alt-text">PM e-Vidya DTH ISL</p>
+            <p class="alt-text">Channel Number 31</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'priya_warrior' %}"
+              ><img
+                src="{% static 'images/priya.jpg' %}"
+                alt="Priya-The Accessibility Warrior"
+            /></a>
+            <p class="alt-text">Priya-The Accessibility Warrior</p>
+          </div>
+          <div class="image-container">
+            <a href="https://ciet.ncert.gov.in/bhasha"
+              ><img
+                src="{% static 'images/bhasha sangam (1).jpg' %}"
+                alt="Bhasha Sangam"
+            /></a>
+            <p class="alt-text">Bhasha Sangam</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'teachers_support' %}"
+              ><img
+                src="{% static 'images/teachers support.jpg' %}"
+                alt="Teachers support material on Inclusive Education"
+            /></a>
+            <p class="alt-text">
+              Teachers support material on
+            </p>
+            <p class="alt-text">
+              Inclusive Education
+            </p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'pmevidya' %}"
+              ><img src="{% static 'images/evidya (1).jpg' %}" alt="PM e-Vidya"
+            /></a>
+            <p class="alt-text">PM e-Vidya</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'moocs_on_swayam' %}"
+              ><img
+                src="{% static 'images/swayam.jpg' %}"
+                alt="SWAYAM on MOOCs"
+            /></a>
+            <p class="alt-text">SWAYAM on MOOCs</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'Activities_nishtha' %}"
+              ><img src="{% static 'images/nishtha.jpg' %}" alt="NISHTHA"
+            /></a>
+            <p class="alt-text">NISHTHA</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'ar_vr' %}"
+              ><img
+                src="{% static 'images/AUGMENTED.jpg' %}"
+                alt="Augmented Reality / Virtual Reality"
+            /></a>
+            <p class="alt-text">Augmented Reality / Virtual Reality</p>
+          </div>
+          <div class="image-container">
+            <a href="https://ciet.ncert.gov.in/tactile"
+              ><img
+                src="{% static 'images/map book (2).jpg' %}"
+                alt="Tactile Map Book"
+            /></a>
+            <p class="alt-text">Tactile Map Book</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'prashast' %}"
+              ><img src="{% static 'images/prashast (1).jpg' %}" alt="Prashast"
+            /></a>
+            <p class="alt-text">Prashast</p>
+          </div>
+          <div class="image-container">
+            <a href="{% url 'diksha' %}"
+              ><img src="{% static 'images/diksha1.jpg' %}" alt="DIKSHA"
+            /></a>
+            <p class="alt-text">DIKSHA</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="{% static 'images/blue_image.jpg' %}"
+        alt="Blue Image"
+        class="background-image"
+      />
+    </div>
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

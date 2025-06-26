@@ -1,0 +1,150 @@
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alt-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.overview-section {
+    flex: 2;
+}
+
+.activities-section {
+    flex: 1;
+    max-width: 200px;
+}
+
+.activity-box {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.activity-content {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.vision-section, .roles-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.publications-section .dropdown {
+    position: relative;
+    display: block;
+    margin: 10px 0;
+}
+
+.publications-section .dropbtn {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.publications-section .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.publications-section .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.publications-section .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.publications-section .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.staff-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.staff-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.staff-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.view-profile {
+    display: inline-block;
+    margin-top: 10px;
+    color: #d2691e;
+    text-decoration: none;
+}
+
+.gallery-section .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-section .gallery-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -84,6 +84,18 @@ INSTALLED_APPS = [
     'moocs_on_swayam',
     'nishtha',
     'ncf_tech',
+    'ict_curriculum',
+    'school_curriculum',
+    'barkhaa',
+    'special_econtent',
+    'priya_warrior',
+    'teachers_support',
+    'ar_vr',
+    'prashast',
+    'evidya_dth',
+    'bharatonthemoon',
+    'ejaadui_pitara',
+    'translation_cell',
 ]
 
 MIDDLEWARE = [

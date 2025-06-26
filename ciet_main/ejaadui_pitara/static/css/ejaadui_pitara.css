@@ -1,0 +1,48 @@
+.content-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.text-content {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.image-container {
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 900px;
+    height: auto;
+}
+
+.alt-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.open-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.open-button:hover {
+    background-color: #0056b3;
+}

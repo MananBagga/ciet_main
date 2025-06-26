@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharatonthemoon</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bharatonthemoon.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="content-section">
+        <h1>Bharatonthemoon</h1>
+        <div class="rocket-container">
+            <a target='_blank' href="https://bharatonthemoon.ncert.gov.in/">
+                <img src="{% static 'images/bharatonthemoon_circle_image.png' %}" alt="Apna Chandrayaan Rocket">
+            </a>
+            <p class="alt-text">Explore Apna Chandrayaan Portal at:-</p>
+            <a class="bharatonthemoon-link" href="https://bharatonthemoon.ncert.gov.in/">https://bharatonthemoon.ncert.gov.in/</a>
+        </div>
+        <div class="text-content">
+            <p>उदेश्य-3 और 23 अगस्त 2023 भारतीयों के लिए गर्वशाली दिन के रूप में इतिहास में अंकित है। आजादी का अमृत महोत्सव की नई ऊर्जा के साथ भारत ने चंद्रयान-3 के सफल कायर्क्रमों के साथ वैज्ञानिक, प्रौद्योगिकी, इंजीनियरिंग, कला और गणित में प्रगति की है। हर माह, नई रचनात्मक गतिविधियों और पहल को लागू करने के लिए बढ़ावा देना होगा जो युवाओं में नवाचार और महत्त्वपूर्ण सोच को बढ़ावा दे। हम आशा करते हैं कि शिक्षक, अभिभावक और छात्र इन साधनों को उपयोक्ता के बेहतर और अन्य क्षेत्रों में समृद्ध शिक्षा के अनुभव प्राप्त करने के लिए करें।</p>
+            <p>Chandrayaan-3 and 23 August 2023 is etched in history as a glorious day for Indians. Our Prime Minister, Shri Narendra Modi, declared 23 August to be celebrated as National Space Day - marking the significance of this milestone event.</p>
+            <p>NCERT under the aegis of DoSEL, MoE, Govt. of India aims to inspire the young Indians in Science, Technology, Engineering, Art and Mathematics using activities based around the legacy of Chandrayaan-3.</p>
+            <p>Every month, the new creative activities and initiatives, will aim to promote skill sets that foster innovation and critical thinking in young minds.</p>
+            <p>We hope teachers, parents and students use these resources to create enriching learning experiences within the classroom and beyond...</p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

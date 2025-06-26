@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barkhaa</title>
+    <link rel="stylesheet" href="{% static 'css/barkhaa.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <div class="header">
+            <h1>Barkhaa</h1>
+        </div>
+        <div class="content">
+            <div class="intro-section">
+                <p>Barkhaa Series is a supplementary Graded Reading Series formulated with the objective of enabling children to develop reading skills during the early years, as a pedagogic tool aimed at helping the children of Classes I and II in learning to read with meaning and to arouse in them the urge to read more and more. The Series has forty stories spread across four levels (Level 1, Level 2, Level 3, Level 4) and five themes (Relationships, Birds/Animals, Musical Instruments, Games and Toys, Around Us, and Food) knit around children's contexts and their everyday experiences of our intended readers age.</p>
+            </div>
+            <div class="resource-section">
+                <div class="resource-item">
+                    <img src="{% static 'images/bharkha1.png' %}" alt="Digital Version of Barkhaa">
+                </div>
+                <div class="resource-item">
+                    <img src="{% static 'images/brochures barkha (1).png' %}" alt="Brochures">
+                </div>
+            </div>
+            <div class="audio-section">
+                <h2>Barkhaa Audio</h2>
+                <div class="levels">
+                    <div>
+                        <img src="{% static 'images/B_level 1.png' %}" alt="Level 1 Flag" class="flag">
+                        <a href="https://ciet.ncert.gov.in/barkhaa_audio" class="level-box" style="background-color: #ff4d4d;">Level 1</a>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/B_level 2.png' %}" alt="Level 2 Flag" class="flag">
+                        <a href="https://ciet.ncert.gov.in/barkhaa_audio" class="level-box" style="background-color: #00cccc;">Level 2</a>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/B_level 3.png' %}" alt="Level 3 Flag" class="flag">
+                        <a href="https://ciet.ncert.gov.in/barkhaa_audio" class="level-box" style="background-color: #ff9900;">Level 3</a>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/B_level 4.png' %}" alt="Level 4 Flag" class="flag">
+                        <a href="https://ciet.ncert.gov.in/barkhaa_audio" class="level-box" style="background-color: #009933;">Level 4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'images/blue_image.jpg' %}" alt="Blue Image" class="background-image">
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

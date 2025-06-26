@@ -55,6 +55,16 @@
   flex: 1;
 }
 
+.card-content p a {
+  text-decoration: none;
+  color: #e15a2a;
+}
+
+.card-content p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .card-content h2 {
   font-size: 24px;
   color: #111;
