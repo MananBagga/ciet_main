@@ -61,6 +61,7 @@ urlpatterns = [
     path('administration_accounts/', include('Departments.administration_accounts.urls')),
     path('library/', include('Library.urls')),
     path('cyber_jaagrookta/', include('cyber_jaagrookta.urls')),
+    path('digital_creativity/', include('digital_creativity.urls')),
     path('pm_evidya/', include('pmevidya.urls')),
     path('epathshala/', include('epathshala.urls')),
     path('diksha/', include('diksha.urls')),

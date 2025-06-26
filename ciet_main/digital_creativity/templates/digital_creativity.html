@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Creativity</title>
+  <link rel="stylesheet" href="{% static "css/digital_creativity.css" %}">
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <header>
+    <h1>Digital Creativity</h1>
+    {% comment %} <nav>
+      <a href="#">Home</a> > <a href="#">Calendar</a> > <a href="#">Digital Creativity</a>
+    </nav> {% endcomment %}
+  </header>
+  <main>
+    <p>Click here to Register</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScEyq6SpqyMLR-0sBbzMoLX-l2lKzv7_9H1ktvank6s13R7Ng/viewform" target="_blank">
+     
+      <img src="{% static "images/QRCode.png" %}" alt="Scan to Register">
+    </a>
+  </main>
+  {% include "partials/footer.html" %}
+</body>
+</html>

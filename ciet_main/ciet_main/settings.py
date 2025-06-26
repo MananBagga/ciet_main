@@ -78,6 +78,7 @@ INSTALLED_APPS = [
     'Departments.administration_accounts',
     'Library',
     'cyber_jaagrookta',
+    'digital_creativity',
     'pmevidya',
     'epathshala',
     'diksha',
