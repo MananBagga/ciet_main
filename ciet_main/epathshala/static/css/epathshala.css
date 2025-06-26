@@ -1,0 +1,71 @@
+.epathshala-container {
+    background-image: url('{% static "images/epathshala_bg.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.epathshala-title {
+    font-size: 2.5em;
+    color: #e15a2a;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.epathshala-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.epathshala-nav a:hover {
+    text-decoration: underline;
+}
+
+.epathshala-description {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.epathshala-features {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.epathshala-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.epathshala-features ul li {
+    margin: 10px 0;
+}
+
+.epathshala-video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.epathshala-video-container iframe {
+    width: 300px;
+    height: 169px;
+    border: none;
+}
+
+.epathshala-image-container {
+    text-align: center;
+}
+
+.epathshala-image-container img {
+    max-width: 100%;
+    height: auto;
+}

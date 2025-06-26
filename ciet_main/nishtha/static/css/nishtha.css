@@ -1,0 +1,55 @@
+.nishtha-container {
+    background-image: url('{% static "images/nishtha_bg.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.nishtha-title {
+    font-size: 2.5em;
+    color: #e15a2a;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+
+.nishtha-description {
+    color: black;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.nishtha-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.nishtha-card-container a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    margin: 10px;
+    width: 180px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.nishtha-card-container a img {
+    width: 100%;
+    height: auto;
+}
+
+.nishtha-card-container a:hover {
+    transform: scale(1.05);
+}

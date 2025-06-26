@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIKSHA</title>
+    <link rel="stylesheet" href="{% static 'css/diksha.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="diksha-container">
+        <h1 class="diksha-title">DIKSHA</h1>
+        <p class="diksha-description">DIKSHA : DIGITAL INFRASTRUCTURE FOR KNOWLEDGE SHARING</p>
+        <p class="diksha-description">DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), Gol. Launched in 2017 by Honourable Vice President of India - Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE. DIKSHA was developed on the basis of the Strategy and Approach Paper for the National Teacher Platform released by the then Honourable Minister for Human Resource Development. Shri Prakash Javdekar in September, 2017. DIKSHA can be accessed by learners and teachers across the country and currently supports 36 Indian languages. Each State/UT leverages the DIKSHA platform in its own way, as it has the freedom and choice to use the varied capabilities and solutions of the platform to design and run programs for teachers, learners and administrators. DIKSHA policies and tools make it possible for the education ecosystem (educationist, experts, institutions - government, autonomous institutions, non-profit and private organisations) to participate, contribute and leverage a common platform to achieve learning goals at scale for the country. NCERT textbooks are licensed under CC BY NC-ND and all the resources are licensed under CC BY NC-SA. Under the PM eVidya initiative of the GoI, which was declared as part of the Atma Nirbhar Bharat, DIKSHA has been declared as 'One Nation, One Digital Platform'.</p>
+        <div class="diksha-image-container">
+            <img src="{% static 'images/Solutions_on_DIKSHA-Diverse,Flexible_and_Evolving.jpg' %}" alt="DIKSHA Features">
+        </div>
+        <p class="diksha-description">The Honourable Prime Minister of India has launched NDEAR (National Digital Education Architecture) on 29th July 2021 which provides building blocks for development of federated and interoperable systems by States/UTs. The core building blocks of DIKSHA comprise majority of NDEAR building blocks, having enabled some successful use-cases of NDEAR such as: energized textbooks, online courses, content authoring, content sourcing, interactive quizzes, question banks, chatbot, analytics and dashboard. In the times of COVID-19 pandemic, the platform has experienced unprecedented rise in access by learners and teachers across the country.</p>
+        <p class="diksha-description">For digital content to aid in the teaching and learning processes, a rich repository of varied resources was contributed by schools/individual teachers, content partners, NGOs, corporates under CSR under VidyaDaan against the various content requirements of NCERT/CBSE/States.</p>
+        <p class="diksha-description">To aid teaching and learning for Children With Special Needs (CwSN), a large number of audio books, ISL (Indian Sign Language) Videos and Dictionary have been made available on DIKSHA for CwSN.</p>
+        <p class="diksha-description">During the pandemic, the massive teachers’ professional development programme NISHTHA 1.0 (National Initiatives for School Heads and Teacher’s Holistic Advancement) for Elementary grades was launched online through DIKSHA. NISHTHA 2.0 & 3.0 focus on Secondary and Foundational Literacy and Numeracy. Apart from NISHTHA, several States/UTs have designed their own capacity building programs.</p>
+        <p class="diksha-description">NCERT also delivers content for students on a 24x7 basis through PM eVIDYA DTH-TV channels (One Class, One Channel from classes I to XII). These channels deliver class-wise contents that are also on DIKSHA through QR Codes. To enable coherence, the broadcast content is also made available on DIKSHA, where this content is accessible any time, anywhere.</p>
+        <a href="https://diksha.gov.in/" class="diksha-explore">Explore DIKSHA</a>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

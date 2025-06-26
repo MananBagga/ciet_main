@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of ICT & Training</title>
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/dept_ict_training.css" %}">
+    <link rel="stylesheet" href="{% static "css/engineering_division.css" %}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -39,7 +39,7 @@
 
                     </div>
                     <div class="head-message">
-                        <img src="head_image.png" alt="Head of Department">
+                        <img src="{% static "images/kunda maam_Eng.jpg" %}" alt="Head of Department">
                         <div class="message-box">
                             <h3>FORM THE DESK OF THE HEAD</h3>
                             <p>"As The Head Of The Engineering Division In CIET, A Constituent Unit Of NCERT, I Take This O..."</p>
@@ -74,8 +74,8 @@
                     Studio A is having the facility of recording dance, drama and quiz programmes. It has facilities of creative sets and Chroma for good quality programme production.<br>
                     <h3>Studio B :</h3><br>
                     Studio B is smaller in size as compared to studio A and is used for production of interviews, simple demonstration, storytelling and panel discussion type of programmes with broadcast quality 3 camera set up. It is also used for LIVE telecast and streaming.<br>
-                    <img src="studioA.png" alt="Studio A">
-                    <img src="studioB" alt="Studio B">
+                    <img src="{% static "images/Engineering (1).jpg" %}" alt="Studio A">
+                    <img src="{% static "images/studiob1.jpg" %}" alt="Studio B">
             </div>
         </section>
 
@@ -92,49 +92,49 @@
                 <p>Music Studio has the latest facilities for multi-track audio recording with a Digital mixer for recording music and drama/play, etc. The studio maintains broadcast standards of reverberation time and acoustic treatment for good quality audio program production.</p><br>
                 <h3>Talk Studio</h3><br>
                 <p>It has the latest facilities for Digital recording for panel discussions and talk, etc. The studio maintains broadcast standards of reverberation time and acoustic treatment.</p><br>
-                <img src="img1.png" alt="img1">
-                <img src="img2.png" alt="img2">
-                <img src="img3.png" alt="img3"><br>
+                <img src="{% static "images/Music.jpg" %}" alt="img1">
+                <img src="{% static "images/music studio.jpg" %}" alt="img2">
+                <img src="{% static "images/talk1.jpg" %}" alt="img3"><br>
                 <h3>I Radio Live:</h3><br>
                 <p>Enriching educational audio programmes and LIVE  interaction /story telling  are being streamed through internet.</p><br>
-                <img src="img4.png" alt="img4">
+                <img class="ed_img" src="{% static "images/radio.png" %}" alt="img4">
             </div>
         </section>
 
         <section id="live-studio-content" class="live-studio-content" style="display: none;">
             <div class="container">
                 <p>For catering the need of students and teachers for curriculum based programmes CIET has created the additional studio for LIVE programmes being transmitted on 14 DTH channels under PM e Vidya. The LIVE transmission is found beneficial to students and teachers not only during pandemic period but in normal conditions as well. It has a facility of recording as well as broadcast and streaming the Live content on social media platforms.</p><br>
-                <img src="img5.png" alt="img5">
-                <img src="img6.png" alt="img6">
-                <img src="img7.png" alt="img7">
+                <img src="{% static "images/live1.jpg" %}" alt="img5">
+                <img src="{% static "images/live2.jpg" %}" alt="img6">
+                <img src="{% static "images/livestd.jpg" %}" alt="img7">
             </div>
         </section>
 
         <section id="vidya-samiksha-content" class="vidya-samiksha-content" style="display: none;">
             <div class="container">
                 <p>CIET has recently developed 2 nos. Vidya Samiksha Kendra for data analysis of various initiatives taken by Ministry of Education, GoI and NCERT as well. It has a state of art facility of Active LED wall and other associated equipment with smart podium etc.</p><br>
-                <img src="img8.png" alt="img8">
-                <img src="img9.png" alt="img9">
-                <img src="img10.png" alt="img10">
+                <img src="{% static "images/vsk0.jpg" %}" alt="img8">
+                <img src="{% static "images/vsk1.jpg" %}" alt="img9">
+                <img src="{% static "images/vsk2.jpg" %}" alt="img10">
             </div>
         </section>
 
         <section id="experiential-learning-content" class="experiential-learning-content" style="display: none;">
             <div class="container">
                 <p>CIET has recently developed Experiential Learning Centre for AR/VR content. The AR/VR Contents are more useful for students to understand the concepts in science and maths.</p><br>
-                <img src="img11.png" alt="img11">
-                <img src="img12.png" alt="img12">
-                <img src="img13.png" alt="img13">
+                <img src="{% static "images/expe0.jpg" %}" alt="img11">
+                <img src="{% static "images/exp1.jpg" %}" alt="img12">
+                <img src="{% static "images/exp01.jpeg" %}" alt="img13">
             </div>
         </section>
 
         <section id="post-production-content" class="post-production-content" style="display: none;">
             <div class="container">
                 <p>CIET is equipped with Non linear Video Editing and Audio Editing systems with latest configuration of iMac 27” and Mac pro machines with Adobe Master Creative Cloud and Nuendo software for post production work for good quality audio – video content. This software facilitates to work faster with numerous special effects. All the A/V editing units are connected in network with video server.</p><br>
-                <img src="img14.png" alt="img14">
-                <img src="img15.png" alt="img15">
-                <img src="img16.png" alt="img16">
-                <img src="img17.png" alt="img17">
+                <img src="{% static "images/post0.jpg" %}" alt="img14">
+                <img src="{% static "images/post1.jpg" %}" alt="img15">
+                <img src="{% static "images/post2.jpg" %}" alt="img16">
+                <img src="{% static "images/post3.jpg" %}" alt="img17">
             </div>
         </section>
 
@@ -142,12 +142,12 @@
             <div class="container">
                 <h3>ICT Lab:</h3><br>
                 <p>Recently CIET has developed state of art ICT lab for online and offline training of teacher s and teacher educators.</p><br>
-                <img src="img18.png" alt="img18">
-                <img src="img19.png" alt="img19">
-                <img src="img20.png" alt="img20"><br>
+                <img src="{% static "images/ict01.jpg" %}" alt="img18">
+                <img src="{% static "images/ict002.jpg" %}" alt="img19">
+                <img src="{% static "images/ictlab011.jpeg" %}" alt="img20"><br>
                 <h3>Digital Learning Lab:</h3><br>
                 <p>CIET has the state of art Digital Learning Lab for ICT related training to teachers and teacher educators from all states and UTs in the country offline and online both.</p><br>
-                <img src="img21.png" alt="img21">
+                <img src="{% static "images/digitallab.jpg" %}" alt="img21">
             </div>
         </section>
 
@@ -155,7 +155,9 @@
             <div class="container">
                 <h3>VR Lab:</h3><br>
                 <p>Recently CIET had created the state of art VR lab for capacity building of teacher and teacher educators for creating VR content. </p><br>
-                <img src="img22.png" alt="img22">
+                <img src="{% static "images/vr0.jpg" %}" alt="img22">
+                <img src="{% static "images/vr01.jpg" %}" alt="img22">
+                <img src="{% static "images/vr12.jpeg" %}" alt="img22">
             </div>
         </section>
 
@@ -163,11 +165,11 @@
             <div class="container">
                 <h3>Video Server</h3><br>
                 <p>For content creation and broadcasting the same 12DTH Channels a large storage space is required for saving Audio -Video content. CIET has NAS servers to cater this need.  All editing units, Graphic systems, and Audio Editing units are connected to the available NAS servers with LAN network. All Master Audio/ Video programmes are saved in the server for further dissemination. </p><br>
-                <img src="img23.png" alt="img23">
-                <img src="img24.png" alt="img24"><br>
+                <img src="{% static "images/video server1.jpg" %}" alt="img23">
+                <img src="{% static "images/video21.jpg" %}" alt="img24"><br>
                 <h3>Preview Room:</h3><br>
                 <p>CIET has a separate preview room with the latest facility for playback of audio/video programmes in various formats.</p><br>
-                <img src="img25.png" alt="img25">
+                <img src="{% static "images/ED.jpeg" %}" alt="img25">
             </div>
         </section>
 
@@ -185,15 +187,15 @@
                 <h2>OUR STAFF</h2>
                 <div class="staff-grid">
                     <div class="staff-member">
-                        <img src="dr_indu_kumar.png" alt="Ms. Kunda Shamkuwar">
+                        <img src="{% static "images/kunda maam_Eng.jpg" %}" alt="Ms. Kunda Shamkuwar">
                         <p><strong>Ms. Kunda Shamkuwar</strong></p>
                         <p>Superintending Engineer & Head, ED</p>
                         <p>Extn. Number</p>
                         <p>+91-11-26864801-10 (213)</p>
-                        <a href="#" class="view-profile-button">View Profile</a>
+                        <a href="{% static "pdfs/ED_pdfs/KUNDA PROFILE FOR WEBSITE (8).pdf" %}" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_bharti.png" alt="Ms Purvi Chhajed">
+                        <img src="{% static "images/Purvi_Chhajed_ Senior_Engineer.jpg" %}" alt="Ms Purvi Chhajed">
                         <p><strong>Ms Purvi Chhajed</strong></p>
                         <p>Senior Engineer</p>
                         <p>Extn. Number</p>
@@ -201,7 +203,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_rejaul_karim_barbhuniya.png" alt="Ms Anupma Thukral">
+                        <img src="{% static "images/Ms_Anupma_Thukral.jpeg" %}" alt="Ms Anupma Thukral">
                         <p><strong>Ms Anupma Thukral</strong></p>
                         <p>Assistant Engineer Gr. A</p>
                         <p>Extn. Number</p>
@@ -217,7 +219,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. B. Lyngdoh">
+                        <img src="{% static "images/B_Lyngdoh.jpeg" %}" alt="Sh. B. Lyngdoh">
                         <p><strong>Sh. B. Lyngdoh</strong></p>
                         <p>Assistant Engineer Gr. A</p>
                         <p>Extn. Number</p>
@@ -225,7 +227,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Sunil Kumar">
+                        <img src="{% static "images/Sunil_Kumar.jpeg" %}" alt="Sh. Sunil Kumar">
                         <p><strong>Sh. Sunil Kumar</strong></p>
                         <p>Assistant Engineering Gr B</p>
                         <p>Extn. Number</p>
@@ -233,7 +235,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Daleep Kumar">
+                        <img src="{% static "images/Daleep photo.jpeg" %}" alt="Sh. Daleep Kumar">
                         <p><strong>Sh. Daleep Kumar</strong></p>
                         <p>Assistant Engineering Gr B</p>
                         <p>Extn. Number</p>
@@ -241,7 +243,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Sanyam Kumar">
+                        <img src="{% static "images/Sanyam_Kumar_Asstt_Engineer_Gr_A.jpg" %}" alt="Sh. Sanyam Kumar">
                         <p><strong>Sh. Sanyam Kumar</strong></p>
                         <p>Asstt Engineer</p>
                         <p>Extn. Number</p>
@@ -249,7 +251,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Vijay Prakash">
+                        <img src="{% static "images/VijayPrakashAssttEngineer.jpg" %}" alt="Sh. Vijay Prakash">
                         <p><strong>Sh. Vijay Prakash</strong></p>
                         <p>Asstt Engineer Gr - A</p>
                         <p>Extn. Number</p>
@@ -257,7 +259,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Ms Manju Yadav">
+                        <img src="{% static "images/Manj_Yadav_Sound_Recordist_Gr_1.jpg" %}" alt="Ms Manju Yadav">
                         <p><strong>Ms Manju Yadav</strong></p>
                         <p>Sound Recordist Gr 1</p>
                         <p>Extn. Number</p>
@@ -265,7 +267,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Virender Rawat">
+                        <img src="{% static "images/Virender_Rawat_Sound_Recordist_Gr_2.jpg" %}" alt="Sh. Virender Rawat">
                         <p><strong>Sh. Virender Rawat</strong></p>
                         <p>Sound Recordist Gr 2</p>
                         <p>Extn. Number</p>
@@ -273,7 +275,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Rohit Sahu">
+                        <img src="{% static "images/Rohit_Sahu.jpg" %}" alt="Sh. Rohit Sahu">
                         <p><strong>Sh. Rohit Sahu</strong></p>
                         <p>Projectionist Grade I</p>
                         <p>Extn. Number</p>
@@ -281,7 +283,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Ajay Kumar Gupta">
+                        <img src="{% static "images/AJAY_KUMAR_GUPTA_TECHNICIAN_GR_1.jpg" %}" alt="Sh. Ajay Kumar Gupta">
                         <p><strong>Sh. Ajay Kumar Gupta</strong></p>
                         <p>Technician Grade I</p>
                         <p>Extn. Number</p>
@@ -289,7 +291,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Ashok Mishra">
+                        <img src="{% static "images/Mishra photo.jpeg" %}" alt="Sh. Ashok Mishra">
                         <p><strong>Sh. Ashok Mishra</strong></p>
                         <p>Tracer</p>
                         <p>Extn. Number</p>
@@ -297,7 +299,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Irfan">
+                        <img src="{% static "images/IRFAN_TECHNICIAN.jpg" %}" alt="Sh. Irfan">
                         <p><strong>Sh. Irfan</strong></p>
                         <p>Technician Grade I</p>
                         <p>Extn. Number</p>
@@ -305,7 +307,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Chandra Bhushan Kumar">
+                        <img src="{% static "images/CHANDRA_BHUSHAN_KUMAR_TECHNICIAN.png" %}" alt="Sh. Chandra Bhushan Kumar">
                         <p><strong>Sh. Chandra Bhushan Kumar</strong></p>
                         <p>Technician Grade I</p>
                         <p>Extn. Number</p>
@@ -313,7 +315,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Nakul Bachhas">
+                        <img src="{% static "images/NAKUL_BACHHAS_TECHNICIAN_GR_1.jpg" %}" alt="Sh. Nakul Bachhas">
                         <p><strong>Sh. Nakul Bachhas</strong></p>
                         <p>Technician Grade I</p>
                         <p>Extn. Number</p>
@@ -321,7 +323,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Hasmuddin">
+                        <img src="{% static "images/HASMUDDIN_TECHNICIAN.jpg" %}" alt="Sh. Hasmuddin">
                         <p><strong>Sh. Hasmuddin</strong></p>
                         <p>Technician Grade I</p>
                         <p>Extn. Number</p>
@@ -329,7 +331,7 @@
                         <a href="#" class="view-profile-button">View Profile</a>
                     </div>
                     <div class="staff-member">
-                        <img src="dr_angel_rathnabai_s.png" alt="Sh. Naresh Kumar">
+                        <img src="{% static "images/Naresh(E).jpg" %}" alt="Sh. Naresh Kumar">
                         <p><strong>Sh. Naresh Kumar</strong></p>
                         <p>Electrician</p>
                         <p>Extn. Number</p>
@@ -344,16 +346,16 @@
             <div class="container">
                 <h2>GALLERY</h2>
                 <div class="gallery-grid">
-                    <img src="gallery_1.jpg" alt="Gallery Image 1">
-                    <img src="gallery_2.jpg" alt="Gallery Image 2">
-                    <img src="gallery_3.jpg" alt="Gallery Image 3">
-                    <img src="gallery_4.jpg" alt="Gallery Image 4">
-                    <img src="gallery_5.jpg" alt="Gallery Image 5">
-                    <img src="gallery_6.jpg" alt="Gallery Image 6">
-                    <img src="gallery_7.jpg" alt="Gallery Image 7">
-                    <div class="placeholder-box"></div>
-                    <div class="placeholder-box"></div>
-                    <div class="placeholder-box"></div>
+                    <img src="{% static "images/EDPIC1.jpg" %}" alt="Gallery Image 1">
+                    <img src="{% static "images/EDPIC10.jpg" %}" alt="Gallery Image 2">
+                    <img src="{% static "images/EDPIC11.jpg" %}" alt="Gallery Image 3">
+                    <img src="{% static "images/EDPIC3.jpg" %}" alt="Gallery Image 4">
+                    <img src="{% static "images/EDPIC8.jpg" %}" alt="Gallery Image 5">
+                    <img src="{% static "images/EDPIC7.jpg" %}" alt="Gallery Image 6">
+                    <img src="{% static "images/EDPIC1.jpg" %}" alt="Gallery Image 7">
+                    <img src="{% static "images/Engineering (1).jpg" %}" alt="Gallery Image 8">
+                    <img src="{% static "images/studiob1.jpg" %}" alt="Gallery Image 9">
+                    <img src="{% static "#" %}" alt="Gallery Image 10">
                     </div>
             </div>
         </section>

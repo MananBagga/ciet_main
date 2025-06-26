@@ -98,6 +98,10 @@
     margin-bottom: 10px;
 }
 
+.ed_img {
+    width: 800px;
+}
+
 .message-box p {
     font-style: italic;
     color: #666;
@@ -106,7 +110,7 @@
 }
 
 .read-more {
-    color: #e67e22;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }

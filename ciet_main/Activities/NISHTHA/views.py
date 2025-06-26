@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def nishtha(requests):
-    return render(requests, 'nishtha.html')
+def Activities_nishtha(requests):
+    return render(requests, 'Activities_nishtha.html')

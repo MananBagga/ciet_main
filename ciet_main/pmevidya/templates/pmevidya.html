@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM eVidya</title>
+    <link rel="stylesheet" href="{% static 'css/pmevidya.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="pm-evidya-container">
+        <h1 class="pm-evidya-title">PM eVidya</h1>
+        <p class="pm-evidya-description">PM eVidya is an innovative and unique initiative by the Ministry of Education, Government of India to sustain education by leveraging ICT and to facilitate learning and teaching at school level. It offers multifarious educational resources in multi-platform mode viz. digital/online through 12 DTH TV channels, community radio, content for Divyangs (CwSNs), podcast etc. Takes advantage of the several streaming platforms available across the country to telecast educational content in audio/video mediums.</p>
+        <div class="pm-evidya-card-container">
+            <a href="{% url "diksha" %}" class="pm-evidya-card">
+                <img src="{% static 'images/diksha2.png' %}" alt="DIKSHA">
+            </a>
+            <a href="{% url "moocs_on_swayam" %}" class="pm-evidya-card">
+                <img src="{% static 'images/new swayam (2).png' %}" alt="Swayam Portal">
+            </a>
+            <a href="{% url "dth_tv" %}" class="pm-evidya-card">
+                <img src="{% static 'images/tv (1).png' %}" alt="200 DTH TV Channels">
+            </a>
+            <a href="{% url "radio" %}" class="pm-evidya-card">
+                <img src="{% static 'images/radio (1).png' %}" alt="Dissemination through Radio">
+            </a>
+            <a href="special_econtent" class="pm-evidya-card">
+                <img src="{% static 'images/cwsn (1).png' %}" alt="Special e-Content for CwSN">
+            </a>
+        </div>
+        <div class="pm-evidya-link-container">
+            <a href="https://www.youtube.com/c/NCERTOFFICIAL" class="pm-evidya-link">Live Telecast</a>
+            <a href="https://www.youtube.com/playlist?list=PLUgLcpnv1YidgxeXsFZH045t8584x4Asx" class="pm-evidya-link">Special Live Telecast on Teaching Learning Interventions for Inclusive Classrooms</a>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

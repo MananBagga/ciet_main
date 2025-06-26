@@ -78,7 +78,16 @@ INSTALLED_APPS = [
     'Departments.administration_accounts',
     'Library',
     'cyber_jaagrookta',
+<<<<<<< HEAD
     'digital_creativity',
+=======
+    'pmevidya',
+    'epathshala',
+    'diksha',
+    'moocs_on_swayam',
+    'nishtha',
+    'ncf_tech',
+>>>>>>> 0044c106c80c1cefc2973e7bf6389c36a7b7fdc1
 ]
 
 MIDDLEWARE = [
