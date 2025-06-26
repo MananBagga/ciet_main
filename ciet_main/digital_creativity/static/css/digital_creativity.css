@@ -1,0 +1,51 @@
+header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  header nav a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  main a {
+    text-decoration: none;
+  }
+  
+  main p {
+    color: orange;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  main img {
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+  
+  main a::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: url('phone-icon.png') no-repeat center;
+    margin-top: -40px;
+  }
