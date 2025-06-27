@@ -80,4 +80,5 @@ urlpatterns = [
     path('bharatonthemoon/', include('bharatonthemoon.urls')),
     path('ejaadui_pitara/', include('ejaadui_pitara.urls')),
     path('translation_cell/', include('translation_cell.urls')),
+    path('privacy_policy/', include('privacy_policy.urls')),
 ]
