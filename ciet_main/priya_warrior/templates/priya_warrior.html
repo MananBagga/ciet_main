@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priya: The Accessibility Warrior</title>
+    <link rel="stylesheet" href="{% static 'css/priya_warrior.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+      <div class="header">
+        <h1>Priya: The Accessibility Warrior</h1>
+      </div>
+      <div class="content">
+        <div class="intro-section">
+          <a href="https://ncert.nic.in/ptaw.php"
+            ><img
+              src="{% static 'images/priya.jpg' %}"
+              alt="Priya: The Accessibility Warrior"
+          /></a>
+          <p>Priya: The Accessibility Warrior</p>
+          <p>
+            The comic book named "Priya - The Accessibility Warrior" was
+            created. The comic book named "Priya -The Accessibility Warrior"
+            provides glimpses into the world of a girl named Priya who met an
+            accident and her leg was plastered. This book brings the message of
+            accessibility and helps in spreading the actionable points for
+            enhancing accessibility. The comic book is available on DIKSHA
+            Portal, E-Pathshala, and NCERT website for everyone to access and
+            read the comic book with embedded ISL video and audio in flipbook,
+            pdf and ePub.
+          </p>
+        </div>
+        <div class="video-section">
+          <div class="video-item">
+            <iframe
+              width="359"
+              height="180"
+              src="https://www.youtube.com/embed/b54V-54sVco"
+              title="Priya The Accessibility Warrior Launch Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p>Launch Video</p>
+          </div>
+          <div class="video-item">
+            <iframe
+              width="359"
+              height="180"
+              src="https://www.youtube.com/embed/9bUAx-oOzdY"
+              title="Priya The Accessibility Warrior Introduction"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p>Introduction</p>
+          </div>
+          <div class="video-item">
+            <iframe
+              width="359"
+              height="180"
+              src="https://www.youtube.com/embed/nclDpxuViJY"
+              title="Special Live Session 'Priya-The accessibility warrior'"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p>Explore More</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="{% static 'images/blue_image.jpg' %}"
+        alt="Blue Image"
+        class="background-image"
+      />
+    </div>
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

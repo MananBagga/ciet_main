@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augmented Reality/Virtual Reality</title>
+    <link rel="stylesheet" href="{% static 'css/ar_vr.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <div class="header">
+            <h1>Augmented Reality/Virtual Reality</h1>
+        </div>
+        <div class="content">
+            <p>The e-Pathshala AR (Augmented Reality) App is an initiative of NCERT under the aegis of MHRD-Government of India, aiming to energise the textbooks, augment child to child, teacher to teacher, child to adult interaction. This App aims to enable students to go beyond textbooks and four wall of the classrooms. With the aim to invoke curiosity and intrigue in the students because of the augmented interaction, the students will hence be able to learn concepts by directly experimenting rather than only through reading and memorization. This effort intends to be a revolutionary effort to change the majority of student's community from passive listeners to active learners. This effort is in line with Prime Minister's Digital India vision to empower varied sectors using technology and addressing the triple need of skill, scale and speed.</p>
+            <p><a href="https://play.google.com/store/apps/details?id=nic.ncert.ciet.epathshalaar&hl=en_IN&gl=US" style="color: #ff6200;">Click here to install ePathshala AR app and explore the eResources</a></p>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

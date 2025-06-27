@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/evidya_dth.css' %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <div class="content-wrapper">
+        <h1 class="main-heading">PM e-Vidya DTH ISL Channel Number 31</h1>
+        <p class="description">The Government of India launched the PM e-Vidya DTH ISL Channel Number 31 on December 6, 2024, to enhance learning opportunities for Children with Hearing Impairments (CwHI). Available through DD's Free Dish network and YouTube, this channel provides NCERT textbook based learning content in ISL. The channel was inaugurated by Union Education Minister Shri Dharmendra Pradhan and Union Minister of State for Skill Development and Education Shri Jayant Chaudhary. This initiative aligns with the NEP 2020's vision of a more inclusive educational environment. By promoting ISL training for parents, special educators, interpreters, and related organizations, the channel strives to ensure equitable access to education for the hearing-impaired community across India. This channel serves the following purposes-</p>
+        <ol class="purpose-list">
+            <li>Bridge the accessibility gap for children with hearing impairment, offering equal opportunities to learn.</li>
+            <li>Provide high-quality, curriculum-aligned ISL content based on the principles of Universal Design of Learning (UDL)</li>
+            <li>Demystifying the ISL</li>
+            <li>Sensitizing and orienting the stakeholders in education with respect to usage of ISL as medium of instruction and its significance</li>
+            <li>Promote inclusivity and foster mutual understanding among students with and without diverse abilities</li>
+            <li>All children will be able to communicate with each other at ease and know each other better. This will promote inclusion and facilitate learning.</li>
+        </ol>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/47kdEZYsMgc" title="PM eVidya ISL 31" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

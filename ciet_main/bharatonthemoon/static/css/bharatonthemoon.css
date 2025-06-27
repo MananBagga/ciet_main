@@ -1,0 +1,35 @@
+.content-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+.rocket-container {
+    margin: 20px auto;
+    display: inline-block;
+}
+.rocket-container img {
+    max-width: 200px;
+    height: auto;
+}
+.alt-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.text-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.text-content p {
+    margin-bottom: 15px;
+}
+.bharatonthemoon-link{
+    color: #e15a2a;
+    text-decoration: none;
+}
+
+.bharatonthemoon-link:hover{
+    text-decoration: underline;
+}

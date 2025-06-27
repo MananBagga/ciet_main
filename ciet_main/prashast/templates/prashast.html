@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRASHAST</title>
+    <link rel="stylesheet" href="{% static 'css/prashast.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+      <div class="header">
+        <h1>PRASHAST</h1>
+      </div>
+      <div class="content">
+        <p>
+          PRASHAST - 'A Disability Screening Checklist for Schools' booklet and
+          mobile app covers the 21 disabilities, including the benchmark
+          disabilities as per the RPwD Act 2016. This initiative facilitates
+          early screening, leading to certification of Children with
+          disabilities, as per the provisions of Samagra Shiksha. It is a small
+          step towards realising the vision of Equitable and Inclusive Education
+          of NEP 2020, RPwD Act, 2016, RTE Act, 2009 and Goal 4 of the
+          Sustainable Development Goals.
+        </p>
+        <div class="resource-section">
+          <div class="resource-item">
+            <a href="https://play.google.com/store/apps/details?id=com.dscs.app&hl=en&gl=US"
+              ><img
+                src="{% static 'images/prashast mobile.jpg' %}"
+                alt="PRASHAST Mobile App"
+            /></a>
+            <p>PRASHAST Mobile App</p>
+          </div>
+          <div class="resource-item">
+            <a href="https://ncert.nic.in/pdf/DSCS_booklet.pdf"
+              ><img
+                src="{% static 'images/prashast booklet.jpg' %}"
+                alt="PRASHAST Booklet"
+            /></a>
+            <p>PRASHAST Booklet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>
