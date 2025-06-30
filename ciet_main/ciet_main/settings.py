@@ -97,11 +97,17 @@ INSTALLED_APPS = [
     'bharatonthemoon',
     'ejaadui_pitara',
     'translation_cell',
-<<<<<<< HEAD
+
     'summer_camp',
-=======
     'privacy_policy',
->>>>>>> ef538e763e2cf4acfa3bd654047e326c5c775d4d
+    'eContent_comp',
+    'ec23',
+    'finaleventec23',
+    'festivalec23',
+    'registrationec23',
+    'entriesec23',
+    'galleryec23',
+
 ]
 
 MIDDLEWARE = [

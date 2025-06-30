@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio and Immersive Digital Educational Games & Applications</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/festivalec23.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <header class="header-banner">
+    <h1>Audio and Immersive Digital Educational Games & Applications</h1>
+    <nav>
+      
+    </nav>
+  </header>
+  <main class="main-content">
+    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/23_24/Directory%20Final%202024%20Audio%209.3.24.pdf" class="media-link">
+      <img src="{% static "images/audio.png" %}" alt="Audio">
+    </a>
+    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/23_24/Directory%20Final%202024%20Video%209.3.24.pdf" class="media-link">
+      <img src="{% static "images/video.png" %}" alt="Video">
+    </a>
+    <div class="background-overlay"></div>
+  </main>
+  {% include "partials/footer.html" %}
+</body>
+</html>

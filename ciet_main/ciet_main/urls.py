@@ -80,9 +80,16 @@ urlpatterns = [
     path('bharatonthemoon/', include('bharatonthemoon.urls')),
     path('ejaadui_pitara/', include('ejaadui_pitara.urls')),
     path('translation_cell/', include('translation_cell.urls')),
-<<<<<<< HEAD
+
     path('summer_camp/', include('summer_camp.urls')),
-=======
+
     path('privacy_policy/', include('privacy_policy.urls')),
->>>>>>> ef538e763e2cf4acfa3bd654047e326c5c775d4d
+    path('eContent_comp/', include('eContent_comp.urls')),
+    path('ec23/', include('ec23.urls')),
+    path('finaleventec23/', include('finaleventec23.urls')),
+    path('festivalec23/', include('festivalec23.urls')),
+    path('registrationec23/', include('registrationec23.urls')),
+    path('entriesec23/', include('entriesec23.urls')),
+    path('galleryec23/', include('galleryec23.urls')),
+
 ]

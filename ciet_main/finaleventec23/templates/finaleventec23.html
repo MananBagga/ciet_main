@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All India Children’s Educational eContent Competition</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/finaleventec23.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <div class="event-header">
+    <h1>All India Children’s Educational eContent Competition Final Event 2023-24</h1>
+    
+  </div>
+  <div class="event-content">
+    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/How%20to%20reach%20NERIE,%20Shillong.pdf" target="_blank">
+      <img src="{% static "images/location.jpg" %}" alt="Reach NERIE, Shillong Campus" class="event-map-image">
+    </a>
+  </div>
+  {% include "partials/footer.html" %}
+</body>
+</html>

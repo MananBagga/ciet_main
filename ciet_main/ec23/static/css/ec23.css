@@ -1,0 +1,102 @@
+.header {
+    background: linear-gradient(to bottom, #333, #000);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .banner {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .banner h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gold-text h3 {
+    position: relative;
+    color: #d4af37;
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .gold-trail {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: url('gold-trail.png') no-repeat;
+    margin: 10px auto;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  
+  .link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-decoration: none;
+    color: #000;
+    margin: 10px 10px;
+  }
+
+  
+  .final-event {
+    background-color: #ffcccb;
+  }
+  
+  .festival-directory {
+    background-color: #add8e6;
+  }
+  
+  .result {
+    background-color: #f0e68c;
+  }
+  
+  .registration {
+    background-color: #add8e6;
+  }
+  
+  .list-entries {
+    background-color: #dda0dd;
+  }
+  
+  .gallery {
+    background-color: #90ee90;
+  }
+  
+  .archive-link {
+    margin-top: 20px;
+    color: #006400;
+    font-size: 14px;
+  }

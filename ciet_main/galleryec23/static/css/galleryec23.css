@@ -1,0 +1,80 @@
+.event-header {
+    background: linear-gradient(to right, #4a4a4a, #8b4513);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.event-header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.event-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.event-map-image {
+    width: 200px;
+    height: auto;
+    border: none;
+}
+
+.header {
+    background: linear-gradient(to right, #4a4a4a, #8b4513);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header p {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #ffcc80, #fff);
+    padding: 10px;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+.card:nth-child(2) img {
+    background: linear-gradient(to bottom right, #80deea, #fff);
+}
+
+.card:nth-child(2) p {
+    color: #00bcd4;
+}
