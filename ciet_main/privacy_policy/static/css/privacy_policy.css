@@ -1,0 +1,38 @@
+.privacy-banner {
+    background: url("{% static 'path/to/your/banner/image.jpg' %}") center/cover no-repeat;
+    text-align: center;
+    padding: 40px 0;
+    color: #e15a2a;
+}
+
+.privacy-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.privacy-banner .breadcrumb {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: auto auto;
+    padding: 0 20px;
+}
+
+.privacy-container p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.privacy-container h3 {
+    color: #e15a2a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    color: #e15a2a;
+    font-weight: bold;
+}

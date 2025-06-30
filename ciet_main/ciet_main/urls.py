@@ -80,5 +80,9 @@ urlpatterns = [
     path('bharatonthemoon/', include('bharatonthemoon.urls')),
     path('ejaadui_pitara/', include('ejaadui_pitara.urls')),
     path('translation_cell/', include('translation_cell.urls')),
+<<<<<<< HEAD
     path('summer_camp/', include('summer_camp.urls')),
+=======
+    path('privacy_policy/', include('privacy_policy.urls')),
+>>>>>>> ef538e763e2cf4acfa3bd654047e326c5c775d4d
 ]

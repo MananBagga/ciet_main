@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/privacy_policy.css" %}">
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+
+    <div class="privacy-banner">
+      <h1>Privacy Policy</h1>
+    </div>
+
+    <div class="privacy-container">
+      <p>
+        CIET website does not automatically capture any specific personal
+        information from you, (like name, phone number or e-mail address), that
+        allows us to identify you individually.
+      </p>
+
+      <p>
+        If the CIET website requests you to provide personal information, you
+        will be informed for the particular purposes for which the information
+        is gathered and adequate security measures will be taken to protect your
+        personal information.
+      </p>
+
+      <h3>Links to Other Sites</h3>
+      <p>
+        This website may contain links to other sites. If you click on a
+        third-party link, you will be directed to that site. Note that these
+        external sites are not operated by us. Therefore, we strongly advise you
+        to review the Privacy Policy of these websites. We have no control over
+        and assume no responsibility for the content, privacy policies, or
+        practices of any third-party sites or services.
+      </p>
+
+      <h3>Changes to This Privacy Policy</h3>
+      <p>
+        We may update our Privacy Policy from time to time. Thus, you are
+        advised to review this page periodically for any changes. We will notify
+        you of any changes by posting the new Privacy Policy on this page. These
+        changes are effective immediately after they are posted on this page.
+      </p>
+
+      <h3>Contact Us</h3>
+      <p>
+        If you have any questions or suggestions about our Privacy Policy, Do
+        not hesitate to contact us at
+        <a class="contact-email" href="mailto:decta.ncert@nic.in">decta.ncert@nic.in</a>
+      </p>
+    </div>
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

@@ -15,7 +15,7 @@
   <button class="text-size-btn" data-action="increase">A+</button>
 </span>
 
-    |
+    {% comment %} | {% endcomment %}
     {% comment %} <div class="language-dropdown-wrapper">
       <select id="language-select">
         <option value="" disabled selected>Language</option>
@@ -23,7 +23,7 @@
         <option value="hi">Hindi</option>
       </select>
     </div> {% endcomment %}
-    <span class="toggle-icon">&#9432;</span>
+    {% comment %} <span class="toggle-icon">&#9432;</span> {% endcomment %}
   </div>
 </div>
 
@@ -101,10 +101,10 @@
       <option value="{% url "reports" %}">Reports</option>
       <option value="{% url "unesco" %}">UNESCO Resources</option>
       <option value="#">Comics on Conservation of Environment - PCRA & NCERT (Hindi)</option>
-      <option value="{% url "learning_objects" %}">Learning Objects</option>
+      {% comment %} <option value="{% url "learning_objects" %}">Learning Objects</option> {% endcomment %}
       <option value="{% url "ncert_initiatives" %}">NCERT Initiatives for Inclusive and Accessible Education</option>
-      <option value="{% url "audio_books" %}">Audio Books</option>
-      <option value="{% url "alternative_academic_calender" %}">Alternative Academic Calender</option>
+      {% comment %} <option value="{% url "audio_books" %}">Audio Books</option>
+      <option value="{% url "alternative_academic_calender" %}">Alternative Academic Calender</option> {% endcomment %}
     </select>
 
     <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
@@ -112,8 +112,7 @@
       <option value="{% url "rti" %}">RTI</option>
       <option value="{% url "announcements" %}">Announcements</option>
       <option value="{% url "contact" %}">Contact</option>
-      <option value="#">Privacy Policy</option>
-      <option value="#">Customize</option>
+      <option value="{% url "privacy_policy" %}">Privacy Policy</option>
     </select>
 
     {% comment %} <a href="#" class="search-icon">&#128269;</a> {% endcomment %}
