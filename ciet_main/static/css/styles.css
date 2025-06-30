@@ -1821,7 +1821,7 @@ carousel-container .nav-arrow.prev-arrow {
   }
 }
 
-/* Footer Base */
+/* ---------------------------------------Footer Styles--------------------------------------------------- */
 .site-footer {
   background-color: #3c3c3c;
   color: white;
@@ -1949,4 +1949,34 @@ carousel-container .nav-arrow.prev-arrow {
     gap: 10px;
     text-align: center;
   }
+}
+
+@media (max-width: 480px) {
+    .site-footer {
+        padding: 30px 20px;
+    }
+
+    .site-footer h3 {
+        font-size: 18px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .visitor-box {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .visitor-count {
+        padding: 2px 8px;
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
 }

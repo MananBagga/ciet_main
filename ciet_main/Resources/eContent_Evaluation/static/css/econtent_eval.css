@@ -56,3 +56,47 @@
 .sub-container {
     margin: 50px 50px;
 }
+
+@media (max-width: 768px) {
+    .sub-container {
+        margin: 20px;
+    }
+
+    .background-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .guidelines p {
+        font-size: 16px;
+    }
+
+    .container h1,
+    .sub-container h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .guidelines {
+        margin-top: 30px;
+    }
+
+    .guidelines p {
+        font-size: 14px;
+    }
+
+    .container h1,
+    .sub-container h1 {
+        font-size: 18px;
+    }
+
+    .sub-container {
+        margin: 15px;
+    }
+}

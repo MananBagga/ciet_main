@@ -1,7 +1,7 @@
 header {
     background-image: url('header-background.jpg');
     background-size: cover;
-    color: white;
+    color: #e15a2a;
     text-align: center;
     padding: 20px;
   }
@@ -49,3 +49,39 @@ header {
     background: url('phone-icon.png') no-repeat center;
     margin-top: -40px;
   }
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        margin: 0 3px;
+        font-size: 14px;
+    }
+
+    main {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    main p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    main img,
+    main a::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    main a::after {
+        margin-top: -30px;
+        background-size: contain;
+    }
+}

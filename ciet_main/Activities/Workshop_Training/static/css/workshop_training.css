@@ -69,3 +69,30 @@
   .program-link:hover {
     text-decoration: underline;
   }
+
+@media (max-width: 600px) {
+    .training-container {
+        padding: 15px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+
+    .activity-table th,
+    .activity-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .activity-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

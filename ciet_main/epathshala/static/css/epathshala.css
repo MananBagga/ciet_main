@@ -69,3 +69,27 @@
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .epathshala-title {
+        font-size: 1.8em;
+    }
+
+    .epathshala-video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .epathshala-video-container iframe {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 15px;
+    }
+
+    .epathshala-description,
+    .epathshala-features {
+        padding: 0 10px;
+        text-align: justify;
+    }
+}

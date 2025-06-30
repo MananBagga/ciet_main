@@ -36,3 +36,44 @@
     color: #e15a2a;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .privacy-banner h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-banner .breadcrumb {
+    font-size: 0.9rem;
+  }
+
+  .privacy-container {
+    padding: 0 15px;
+  }
+
+  .privacy-container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-banner {
+    padding: 25px 0;
+  }
+
+  .privacy-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-banner .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .privacy-container {
+    padding: 0 10px;
+  }
+
+  .privacy-container h3 {
+    font-size: 1rem;
+  }
+}
+

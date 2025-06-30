@@ -25,3 +25,28 @@
     height: 80%;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .background-image {
+    width: 100%;
+    height: auto;
+    left: 50%;
+    margin-left: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2em;
+  }
+
+  .background-image {
+    width: 100%;
+    height: auto;
+  }
+}

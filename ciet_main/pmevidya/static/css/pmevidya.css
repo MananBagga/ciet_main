@@ -93,3 +93,45 @@
 .pm-evidya-link:hover {
     background-color: #ff1493;
 }
+
+@media (max-width: 768px) {
+  .pm-evidya-title {
+    font-size: 2em;
+  }
+
+  .pm-evidya-description {
+    padding: 0 5px;
+    font-size: 0.95em;
+  }
+
+  .pm-evidya-link {
+    width: 70%;
+    padding: 12px 20px;
+  }
+
+  .pm-evidya-card img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pm-evidya-title {
+    font-size: 1.5em;
+  }
+
+  .pm-evidya-description {
+    font-size: 0.9em;
+  }
+
+  .pm-evidya-link {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+
+  .pm-evidya-card img {
+    width: 120px;
+    height: auto;
+  }
+}

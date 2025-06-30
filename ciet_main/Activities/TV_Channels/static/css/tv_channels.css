@@ -110,3 +110,35 @@ main a {
   color: #f28c38;
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    .orange-button,
+    .class-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .info-button {
+        padding: 8px;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .info-button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    main h2 {
+        font-size: 18px;
+    }
+}

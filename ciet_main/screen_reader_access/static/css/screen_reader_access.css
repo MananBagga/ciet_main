@@ -46,3 +46,36 @@ tr:nth-child(odd) {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .sub-description {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    font-size: 13px;
+  }
+
+  .sub-description {
+    font-size: 11px;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

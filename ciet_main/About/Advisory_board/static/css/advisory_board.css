@@ -1,57 +1,88 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-} */
-
 .container {
-    padding: 20px 20px; /* Matches the spacing between text and screen edges */
-    text-align: left; /* Aligns text to the left as in the original */
+    padding: 5vw;
+    text-align: left;
     line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .advisory_h1 {
-    color: #ff0000; /* Red color for headings */
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px; /* Space between heading and following paragraph */
+    color: #ff0000;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .advisory_p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 5px; /* Matches spacing between paragraphs */
+    margin-bottom: 0.5rem;
 }
 
 .link {
-    color: #0000EE; /* Default blue color for links */
+    color: #0000EE;
     text-decoration: underline;
 }
 
 .link-orange {
-    color: #FF6200; /* Orange color for specific links in the table */
+    color: #FF6200;
     text-decoration: underline;
 }
 
 .advisory_table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    overflow-x: auto;
 }
 
-.advisory_th {
+.advisory_th, td {
     border: 1px solid #ccc;
-    padding: 8px;
+    padding: 0.5rem;
     text-align: left;
 }
 
 th {
-    background-color: #f5f5f5; /* Light grey background for table headers */
+    background-color: #f5f5f5;
     font-weight: bold;
 }
 
 td {
     color: #333;
+}
+
+@media (max-width: 768px) {
+    .advisory_h1 {
+        font-size: 1.5rem;
+    }
+
+    .advisory_p {
+        font-size: 0.95rem;
+    }
+
+    .advisory_table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 4vw;
+    }
+
+    .advisory_h1 {
+        font-size: 1.3rem;
+    }
+
+    .advisory_p {
+        font-size: 0.9rem;
+    }
+
+    .advisory_table {
+        font-size: 0.85rem;
+    }
 }

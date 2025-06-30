@@ -56,3 +56,38 @@ h2 {
 .footer-list li a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-header .col1, .table-row .col1,
+  .table-header .col2, .table-row .col2,
+  .table-header .col3, .table-row .col3,
+  .table-header .col4, .table-row .col4 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 0.9em;
+  }
+}

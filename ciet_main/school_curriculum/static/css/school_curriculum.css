@@ -85,3 +85,43 @@
     font-size: 14px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .header p {
+    font-size: 0.8em;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .alt-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2em;
+  }
+
+  .header p {
+    font-size: 0.7em;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .alt-text {
+    font-size: 11px;
+  }
+}

@@ -150,3 +150,28 @@ textarea {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .contact-details, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .location-section {
+        margin: 15px;
+    }
+
+    #map {
+        height: 250px;
+    }
+}

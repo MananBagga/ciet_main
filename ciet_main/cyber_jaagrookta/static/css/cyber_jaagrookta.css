@@ -31,3 +31,33 @@
 .session-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+@media (max-width: 768px) {
+    .session-table th,
+    .session-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .session-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .section-title {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    .cyber-jaagrookta-header {
+        padding: 8px;
+    }
+}

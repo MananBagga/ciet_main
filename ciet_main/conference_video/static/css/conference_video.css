@@ -32,3 +32,32 @@
     padding: 20px 0;
 }
 
+@media (max-width: 768px) {
+    .video-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .video-header h2 {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    .video-content {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-header h2 {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    .video-section {
+        padding: 15px;
+    }
+}
+
+

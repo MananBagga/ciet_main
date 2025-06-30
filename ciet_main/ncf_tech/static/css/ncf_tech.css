@@ -41,3 +41,35 @@
 .ncf-explore:hover {
     background-color: #e03a00;
 }
+
+@media (max-width: 768px) {
+  .ncf-title {
+    font-size: 2em;
+  }
+
+  .ncf-description {
+    padding: 0 5px;
+    font-size: 0.95em;
+  }
+
+  .ncf-explore {
+    width: 180px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ncf-title {
+    font-size: 1.5em;
+  }
+
+  .ncf-description {
+    font-size: 0.9em;
+  }
+
+  .ncf-explore {
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}

@@ -180,7 +180,6 @@
   header {
     position: relative;
     text-align: center;
-    background: url('background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     padding: 20px;
@@ -189,3 +188,35 @@
   header h1 {
     margin: 0;
   }
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .overview, .activities {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pub-buttons, .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .staff-member {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}

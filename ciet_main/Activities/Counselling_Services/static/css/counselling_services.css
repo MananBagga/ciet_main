@@ -36,3 +36,21 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  @media (max-width: 600px) {
+    .counseling-container {
+        padding: 15px;
+    }
+
+    .counseling-text {
+        font-size: 14px;
+    }
+
+    .free-service {
+        font-size: 14px;
+    }
+
+    .region-wise-text {
+        font-size: 16px;
+    }
+}

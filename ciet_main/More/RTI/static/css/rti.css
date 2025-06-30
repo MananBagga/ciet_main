@@ -46,3 +46,27 @@
 .rti-footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .rti-container {
+        margin: 10px;
+    }
+
+    .rti-heading {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .rti-table {
+        font-size: 0.8em;
+    }
+
+    .rti-table th, .rti-table td {
+        padding: 6px;
+    }
+
+    .rti-footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
+}

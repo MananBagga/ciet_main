@@ -100,3 +100,56 @@
     color: #006400;
     font-size: 14px;
   }
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .gold-text h3 {
+        font-size: 18px;
+    }
+
+    .gold-trail {
+        width: 150px;
+        height: 40px;
+    }
+
+    .links-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link-box {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .banner h2 {
+        font-size: 16px;
+    }
+
+    .gold-text h3 {
+        font-size: 16px;
+    }
+
+    .gold-trail {
+        width: 120px;
+        height: 35px;
+    }
+
+    .link-box {
+        width: 100%;
+        max-width: 200px;
+    }
+}

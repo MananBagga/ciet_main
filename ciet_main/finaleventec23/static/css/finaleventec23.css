@@ -32,3 +32,31 @@
     height: auto;
     border: none;
   }
+
+  @media (max-width: 768px) {
+  .event-header h1 {
+    font-size: 1.5em;
+  }
+
+  .event-content {
+    padding: 30px 0;
+  }
+
+  .event-map-image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-header h1 {
+    font-size: 1.2em;
+  }
+
+  .event-content {
+    padding: 20px 0;
+  }
+
+  .event-map-image {
+    width: 120px;
+  }
+}

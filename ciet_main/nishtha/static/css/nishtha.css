@@ -53,3 +53,36 @@
 .nishtha-card-container a:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .nishtha-title {
+    font-size: 2em;
+  }
+
+  .nishtha-description {
+    padding: 0 5px;
+    font-size: 0.95em;
+  }
+
+  .nishtha-card-container {
+    justify-content: center;
+  }
+
+  .nishtha-card-container a {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nishtha-title {
+    font-size: 1.5em;
+  }
+
+  .nishtha-description {
+    font-size: 0.9em;
+  }
+
+  .nishtha-card-container a {
+    width: 130px;
+  }
+}

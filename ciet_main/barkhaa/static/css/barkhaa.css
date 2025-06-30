@@ -80,3 +80,29 @@
     opacity: 0.1;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .resource-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .level-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .levels {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-section p {
+        font-size: 14px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+}

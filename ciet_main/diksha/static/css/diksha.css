@@ -55,3 +55,36 @@
 .diksha-explore:hover {
     background-color: #e03a00;
 }
+
+@media (max-width: 768px) {
+    .diksha-title {
+        font-size: 1.8em;
+    }
+
+    .diksha-description {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .diksha-explore {
+        width: 160px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .diksha-title {
+        font-size: 1.5em;
+    }
+
+    .diksha-description {
+        font-size: 13px;
+    }
+
+    .diksha-explore {
+        width: 140px;
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}

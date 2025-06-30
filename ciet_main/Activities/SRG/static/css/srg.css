@@ -167,3 +167,49 @@ h2 {
 .archive-box a:hover{
     color: brown;
 }
+
+@media (max-width: 992px) {
+    .training-section {
+        flex-direction: column;
+    }
+
+    .training-left,
+    .training-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container p,
+    .objective-box li,
+    .training-right p {
+        font-size: 14px;
+    }
+
+    .objective-box h2,
+    .training-left h2,
+    .training-right h2,
+    h2 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .programme-table th,
+    .programme-table td,
+    .content-table th,
+    .content-table td,
+    .training-table th,
+    .training-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .archive-box {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -172,3 +172,46 @@
   .nistha-sections a:hover {
     text-decoration: underline;
   }
+
+@media (max-width: 992px) {
+    .nistha-sections {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .nistha-container {
+        padding: 15px;
+    }
+
+    .nistha-content h1 {
+        font-size: 20px;
+    }
+
+    .nistha-content p,
+    .nistha-content ul li {
+        font-size: 14px;
+    }
+
+    .nistha-sections .section {
+        min-width: 100%;
+    }
+
+    .section h2 {
+        font-size: 16px;
+    }
+
+    .section h3 {
+        font-size: 14px;
+    }
+
+    .section ul li,
+    .section p,
+    .nistha-steps ol li {
+        font-size: 13px;
+    }
+
+    .nistha-steps h2 {
+        font-size: 14px;
+    }
+}

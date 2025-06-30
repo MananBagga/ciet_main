@@ -33,3 +33,28 @@
 .bharatonthemoon-link:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .rocket-container img {
+        max-width: 150px;
+    }
+
+    .text-content {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rocket-container img {
+        max-width: 120px;
+    }
+
+    .alt-text {
+        font-size: 12px;
+    }
+
+    .text-content {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}

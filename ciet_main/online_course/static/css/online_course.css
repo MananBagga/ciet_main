@@ -134,3 +134,61 @@
     border-radius: 50%;
     border: 2px solid #f28c38;
   }
+
+@media (max-width: 768px) {
+  .logo-section {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .logo-section img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .course-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .course-link img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .qr-codes {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .qr-codes img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2em;
+    padding: 8px;
+  }
+
+  .content h2,
+  .content h3,
+  .card-title h2,
+  .subheader h2 {
+    font-size: 1.1em;
+    padding: 8px;
+  }
+
+  .course-link img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .qr-codes img {
+    width: 60px;
+    height: 60px;
+  }
+}

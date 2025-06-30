@@ -104,3 +104,46 @@
 .moocs-table td a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 992px) {
+  .moocs-title {
+    font-size: 2em;
+  }
+
+  .moocs-description {
+    padding: 0 5px;
+  }
+
+  .moocs-features {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .moocs-title {
+    font-size: 1.5em;
+  }
+
+  .moocs-description {
+    font-size: 0.9em;
+    padding: 0 5px;
+  }
+
+  .moocs-features {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  .moocs-support,
+  .moocs-dates,
+  .moocs-links,
+  .moocs-steps {
+    padding: 10px;
+  }
+
+  .moocs-table th,
+  .moocs-table td {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+}

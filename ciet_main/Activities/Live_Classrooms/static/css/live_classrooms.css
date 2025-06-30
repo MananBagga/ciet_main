@@ -96,3 +96,32 @@
   a:hover {
     text-decoration: underline;
   }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .intro-text,
+    .schedule-title,
+    .schedule-timings,
+    .schedule-table th,
+    .schedule-table td,
+    .training-table th,
+    .training-table td,
+    .completed-table th,
+    .completed-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

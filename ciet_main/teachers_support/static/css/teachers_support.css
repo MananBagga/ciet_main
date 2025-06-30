@@ -38,3 +38,10 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .resource-section a img {
+        width: 120px;
+        height: 120px;
+    }
+}
