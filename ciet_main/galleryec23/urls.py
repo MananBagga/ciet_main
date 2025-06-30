@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.galleryec23, name='galleryec23'),
+    path('galleryec23/', views.galleryec23, name='galleryec23'),
     
 ]

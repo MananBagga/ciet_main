@@ -1,13 +1,6 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-} */
-
 .container {
-    padding: 20px 20px; /* Matches the spacing between text and screen edges */
-    text-align: left; /* Aligns text to the left as in the original */
+    padding: 20px 20px; 
+    text-align: left; 
     line-height: 1.6;
 }
 
@@ -34,4 +27,38 @@
     font-size: 16px;
     color: #333;
     margin-bottom: 2px; 
+}
+
+@media (min-width: 600px) {
+    .about_heading {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about_p,
+    .about_li {
+        font-size: 16px;
+    }
+
+    .about_ul {
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 20px 80px;
+    }
+
+    .about_heading {
+        font-size: 28px;
+    }
+
+    .about_p,
+    .about_li {
+        font-size: 18px;
+    }
 }

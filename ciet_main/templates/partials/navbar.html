@@ -4,26 +4,24 @@
     <span class="date-icon">&#128197;</span>
     <span class="date-text" id="current-date"></span>
   </div>
-  <div class="topbar-right">
-    <a href="{% url "home" %}#main-content" class="skip-link">Skip to main content</a> |
-    <a href="#navigation" class="skip-link">Skip to navigation</a> |
-    <a href="{% url "screen_reader_access" %}" class="skip-link">Screen Reader Access</a> |
+  <button class="topbar-toggle" id="topbar-toggle">&#9776;</button>
+  <div class="topbar-right" id="topbar-right">
+    <a href="{% url 'home' %}#main-content" class="skip-link"
+      >Skip to main content</a
+    >
+    <span>|</span>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+    <span>|</span>
+    <a href="{% url 'screen_reader_access' %}" class="skip-link"
+      >Screen Reader Access</a
+    >
+    <span>|</span>
     <span class="text-size-label">Text Size:</span>
     <span class="text-size-controls">
-  <button class="text-size-btn" data-action="decrease">A-</button>
-  <button class="text-size-btn" data-action="normal">A</button>
-  <button class="text-size-btn" data-action="increase">A+</button>
-</span>
-
-    {% comment %} | {% endcomment %}
-    {% comment %} <div class="language-dropdown-wrapper">
-      <select id="language-select">
-        <option value="" disabled selected>Language</option>
-        <option value="en">English</option>
-        <option value="hi">Hindi</option>
-      </select>
-    </div> {% endcomment %}
-    {% comment %} <span class="toggle-icon">&#9432;</span> {% endcomment %}
+      <button class="text-size-btn" data-action="decrease">A-</button>
+      <button class="text-size-btn" data-action="normal">A</button>
+      <button class="text-size-btn" data-action="increase">A+</button>
+    </span>
   </div>
 </div>
 
@@ -38,136 +36,195 @@
     </a>
   </div>
   <div class="navbar-right">
-    <a
-      href="{% url 'home' %}"
-      class="nav-link {% if request.path == '/' %}active{% endif %}"
-      >Home</a
-    >
+    <button class="navbar-toggle" id="navbar-toggle">&#9776;</button>
+    <div class="navbar-items" id="navbar-items">
+      <a
+        href="{% url 'home' %}"
+        class="nav-link {% if request.path == '/' %}active{% endif %}"
+        >Home</a
+      >
 
-    <select
-      style="max-width: 150px"
-      class="nav-link nav-select"
-      onchange="if (this.value) window.location.href=this.value;"
-    >
-      <option selected disabled>About</option>
-      <option value="{% url 'people' %}">People</option>
-      <option value="{% url 'about_us' %}">About Us</option>
-      <option value="{% url 'advisory_board' %}">Advisory board</option>
-    </select>
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>About</option>
+        <option value="{% url 'people' %}">People</option>
+        <option value="{% url 'about_us' %}">About Us</option>
+        <option value="{% url 'advisory_board' %}">Advisory board</option>
+      </select>
 
-    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
-      <option selected disabled>Departments</option>
-      <option value="{% url 'dept_ict_training' %}">Department of ICT & Training</option>
-      <option value="{% url "media_production_division" %}">Media Production Division</option>
-      <option value="{% url "planning_research_division" %}">Planning & research Division</option>
-      <option value="{% url "engineering_division" %}">Enginnering Division</option>
-      {% comment %} <option value="{% url "administration_accounts" %}">Administration & accounts</option> {% endcomment %}
-    </select>
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>Departments</option>
+        <option value="{% url 'dept_ict_training' %}">
+          Department of ICT & Training
+        </option>
+        <option value="{% url 'media_production_division' %}">
+          Media Production Division
+        </option>
+        <option value="{% url 'planning_research_division' %}">
+          Planning & research Division
+        </option>
+        <option value="{% url 'engineering_division' %}">
+          Engineering Division
+        </option>
+      </select>
 
-    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
-      <option selected disabled>Initiatives</option>
-      <option value="{% url 'majorProjects' %}">Major Projects</option>
-      <option value="{% url "pac_projects" %}">PAC Projects</option>
-      <option value="{% url "pab_projects" %}">PAB Projects</option>
-      <option value="{% url "translation_cell" %}">Translation Cell</option>
-    </select>
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>Initiatives</option>
+        <option value="{% url 'majorProjects' %}">Major Projects</option>
+        <option value="{% url 'pac_projects' %}">PAC Projects</option>
+        <option value="{% url 'pab_projects' %}">PAB Projects</option>
+        <option value="{% url 'translation_cell' %}">Translation Cell</option>
+      </select>
 
-    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
-      <option selected disabled>Activities</option>
-      <option value="{% url 'calender' %}">Calender</option>
-      <option value="{% url "webinars" %}">Webinar on ICT Tools</option>
-      <option value="{% url 'ICT_Awards' %}">ICT Award</option>
-      <option value="{% url "conference" %}">Conference</option>
-      <option value="{% url "Activities_nishtha" %}">NISHTHA online</option>
-      <option value="{% url "summer_camp" %}">Summer Camp</option>
-      <option value="{% url "counselling_services" %}">Counselling Services</option>
-      <option value="{% url "live_classrooms" %}">Live Inclusive classrooms</option>
-      <option value="{% url "eContent_comp" %}">eContent Competition</option>
-      <option value="{% url "srg" %}">SRG Orientation on eContent 2022-2023</option>
-      <option value="{% url "tv_channels" %}">TV Channels</option>
-      <option value="{% url "workshop_training" %}">Workshops/Training</option>
-      <option value="{% url "digital_creativity" %}">Digital Creativity</option>
-    </select>
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>Activities</option>
+        <option value="{% url 'calender' %}">Calender</option>
+        <option value="{% url 'webinars' %}">Webinar on ICT Tools</option>
+        <option value="{% url 'ICT_Awards' %}">ICT Award</option>
+        <option value="{% url 'conference' %}">Conference</option>
+        <option value="{% url 'Activities_nishtha' %}">NISHTHA online</option>
+        <option value="{% url 'summer_camp' %}">Summer Camp</option>
+        <option value="{% url 'counselling_services' %}">
+          Counselling Services
+        </option>
+        <option value="{% url 'live_classrooms' %}">
+          Live Inclusive classrooms
+        </option>
+        <option value="{% url 'eContent_comp' %}">eContent Competition</option>
+        <option value="{% url 'srg' %}">
+          SRG Orientation on eContent 2022-2023
+        </option>
+        <option value="{% url 'tv_channels' %}">TV Channels</option>
+        <option value="{% url 'workshop_training' %}">
+          Workshops/Training
+        </option>
+        <option value="{% url 'digital_creativity' %}">
+          Digital Creativity
+        </option>
+      </select>
 
-    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
-      <option selected disabled>Resources</option>
-      <option value="{% url "cyber_safety_security" %}">Cyber Safety & Security</option>
-      <option value="{% url "econtent_guidelines" %}">eContent Guidelines</option>
-      <option value="{% url "catalogue" %}">Catalogue</option>
-      <option value="{% url "brochure_ict_initiatives" %}">Brochure on ICT Initiatives</option>
-      <option value="https://journals.ncert.gov.in/">Journals</option>
-      <option value="{% url "newsletter" %}">Newsletters</option>
-      <option value="{% url "econtent_eval" %}">eContent Evaluation</option>
-      <option value="{% url "reports" %}">Reports</option>
-      <option value="{% url "unesco" %}">UNESCO Resources</option>
-      <option value="{% url "comics" %}">Comics on Conservation of Environment - PCRA & NCERT (Hindi)</option>
-      {% comment %} <option value="{% url "learning_objects" %}">Learning Objects</option> {% endcomment %}
-      <option value="{% url "ncert_initiatives" %}">NCERT Initiatives for Inclusive and Accessible Education</option>
-      <option value="{% url "daisy_books" %}">Daisy Books</option>
-      {% comment %} <option value="{% url "audio_books" %}">Audio Books</option>
-      <option value="{% url "alternative_academic_calender" %}">Alternative Academic Calender</option> {% endcomment %}
-    </select>
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>Resources</option>
+        <option value="{% url 'cyber_safety_security' %}">
+          Cyber Safety & Security
+        </option>
+        <option value="{% url 'econtent_guidelines' %}">
+          eContent Guidelines
+        </option>
+        <option value="{% url 'catalogue' %}">Catalogue</option>
+        <option value="{% url 'brochure_ict_initiatives' %}">
+          Brochure on ICT Initiatives
+        </option>
+        <option value="https://journals.ncert.gov.in/">Journals</option>
+        <option value="{% url 'newsletter' %}">Newsletters</option>
+        <option value="{% url 'econtent_eval' %}">eContent Evaluation</option>
+        <option value="{% url 'reports' %}">Reports</option>
+        <option value="{% url 'unesco' %}">UNESCO Resources</option>
+        <option value="{% url 'comics' %}">
+          Comics on Conservation of Environment - PCRA & NCERT (Hindi)
+        </option>
+        <option value="{% url 'ncert_initiatives' %}">
+          NCERT Initiatives for Inclusive and Accessible Education
+        </option>
+        <option value="{% url 'daisy_books' %}">Daisy Books</option>
+      </select>
 
-    <select style="max-width: 150px" class="nav-link nav-select" onchange="if (this.value) window.location.href=this.value;">
-      <option selected disabled>More</option>
-      <option value="{% url "rti" %}">RTI</option>
-      <option value="{% url "announcements" %}">Announcements</option>
-      <option value="{% url "contact" %}">Contact</option>
-      <option value="{% url "privacy_policy" %}">Privacy Policy</option>
-    </select>
-
-    {% comment %} <a href="#" class="search-icon">&#128269;</a> {% endcomment %}
+      <select
+        style="max-width: 150px"
+        class="nav-link nav-select"
+        onchange="if (this.value) window.location.href=this.value;"
+      >
+        <option selected disabled>More</option>
+        <option value="{% url 'rti' %}">RTI</option>
+        <option value="{% url 'announcements' %}">Announcements</option>
+        <option value="{% url 'contact' %}">Contact</option>
+        <option value="{% url 'privacy_policy' %}">Privacy Policy</option>
+      </select>
+    </div>
   </div>
 </nav>
 
-
 <script>
 
-{% comment %} ------------------------------------------ A- A A+ ------------------------------------------------------------------------ {% endcomment %}
+          {% comment %} ------------------------------------------ A- A A+ ------------------------------------------------------------------------ {% endcomment %}
 
-  const body = document.body;
-const textSizeButtons = document.querySelectorAll(".text-size-btn");
-const defaultFontSize = 16; // Default body font size in px
-let currentStep = 0; // 0 = default, -3 to +4 range allowed
+            const body = document.body;
+          const textSizeButtons = document.querySelectorAll(".text-size-btn");
+          const defaultFontSize = 16; // Default body font size in px
+          let currentStep = 0; // 0 = default, -3 to +4 range allowed
 
-const applyFontSize = () => {
-  const newSize = defaultFontSize + currentStep * 2; // Change font by steps of 2px
-  body.style.fontSize = newSize + "px";
-};
+          const applyFontSize = () => {
+            const newSize = defaultFontSize + currentStep * 2; // Change font by steps of 2px
+            body.style.fontSize = newSize + "px";
+          };
 
-textSizeButtons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const action = btn.dataset.action;
+          textSizeButtons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              const action = btn.dataset.action;
 
-    if (action === "decrease" && currentStep > -3) {
-      currentStep--;
-    } else if (action === "increase" && currentStep < 4) {
-      currentStep++;
-    } else if (action === "normal") {
-      currentStep = 0;
-    }
+              if (action === "decrease" && currentStep > -3) {
+                currentStep--;
+              } else if (action === "increase" && currentStep < 4) {
+                currentStep++;
+              } else if (action === "normal") {
+                currentStep = 0;
+              }
 
-    applyFontSize();
-  });
-});
+              applyFontSize();
+            });
+          });
 
-// Set default on load
-window.addEventListener("DOMContentLoaded", () => {
-  body.style.fontSize = defaultFontSize + "px";
-});
+          // Set default on load
+          window.addEventListener("DOMContentLoaded", () => {
+            body.style.fontSize = defaultFontSize + "px";
+          });
 
 
-{% comment %} ---------------------------------------------------------- Date Time---------------------------------------------------------------- {% endcomment %}
+          {% comment %} ---------------------------------------------------------- Date Time---------------------------------------------------------------- {% endcomment %}
 
-document.addEventListener("DOMContentLoaded", function () {
-        const dateElement = document.getElementById("current-date");
-        if (dateElement) {
-          const today = new Date();
-          const options = { day: "2-digit", month: "short", year: "numeric" };
-          dateElement.textContent = today
-            .toLocaleDateString("en-GB", options)
-            .replace(/ /g, "/");
-        }
+          document.addEventListener("DOMContentLoaded", function () {
+                  const dateElement = document.getElementById("current-date");
+                  if (dateElement) {
+                    const today = new Date();
+                    const options = { day: "2-digit", month: "short", year: "numeric" };
+                    dateElement.textContent = today
+                      .toLocaleDateString("en-GB", options)
+                      .replace(/ /g, "/");
+                  }
+          });
+
+        const navbarToggle = document.getElementById("navbar-toggle");
+      const navbarItems = document.getElementById("navbar-items");
+      navbarToggle.addEventListener("click", () => {
+        navbarItems.classList.toggle("show");
       });
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const topbarToggle = document.getElementById("topbar-toggle");
+    const topbarRight = document.getElementById("topbar-right");
+
+    topbarToggle.addEventListener("click", () => {
+      topbarRight.classList.toggle("show");
+    });
+  });
 </script>
