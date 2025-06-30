@@ -99,17 +99,12 @@ INSTALLED_APPS = [
     'translation_cell',
     'summer_camp',
     'privacy_policy',
-<<<<<<< HEAD
     'conference_video',
     'comics',
     'daisy_books',
-=======
-
     'conference_video',
     'comics',
     'daisy_books',
-
->>>>>>> 0cb936e6d9195784d6a747932c31a82c2b5d90ee
     'eContent_comp',
     'ec23',
     'finaleventec23',
