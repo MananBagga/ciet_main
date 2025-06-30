@@ -1,172 +1,125 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translation Cell</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'css/translation_cell.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Cell</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/translation_cell.css" %}">
 </head>
 <body>
-
     {% include "partials/navbar.html" %}
+  <header>
+    <img src="{% static "images/TC.jpg" %}" alt="CIET Logo" class="logo">
+    <h1>Translation Cell</h1>
+  </header>
+  <main>
+    <section class="content">
+      <div class="overview">
+        <h2>Overview</h2>
+        <p>India is a multilingual and multicultural country. The linguistic expressions and cultural awareness are important contributors to individual as well as societal well-being. Keeping in view its socio-cultural-linguistic diversity, the National Educational Policy (NEP) 2020 soundly concentrates on the promotion of Indian languages. It aims to uphold Indian languages by using them consistently, by creating curriculum materials and teaching-learning resources, by implementing mother tongues/home languages/local languages/regional languages as the medium of instruction, by devising innovative approaches, providing technology-based solutions and cultivating a positive attitude towards all languages and their remarkable unity (NEP, 2020). Under the aegis of the Ministry of Education, Govt. of India, the National Council of Educational Research and Training (NCERT) has taken initiatives to achieve the above mentioned goals of NEP 2020. The Central Institute of Educational Technology (CIET), a constituent unit of NCERT has undertaken a project ‘Translation of NCERT Contents in 22 Indian Languages’. Its aim is to translate NCERT textbooks, policy documents and other resources in 22 scheduled Indian languages listed under the Eighth Schedule of the Indian Constitution.</p>
+      </div>
+      <div class="activities">
+        <h2>Activities</h2>
+        <div class="buttons">
+          <button class="activity-btn" data-content="notices">Notices</button>
+          <button class="activity-btn" data-content="translation">Translation</button>
+          <button class="activity-btn" data-content="events">Events</button>
+          <button class="activity-btn" data-content="reports">Reports</button>
+        </div>
+        <div class="content-area" id="notices">
+          <ul>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDpDA9qqy16M-kGCQJCKddCP5p5IGGCwmgLYEQxn4jaUO31Q/viewform?pli=1" target="_blank">Google form for Translator Panel</a></li>
+          </ul>
+        </div>
+        <div class="content-area" id="translation" style="display:none;">
+          <p>Translation content goes here.</p>
+        </div>
+        <div class="content-area" id="events" style="display:none;">
+          <p>Events content goes here.</p>
+        </div>
+        <div class="content-area" id="reports" style="display:none;">
+          <p>Reports content goes here.</p>
+        </div>
+      </div>
+    </section>
+    <section class="publications">
+      <h2>|| Publications ||</h2>
+      <div class="pub-buttons">
+        <button class="pub-btn" data-content="joyful1">Joyful Mathematic Class 1</button>
+        <button class="pub-btn" data-content="joyful2">Joyful Mathematic Class 2</button>
+        <button class="pub-btn" data-content="anand">Anand Activity book for Balvatika</button>
+        <button class="pub-btn" data-content="unmukh">Unmukh Teachers Training Handbook</button>
+        <button class="pub-btn" data-content="special">Special Modules</button>
+        <button class="pub-btn" data-content="primers">Indian Languages Primers</button>
+      </div>
+      <div class="pub-content" id="joyful1">
+        <p><a href="https://example.com/assamese" target="_blank">Assamese</a> || <a href="https://example.com/bengali" target="_blank">Bengali</a> || <a href="https://example.com/gujarati" target="_blank">Gujarati</a> || <a href="https://example.com/kannada" target="_blank">Kannada</a> || <a href="https://example.com/malayalam" target="_blank">Malayalam</a> || <a href="https://example.com/marathi" target="_blank">Marathi</a> || <a href="https://example.com/odia" target="_blank">Odia</a> || <a href="https://example.com/punjabi" target="_blank">Punjabi</a> || <a href="https://example.com/tamil" target="_blank">Tamil</a> || <a href="https://example.com/telugu" target="_blank">Telugu</a> || <a href="https://example.com/bodo" target="_blank">Bodo</a> || <a href="https://example.com/dogri" target="_blank">Dogri</a> || <a href="https://example.com/kashmiri" target="_blank">Kashmiri</a> || <a href="https://example.com/konkani" target="_blank">Konkani</a> || <a href="https://example.com/maithili" target="_blank">Maithili</a> || <a href="https://example.com/manipuri" target="_blank">Manipuri</a> || <a href="https://example.com/nepali" target="_blank">Nepali</a> || <a href="https://example.com/sanskrit" target="_blank">Sanskrit</a> || <a href="https://example.com/santali" target="_blank">Santali</a> || <a href="https://example.com/sindhi" target="_blank">Sindhi</a> ||</p>
+      </div>
+      <div class="pub-content" id="joyful2" style="display:none;">
+        <p><a href="https://example.com/joyful2-assamese" target="_blank">Assamese</a> || <a href="https://example.com/joyful2-bengali" target="_blank">Bengali</a> || <a href="https://example.com/joyful2-gujarati" target="_blank">Gujarati</a> || <a href="https://example.com/joyful2-kannada" target="_blank">Kannada</a> || <a href="https://example.com/joyful2-malayalam" target="_blank">Malayalam</a> || <a href="https://example.com/joyful2-marathi" target="_blank">Marathi</a> || <a href="https://example.com/joyful2-odia" target="_blank">Odia</a> || <a href="https://example.com/joyful2-punjabi" target="_blank">Punjabi</a> || <a href="https://example.com/joyful2-tamil" target="_blank">Tamil</a> || <a href="https://example.com/joyful2-telugu" target="_blank">Telugu</a> ||</p>
+      </div>
+      <div class="pub-content" id="anand" style="display:none;">
+        <p><a href="https://example.com/anand-assamese" target="_blank">Assamese</a> || <a href="https://example.com/anand-bengali" target="_blank">Bengali</a> || <a href="https://example.com/anand-gujarati" target="_blank">Gujarati</a> || <a href="https://example.com/anand-kannada" target="_blank">Kannada</a> || <a href="https://example.com/anand-malayalam" target="_blank">Malayalam</a> || <a href="https://example.com/anand-marathi" target="_blank">Marathi</a> || <a href="https://example.com/anand-odia" target="_blank">Odia</a> || <a href="https://example.com/anand-punjabi" target="_blank">Punjabi</a> || <a href="https://example.com/anand-tamil" target="_blank">Tamil</a> || <a href="https://example.com/anand-telugu" target="_blank">Telugu</a> ||</p>
+      </div>
+      <div class="pub-content" id="unmukh" style="display:none;">
+        <p><a href="https://example.com/unmukh-assamese" target="_blank">Assamese</a> || <a href="https://example.com/unmukh-bengali" target="_blank">Bengali</a> || <a href="https://example.com/unmukh-gujarati" target="_blank">Gujarati</a> || <a href="https://example.com/unmukh-kannada" target="_blank">Kannada</a> || <a href="https://example.com/unmukh-malayalam" target="_blank">Malayalam</a> || <a href="https://example.com/unmukh-marathi" target="_blank">Marathi</a> || <a href="https://example.com/unmukh-odia" target="_blank">Odia</a> || <a href="https://example.com/unmukh-punjabi" target="_blank">Punjabi</a> || <a href="https://example.com/unmukh-tamil" target="_blank">Tamil</a> ||  <a href="https://example.com/unmukh-tamil" target="_blank">Urdu</a> ||  <a href="https://example.com/unmukh-tamil" target="_blank">Telugu</a> ||  <a href="https://example.com/unmukh-tamil" target="_blank">English</a> ||  <a href="https://example.com/unmukh-tamil" target="_blank">Hindi</a> </p>
+      </div>
+      <div class="pub-content" id="special" style="display:none;">
+        <p><a href="https://example.com/special-assamese" target="_blank">Viksit Bharat</a> || <a href="https://example.com/special-assamese" target="_blank">Nari Shakti Vandan</a> || <a href="https://example.com/special-assamese" target="_blank">G20</a> || <a href="https://example.com/special-assamese" target="_blank">Chandrayan Utsav Modules</a> </p>
+      </div>
+      <div class="pub-content" id="primers" style="display:none;">
+        <p><a href="https://example.com/primers-assamese" target="_blank">Indian Languages Primers</a> </p>
+      </div>
+    </section>
+    <section class="staff">
+      <h2>OUR STAFF</h2>
+      <div class="staff-member">
+        <img src="{% static "images/DrRajendraPal.jpg" %}" alt="Dr. Rajendra Pal">
+        <h3>Dr. Rajendra Pal</h3>
+        <p>Professor & Head, MPD<br>Extn. Number: +91-11-26864801-10 (240)</p>
+        <a href="{% static "pdfs/dept_pdfs/BiodataRajendraPal.pdf" %}" target="_blank" class="view-profile">View Profile</a>
+      </div>
+      <div class="staff-member">
+        <img src="{% static "images/Photo_DrRavindra Kumar.jpg" %}" alt="Dr. Ravindra Kumar">
+        <h3>Dr. Ravindra Kumar</h3>
+        <p>Incharge, Translation Cell<br>Extn. Number: +91-11-26864801-10 (221)</p>
+        <a href="{% static "pdfs/dept_pdfs/Profile_DrRavindra Kumar.pdf" %}" target="_blank" class="view-profile">View Profile</a>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2>GALLERY</h2>
+      <div class="gallery-images">
+        <img src="{% static "images/tc1.jpg" %}" alt="Gallery Image 1">
+        <img src="{% static "images/tc2.jpg" %}" alt="Gallery Image 2">
+        <img src="{% static "images/tc3.jpg" %}" alt="Gallery Image 3">
+        <img src="{% static "images/tc4.jpg" %}" alt="Gallery Image 4">
+        <img src="{% static "images/tc5.jpg" %}" alt="Gallery Image 5">
+        <img src="{% static "images/tc6.jpg" %}" alt="Gallery Image 6">
+      </div>
+    </section>
+    <section class="contact">
+      <h2>CONTACT US</h2>
+      <p>Joint Director, Educational Technology (CIET),<br>NCERT, Sri Aurobindo Marg, New Delhi-110016<br>Email: translation.cell@ciet.nic.in</p>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll('.activity-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.content-area').forEach(area => area.style.display = 'none');
+        document.getElementById(button.getAttribute('data-content')).style.display = 'block';
+      });
+    });
 
-    <div class="content-section">
-        <h1>Translation Cell</h1>
-        <div class="banner">
-            <img src="{% static 'images/translation_banner.png' %}" alt="Translation Banner">
-            <p class="alt-text">Translation Banner</p>
-        </div>
-        <div class="main-content">
-            <div class="overview-section">
-                <h2>Overview</h2>
-                <p>India is a multilingual and multicultural country. The linguistic expressions and cultural awareness are important contributors to individual as well as societal well-being. Keeping in view its sociocultural-linguistic diversity, the National Education Policy (NEP) 2020 soundly concentrates on the promotion of Indian languages. It aims to uphold Indian languages by using them consistently, by creating curriculum materials and teaching-learning resources, implementing mother tongues/home languages/local languages/regional languages as the medium of instruction, by devising innovative approaches, providing technology-based solutions and cultivating a positive attitude towards all languages and their remarkable unity (NEP, 2020). Under the aegis of the Ministry of Education, Govt. of India, the National Council of Educational Research and Training (NCERT) has taken initiatives to achieve the above mentioned goals of NEP 2020. The Central Institute of Educational Technology (CIET), a constituent unit of NCERT has undertaken a project 'Translation of NCERT Contents in 22 Indian Languages'. Its aim is to translate NCERT textbooks, policy documents and other resources in 22 scheduled Indian languages listed under the Eighth Schedule of the Indian Constitution.</p>
-            </div>
-            <div class="activities-section">
-                <div class="activity-box" data-target="notices">Notices</div>
-                <div class="activity-box" data-target="translation">Translation</div>
-                <div class="activity-box" data-target="events">Events</div>
-                <div class="activity-box" data-target="reports">Reports</div>
-                <div class="activity-content" id="notices">
-                    <ul>
-                        <li><a href="#">Google form for Translator Panel</a></li>
-                    </ul>
-                </div>
-                <div class="activity-content" id="translation"></div>
-                <div class="activity-content" id="events"></div>
-                <div class="activity-content" id="reports"></div>
-            </div>
-        </div>
-        <div class="side-by-side">
-            <div class="vision-section">
-                <h2>Vision</h2>
-                <p>The Translation Cell of CIET is built with the insightful vision which finely aligns with the NEP 2020. The Translation Cell has been working on erasing the gap created in the field of knowledge in Indian languages. Its plan is to reach every learner across India with resource materials in their own languages for their scholastic, cognitive as well as holistic development.</p>
-            </div>
-            <div class="roles-section">
-                <h2>Roles & Functions</h2>
-                <p>The Translation Cell primarily focuses on the translation of NCERT contents, policy documents and other useful materials like video programs and supplementary materials in 22 scheduled Indian languages for the school students. Further, its target is to disseminate them through its official web portals. The significant roles of Translation Cell are as follows:</p>
-                <ul>
-                    <li>To promote Indian languages for overall holistic development of children.</li>
-                    <li>To elevate mother tongue/home language/local language/regional language as a medium of instruction in the education system.</li>
-                    <li>To encourage education through technology at all levels of school education to the very last mile student.</li>
-                    <li>To facilitate teachers, teacher-educators, administrators, parents and other stakeholders of education by providing digital resources in their own languages.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="publications-section">
-            <h2>|| Publications ||</h2>
-            <div class="dropdown">
-                <button class="dropbtn">Joyful Mathematic Class 1</button>
-                <div class="dropdown-content">
-                    <a href="#">Assamese</a>
-                    <a href="#">Bengali</a>
-                    <a href="#">Gujarati</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Joyful Mathematic Class 2</button>
-                <div class="dropdown-content">
-                    <a href="#">Assamese</a>
-                    <a href="#">Bengali</a>
-                    <a href="#">Gujarati</a>
-                    <a href="#">Kannada</a>
-                    <a href="#">Malayalam</a>
-                    <a href="#">Marathi</a>
-                    <a href="#">Odia</a>
-                    <a href="#">Punjabi</a>
-                    <a href="#">Tamil</a>
-                    <a href="#">Telugu</a>
-                    <a href="#">Bodo</a>
-                    <a href="#">Dogri</a>
-                    <a href="#">Kashmiri</a>
-                    <a href="#">Konkani</a>
-                    <a href="#">Maithili</a>
-                    <a href="#">Manipuri</a>
-                    <a href="#">Nepali</a>
-                    <a href="#">Sanskrit</a>
-                    <a href="#">Santhali</a>
-                    <a href="#">Sindhi</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Anand Activity book for Balvatika</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Unnukh Teachers Training Handbook</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Special Modules</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Indian Languages Primers</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                </div>
-            </div>
-        </div>
-        <div class="staff-section">
-            <h2>OUR STAFF</h2>
-            <div class="staff-card">
-                <img src="{% static 'images/staff1.png' %}" alt="Dr. Rajendra Pal">
-                <p class="alt-text">Dr. Rajendra Pal</p>
-                <p>Dr. Rajendra Pal<br>Professor & Head, MEd<br>Extn. Number<br>+91-11-26864801-10 (240)</p>
-                <a href="#" class="view-profile">View Profile</a>
-            </div>
-            <div class="staff-card">
-                <img src="{% static 'images/staff2.png' %}" alt="Dr. Ravindra Kumar">
-                <p class="alt-text">Dr. Ravindra Kumar</p>
-                <p>Dr. Ravindra Kumar<br>Incharge, Translation Cell<br>Extn. Number<br>+91-11-26864801-10 (221)</p>
-                <a href="#" class="view-profile">View Profile</a>
-            </div>
-        </div>
-        <div class="gallery-section">
-            <h2>GALLERY</h2>
-            <div class="gallery-grid">
-                <img src="{% static 'images/gallery1.png' %}" alt="Gallery Image 1">
-                <p class="alt-text">Gallery Image 1</p>
-                <img src="{% static 'images/gallery2.png' %}" alt="Gallery Image 2">
-                <p class="alt-text">Gallery Image 2</p>
-                <img src="{% static 'images/gallery3.png' %}" alt="Gallery Image 3">
-                <p class="alt-text">Gallery Image 3</p>
-                <img src="{% static 'images/gallery4.png' %}" alt="Gallery Image 4">
-                <p class="alt-text">Gallery Image 4</p>
-                <img src="{% static 'images/gallery5.png' %}" alt="Gallery Image 5">
-                <p class="alt-text">Gallery Image 5</p>
-                <img src="{% static 'images/gallery6.png' %}" alt="Gallery Image 6">
-                <p class="alt-text">Gallery Image 6</p>
-            </div>
-        </div>
-        <div class="contact-section">
-            <h2>CONTACT US</h2>
-            <p>Joint Director,<br>Central Institute of Educational Technology (CIET),<br>NCERT, Sri Aurobindo Marg, New Delhi-110016<br>Email: translation.cell@ciet.nic.in</p>
-        </div>
-    </div>
-    <script>
-        document.querySelectorAll('.activity-box').forEach(box => {
-            box.addEventListener('click', () => {
-                const target = box.getAttribute('data-target');
-                document.querySelectorAll('.activity-content').forEach(content => {
-                    content.style.display = 'none';
-                });
-                document.getElementById(target).style.display = 'block';
-            });
-        });
-        // Initialize with Notices open
-        document.getElementById('notices').style.display = 'block';
-    </script>
-
-
-    {% include "partials/footer.html" %}
-
+    document.querySelectorAll('.pub-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.pub-content').forEach(content => content.style.display = 'none');
+        document.getElementById(button.getAttribute('data-content')).style.display = 'block';
+      });
+    });
+  </script>
+  {% include "partials/footer.html" %}
 </body>
 </html>

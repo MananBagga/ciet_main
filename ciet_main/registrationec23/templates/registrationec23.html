@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entries for AICEeCC 2023-24</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/registrationec23.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <div class="header">
+    <p>Entries for AICEeCC 2023-24 </p>
+  </div>
+  <div class="container">
+    <div class="card">
+      <a href="registration-form.png">
+        <img src="{% static "images/reg.png" %}" alt="Registration Form">
+        <p>Registration Form</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/AICEeCC2/Brochure.pdf">
+        <img src="{% static "images/brochure.png" %}" alt="Brochure">
+        <p>Brochure</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/videoAICEeCC/AICEeCC%20Instructions%20Google%20Drive%20Final.pdf">
+        <img src="{% static "images/insc.png" %}" alt="Instructions to upload through Google Drive">
+        <p>Instructions to upload through Google Drive</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="synopsis-template.png">
+        <img src="{% static "images/synopsis.png" %}" alt="Synopsis Template">
+        <p>Synopsis Template</p>
+      </a>
+    </div>
+  </div>
+  {% include "partials/footer.html" %}
+</body>
+</html>

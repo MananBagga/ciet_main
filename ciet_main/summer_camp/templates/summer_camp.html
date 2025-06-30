@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Camp</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/summer_camp.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <div class="container">
+    <div class="left-section">
+      <img src="{% static "images/sc1.jpg" %}" alt="Child with VR" class="main-image">
+    </div>
+    
+    <div class="bottom-section">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/16/SummerCamp2024/ConceptNoteSummerCamp2024.pdf" class="bottom-image-link">
+        <img src="{% static "images/sc2.png" %}" alt="Camp Icon 1">
+      </a>
+      <a href="#" class="bottom-image-link">
+        <img src="{% static "images/sc3.png" %}" alt="Camp Icon 2">
+      </a>
+      <div class="registration-text">
+        <h3>SUMMER CAMP</h3>
+        <p>Registration for 2024 year is Over.</p>
+      </div>
+    </div>
+  </div>
+  {% include "partials/footer.html" %}
+</body>
+</html>

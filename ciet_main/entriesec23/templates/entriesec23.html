@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entries for AICEeCC 2023-24</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/entriesec23.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <div class="header">
+    <p>List of entries received under various category for the 28th AICEAVF</p>
+  </div>
+  <div class="container">
+    <div class="card">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/23_24/23_24files/Final_AUDIO_Programmes.pdf">
+        <img src="{% static "images/audio.png" %}" alt="Audio">
+        <p>Registration Form</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/23_24/23_24files/Final_Immersive_Programmes.pdf">
+        <img src="{% static "images/iec.png" %}" alt="immersive content">
+        <p>Brochure</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/AICEeCC/23_24/23_24files/Final_VIDEO_Programmes.pdf">
+        <img src="{% static "images/video.png" %}" alt="Video">
+        <p>Instructions to upload through Google Drive</p>
+      </a>
+    </div>
+    
+  </div>
+  {% include "partials/footer.html" %}
+</body>
+</html>

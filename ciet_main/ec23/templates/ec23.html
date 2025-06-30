@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All India Children’s Educational eContent Competition (AICEeCC)</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/ec23.css" %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+  <div class="header">
+    <h1>All India Children’s Educational eContent Competition (AICEeCC)</h1>
+    
+  </div>
+  <div class="banner">
+    <h2>All India Children’s Educational eContent Competition (AICEeCC)<br>(A National Level Competition for e-Contents Development)</h2>
+  </div>
+  <div class="main-content">
+    <div class="gold-text">
+      <h3>All India Children’s Educational eContent Competition (AICEeCC)<br>2023-24</h3>
+      <span class="gold-trail"></span>
+    </div>
+    <div class="links-container">
+      <a href="{% url "finaleventec23" %}" class="link-box final-event">
+        <img src="{% static "images/ec231.jpg" %}" alt="Final Event">
+       
+      </a>
+      <a href="{% url "festivalec23" %}" class="link-box festival-directory">
+        <img src="{% static "images/ec232.jpeg" %}" alt="Festival Directory">
+        
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/shares/Result_AICEeCC_2023-24.pdf" class="link-box result">
+        <img src="{% static "images/ec233.jpg" %}" alt="Result of AICEeCC">
+       
+      </a>
+      <a href="{% url "registrationec23" %}" class="link-box registration">
+        <img src="{% static "images/ec234.jpg" %}" alt="Registration">
+        
+      </a>
+      <a href="{% url "entriesec23" %}" class="link-box list-entries">
+        <img src="{% static "images/ec235.png" %}" alt="List of Entries">
+        
+      </a>
+      <a href="{% url "galleryec23" %}" class="link-box gallery">
+        <img src="{% static "images/ec236.jpeg" %}" alt="Gallery">
+        
+      </a>
+    </div>
+    
+  </div>
+  {% include "partials/footer.html" %}
+</body>
+</html>

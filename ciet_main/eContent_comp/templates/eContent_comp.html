@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All India Children’s Educational eContent Competition (AICEECC)</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/eContent_comp" %}">
+
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+    <header>
+        <h1>All India Children’s Educational eContent Competition (AICEECC)</h1>
+        {% comment %} <nav>
+            <a href="#">Home</a> > <a href="#">All India Children’s Educational eContent Competition (AICEECC)</a>
+        </nav> {% endcomment %}
+    </header>
+    <main>
+        <section class="competition current">
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec1.png" %}" alt="All India Children’s Educational eContent Competition 2024-25"></div>
+            </a>
+        </section>
+        <section class="competitions past">
+            <a href="{% url "ec23" %}">
+                <div class="box"><img src="{% static "images/ec2.png" %}" alt="All India Children’s Educational eContent Competition 2023-24"></div>
+            </a>
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec3.png" %}" alt="All India Children’s Educational eContent Competition 2022-23"></div>
+            </a>
+        </section>
+        <section class="festivals">
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec4.png" %}" alt="26th All India Children’s Educational Audio Video Festival 2021-22"></div>
+            </a>
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec5.png" %}" alt="25th All India Children’s Educational Audio Video Festival 2020-21"></div>
+            </a>
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec6.png" %}" alt="24th All India Children’s Educational Audio Video Festival and 4th ICT Mela 2019-20"></div>
+            </a>
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec7.png" %}" alt="23rd All India Children’s Educational Audio Video Festival and 3rd ICT Mela 2018-19"></div>
+            </a>
+            <a href="#">
+                <div class="box"><img src="{% static "images/ec8.png" %}" alt="22nd All India Children’s Educational Audio Video Festival and 2nd ICT Mela 2017-18"></div>
+            </a>
+        </section>
+    </main>
+    {% include "partials/footer.html" %}
+</body>
+</html>
