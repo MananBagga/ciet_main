@@ -1,150 +1,191 @@
-.content-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.banner {
-    margin: 20px auto;
-    display: inline-block;
-}
-
-.banner img {
-    max-width: 100%;
-    height: auto;
-}
-
-.alt-text {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-}
-
-.main-content {
+.content {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.overview-section {
-    flex: 2;
-}
-
-.activities-section {
-    flex: 1;
-    max-width: 200px;
-}
-
-.activity-box {
-    background-color: #d2691e;
-    color: white;
+    margin: 20px;
+  }
+  
+  .overview, .activities {
+    width: 48%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .overview h2, .activities h2 {
+    color: #fff;
+    background: #e15a2a;
     padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.activity-content {
-    display: none;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.side-by-side {
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .buttons {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.vision-section, .roles-section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.publications-section .dropdown {
-    position: relative;
-    display: block;
-    margin: 10px 0;
-}
-
-.publications-section .dropbtn {
-    background-color: #d2691e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border-radius: 5px;
-}
-
-.publications-section .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.publications-section .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.publications-section .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.publications-section .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.staff-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-}
-
-.staff-card img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.view-profile {
-    display: inline-block;
-    margin-top: 10px;
-    color: #d2691e;
-    text-decoration: none;
-}
-
-.gallery-section .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 20px;
-}
-
-.gallery-section .gallery-grid img {
-    max-width: 100%;
-    height: auto;
-}
-
-.contact-section {
-    background-color: #f9f9f9;
+  }
+  
+  .activity-btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .activity-btn:hover {
+    background: #2980b9;
+  }
+  
+  .content-area {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .publications {
+    margin: 20px;
+  }
+  
+  .publications h2 {
+    color: #fff;
+    background: #e15a2a;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .pub-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .pub-btn {
+    padding: 10px 20px;
+    background: #e15a2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pub-btn:hover {
+    background: #e15a2a;
+  }
+  
+  .pub-content {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .staff {
+    margin: 20px;
+  }
+  
+  .staff h2 {
+    color: #fff;
+    background: #e15a2a;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .staff-member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    background: #fff9e6;
     padding: 20px;
-    border-radius: 10px;
-}
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .staff-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .view-profile {
+    padding: 5px 10px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-profile:hover {
+    background: #2980b9;
+  }
+  
+  .gallery {
+    margin: 20px;
+  }
+  
+  .gallery h2 {
+    color: #fff;
+    background: #e15a2a;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .gallery-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact {
+    margin: 20px;
+  }
+  
+  .contact h2 {
+    color: #fff;
+    background: #e15a2a;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .contact p {
+    padding: 20px;
+    background: #fff9e6;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .logo {
+    top: 10px;
+    left: 10px;
+    width: 100%;
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }

@@ -97,6 +97,7 @@ INSTALLED_APPS = [
     'bharatonthemoon',
     'ejaadui_pitara',
     'translation_cell',
+    'summer_camp',
 ]
 
 MIDDLEWARE = [
