@@ -3,40 +3,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Channels</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/tv_channels.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>200 DTH TV Channels</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/tv_channels.css" %}">
 </head>
 <body>
-
-    {% include "partials/navbar.html" %}
-
-    <div class="dth-container">
-    <div class="dth-header">
-      <h1>12 DTH TV Channels</h1> 
+  {% include "partials/navbar.html" %}
+  <header style="background-color: #2c6e8c; color: white; padding: 10px; text-align: center;">
+    <h1>200 DTH TV Channels</h1>
+   
+    
+  </header>
+  <main>
+    <div class="button-container">
+      <a href="#" class="orange-button">200 DTH TV Channels Transmission</a>
+      <a href="#" class="orange-button">200 DTH TV Channels List</a>
     </div>
-    <div >
-        <p>One of the major components of PM eVidya initiative is 'One Class-One Channel' where 12 DTH television channels are dedicated for the transmission of educational contents for Class 1 to 12 based on NCERT curriculum.</p>
+    <p>Standard operating procedure (SOP) for DTH - TV channels for school education</p>
+    <p>Guidelines for Development of Engaging eContents for Educational Television</p>
+    <p>One of the major components of PM eVidya initiative is 'One Class-One Channel' where 12 DTH television channels are dedicated for the transmission of education contents for Class 1 to 12 based on NCERT curriculum</p>
+    <h2 style="color: #28a745;">12 NCERT DTH Educational TV Channel Transmission Schedule (Current)</h2>
+    <div class="class-buttons">
+      <a href="#" class="class-button">Class I</a>
+      <a href="#" class="class-button">Class II</a>
+      <a href="#" class="class-button">Class III</a>
+      <a href="#" class="class-button">Class IV</a>
     </div>
-    <div class="dth-description">
-        <h3>12 DTH Educational TV Channel Transmission Schedule (Current)</h3>
-        <h3>Important Info About 12 DTH TV Channels</h3>
+    <div class="class-buttons">
+      <a href="#" class="class-button">Class V</a>
+      <a href="#" class="class-button">Class VI</a>
+      <a href="#" class="class-button">Class VII</a>
+      <a href="#" class="class-button">Class VIII</a>
     </div>
-    <div class="dth-info">
-        
-      <p>Give your feedback on 12 eVidya channels on Toll Free number- 8800440559</p>
-      <p>You can also send your feedback by email- <a href="#">Click here for class-wise email id</a></p>
+    <div class="class-buttons">
+      <a href="#" class="class-button">Class IX</a>
+      <a href="#" class="class-button">Class X</a>
+      <a href="#" class="class-button">Class XI</a>
+      <a href="#" class="class-button">Class XII</a>
     </div>
-  </div>
-
+    <h2 style="color: #28a745;">Important Info About 12 DTH TV Channels</h2>
+    <div class="info-buttons">
+      <a href="#" class="info-button"><img src="https://via.placeholder.com/50" alt="Service Provider">Service Provider Details</a>
+      <a href="#" class="info-button"><img src="https://via.placeholder.com/50" alt="Transmission Schedule">Transmission Schedule for Classes 1-12</a>
+      <a href="#" class="info-button"><img src="https://via.placeholder.com/50" alt="Archive">Archive</a>
+    </div>
+    <p>Give your feedback on 12 eVidya channels on Toll Free number - 8004400559</p>
+    <p>You can also send your feedback by <a href="#" style="color: orange;">Click here for class-wise email id</a> and <a href="#" style="color: orange;">Click here for Feedback form</a></p>
+  </main>
   {% include "partials/footer.html" %}
-
 </body>
+</html>
