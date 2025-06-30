@@ -100,6 +100,11 @@ INSTALLED_APPS = [
 
     'summer_camp',
     'privacy_policy',
+<<<<<<< HEAD
+    'conference_video',
+    'comics',
+    'daisy_books',
+=======
     'eContent_comp',
     'ec23',
     'finaleventec23',
@@ -108,6 +113,7 @@ INSTALLED_APPS = [
     'entriesec23',
     'galleryec23',
 
+>>>>>>> d17d91a4db9c615de7c28efebbb0cdc2ee1716ef
 ]
 
 MIDDLEWARE = [

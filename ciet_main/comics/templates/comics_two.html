@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics on Conservation</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/comics.css' %}">
+</head>
+<body>
+    
+    {% include "partials/navbar.html" %}
+
+    <div class="container">
+        <section class="section-header">
+            <h1>Comics on Conservation of Environment comics_two - PCRA & NCERT (Hindi)</h1>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="https://dev.ciet.co.in/storage/app/public/files/14/pcra-comics/pcracomics.pdf"><img src="{% static 'images/pcra.png' %}" alt="Comics on Conservation of Environment - PCRA & NCERT (Hindi)"></a>
+                    <p><a href="https://dev.ciet.co.in/storage/app/public/files/14/pcra-comics/pcracomics.pdf">PDF</a> / <a href="https://ciet.nic.in/upload/PCRA/#page=1">Flipbook</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    {% include "partials/footer.html" %}
+
+</body>
+</html>

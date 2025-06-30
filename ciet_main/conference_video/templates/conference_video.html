@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/conference_video.css' %}" />
+    <title>Video Section</title>
+  </head>
+  <body>
+    {% include 'partials/navbar.html' %}
+
+    <div class="video-section">
+      <div class="video-header">
+        <h2>Videos created by Participating Members</h2>
+      </div>
+      <div class="video-content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cEyUfXD1Uj0" title="ICTFORUM TPACK Mabdous" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    {% include 'partials/footer.html' %}
+  </body>
+</html>

@@ -1,35 +1,193 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brochure on ICT initiatives</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/brochure_ict_initiatives.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <title>ICT Initiatives</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/brochure_ict_initiatives.css' %}">
 </head>
 <body>
+    
     {% include "partials/navbar.html" %}
 
     <div class="container">
-        <h1>Brochure on ICT initiatives</h1>
-        <div class="guidelines">
-            <p>National Repository of Open Educational Resources (NROER)</p>
-            <p>ePathshala</p>
-            <p>SWAYAM</p>
-            <p>SWAYAM PRABHA</p>
-            <p>ICT Curriculum</p>
-            <p>Cyber Safety and Security</p>
-        </div>
-        
+        <section class="section-header">
+            <h1>Brochure / Bookmark / Standees on ICT Initiatives</h1>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/DIKSHABROCHURE.pdf"><img src="{% static 'images/DIKSHA_brochure.png' %}" alt="DIKSHA Brochure"></a>
+                    <p>Brochure</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/NISHTHA_Brochure_English.pdf"><img src="{% static 'images/NISHTHA.png' %}" alt="NISHTHA Brochure"></a>
+                    <p>NISHtha</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/PM_eVIDYA_brochure.pdf"><img src="{% static 'images/pmevdiya.png' %}" alt="PM eVIDYA Brochure"></a>
+                    <p>PM eVIDYA</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/PRASHAST_Brochure_18_jan.pdf"><img src="{% static 'images/Prashast.png' %}" alt="PRASHAST Brochure"></a>
+                    <p>PRASHAST</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/Swayam_Brochure_%20English_A5_fold.pdf"><img src="{% static 'images/swayam.png' %}" alt="SWAYAM Brochure"></a>
+                    <p>SWAYAM</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/VSk_Brochure_8th_march_2024.pdf"><img src="{% static 'images/vsk.png' %}" alt="NVSK Brochure"></a>
+                    <p>NVSK</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/Technology_intiatives_07Feb_2024.pdf"><img src="{% static 'images/TI.png' %}" alt="Technology Initiatives"></a>
+                    <p>Technology Initiatives</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/Brochure_ePathshala(ForPrint).pdf"><img src="{% static 'images/epathshala_brochure.jpg' %}" alt="ePathshala Brochure"></a>
+                    <p>ePathshala</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/brochure-bookmarks/brochure_ICT.pdf"><img src="{% static 'images/ict1.png' %}" alt="ICT Education Bookmark"></a>
+                    <p>ICT Education</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/brochure-bookmarks/Cyber%20safety.pdf"><img src="{% static 'images/Cyber_safety_brochure.jpg' %}" alt="Cyber Safety and Security"></a>
+                    <p>Cyber Safety and Security</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-header">
+            <h1>Bookmark</h1>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Brochure/DIKSHABROCHURE.pdf"><img src="{% static 'images/DIKSHA_brochure.png' %}" alt="DIKSHA Bookmark"></a>
+                    <p>DIKSHA</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/PMeVidya%20bookmark.pdf"><img src="{% static 'images/pmevidyaeng.png' %}" alt="PM eVIDYA Bookmark"></a>
+                    <p>Pm eVidya (English)</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/PMeVidya%20bookmark%20Hindi.pdf"><img src="{% static 'images/pmevidyahindi.png' %}" alt="PM eVIDYA Bookmark"></a>
+                    <p>Pm eVidya (Hindi) </p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/Prashastbookmark_English.pdf"><img src="{% static 'images/Prashast (1).png' %}" alt="PRASHAST Bookmark"></a>
+                    <p>PRASHAST</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/SWAYAM.pdf"><img src="{% static 'images/swayam (1).png' %}" alt="SWAYAM Bookmark"></a>
+                    <p>SWAYAM</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/VSk.pdf"><img src="{% static 'images/vsk (1).png' %}" alt="NVSK Bookmark"></a>
+                    <p>NVSK</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/photos/19/Bookmark/ICTinEducation_bookmark-01%20(1).jpg"><img src="{% static 'images/ICTinEducation_bookmark-01 (1).jpg' %}" alt="NVSK Bookmark"></a>
+                    <p>ICTinEducation</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/Copy%20of%20ePathshala_book%20mark%20English.pdf"><img src="{% static 'images/epathshala.png' %}" alt="NVSK Bookmark"></a>
+                    <p>ePathshala</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/photos/19/Bookmark/ICTinEducation_bookmark-02.jpg"><img src="{% static 'images/ICTinEducation_bookmark-02.jpg' %}" alt="NVSK Bookmark"></a>
+                    <p>ICTinEducation_bookmark</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/Digital%20Initiative%20Book%20mark(For%20Print).pdf"><img src="{% static 'images/NISHTHA (1).png' %}" alt="NVSK Bookmark"></a>
+                    <p>Digital Initiative</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/NISHTHA_Bookmark%20English(For%20Print).pdf"><img src="{% static 'images/NIShTHa1.png' %}" alt="NVSK Bookmark"></a>
+                    <p>NISHTHA (ENGLISH)</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/bookmark/NISHTHA_Bookmark-%20%D9%93Hindi(For%20Print).pdf"><img src="{% static 'images/NISHTHAHINDI.png' %}" alt="NVSK Bookmark"></a>
+                    <p>NISHTHA (HINDI)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-header">
+            <h1>Standees</h1>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/digital%20inciative%20standee7x3.pdf"><img src="{% static 'images/digital_inciative_standee7x3.jpg' %}" alt="DIKSHA Standee"></a>
+                    <p>Digital Inciative</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/diksha7x3.pdf"><img src="{% static 'images/diksha7x3.jpg' %}" alt="ePathshala Standee"></a>
+                    <p>DIKSHA</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/eJP_standee_7x3standee2.pdf"><img src="{% static 'images/eJP_standee_7x3standee2.jpg' %}" alt="ePathshala Standee 2"></a>
+                    <p>E-Jaadui Pitara 2</p>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="{% static 'images/e-pathshala7x3feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>Epathshala</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/eJP_standee_7x3standee1.pdf"><img src="{% static 'images/eJP_standee_7x3standee1.jpg' %}" alt="ICT Standee"></a>
+                    <p>E-Jaadui Pitara 1</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/ICTStandee7x3feet.pdf"><img src="{% static 'images/ICTStandee7x3feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>ICT</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/NCERTAddress7X3.pdf"><img src="{% static 'images/NCERTAddress7X3.jpg' %}" alt="ICT Standee"></a>
+                    <p>NCERT Address</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/Nishtha(7X3feet).pdf"><img src="{% static 'images/Nishtha(7X3feet).jpg' %}" alt="ICT Standee"></a>
+                    <p>Nishtha</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/Prashast(7X3%20feet).pdf"><img src="{% static 'images/Prashast(7X3 feet).jpg' %}" alt="ICT Standee"></a>
+                    <p>Prashast</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/RashtriyaePustaklayaStandee_7x3feet.pdf"><img src="{% static 'images/RashtriyaePustaklayaStandee_7x3feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>Rashtriya e-Pustaklaya</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/PMeVIDYA_7x3.pdf"><img src="{% static 'images/PMeVIDYA_7x3.jpg' %}" alt="ICT Standee"></a>
+                    <p>PMeVIDYA</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/swayamstandeewithQrcodesforonlinecourses7X3Feet.pdf"><img src="{% static 'images/swayamstandeewithQrcodesforonlinecourses7X3Feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>Swayam</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/Virtuallab7x3feet.pdf"><img src="{% static 'images/Virtuallab7x3feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>Virtual lab</p>
+                </div>
+                <div class="card">
+                    <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/standeespdf/vsk7x3feet.pdf"><img src="{% static 'images/vsk7x3feet.jpg' %}" alt="ICT Standee"></a>
+                    <p>VSK</p>
+                </div>
+            </div>
+        </section>
+
     </div>
+
     {% include "partials/footer.html" %}
+
 </body>
 </html>

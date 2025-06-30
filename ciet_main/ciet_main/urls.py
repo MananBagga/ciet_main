@@ -84,6 +84,14 @@ urlpatterns = [
     path('summer_camp/', include('summer_camp.urls')),
 
     path('privacy_policy/', include('privacy_policy.urls')),
+<<<<<<< HEAD
+    #path('conference_video/', include('conference_video.urls')),
+    path('', include('conference_video.urls')),
+    #path('comics/', include('comics.urls')),
+    path('', include('comics.urls')),
+
+    path('daisy_books/', include('daisy_books.urls')),
+=======
     path('eContent_comp/', include('eContent_comp.urls')),
     path('ec23/', include('ec23.urls')),
     path('finaleventec23/', include('finaleventec23.urls')),
@@ -92,4 +100,5 @@ urlpatterns = [
     path('entriesec23/', include('entriesec23.urls')),
     path('galleryec23/', include('galleryec23.urls')),
 
+>>>>>>> d17d91a4db9c615de7c28efebbb0cdc2ee1716ef
 ]
