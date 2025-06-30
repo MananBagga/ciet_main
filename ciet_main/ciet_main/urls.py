@@ -81,4 +81,10 @@ urlpatterns = [
     path('ejaadui_pitara/', include('ejaadui_pitara.urls')),
     path('translation_cell/', include('translation_cell.urls')),
     path('privacy_policy/', include('privacy_policy.urls')),
+    #path('conference_video/', include('conference_video.urls')),
+    path('', include('conference_video.urls')),
+    #path('comics/', include('comics.urls')),
+    path('', include('comics.urls')),
+
+    path('daisy_books/', include('daisy_books.urls')),
 ]

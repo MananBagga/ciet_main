@@ -98,6 +98,9 @@ INSTALLED_APPS = [
     'ejaadui_pitara',
     'translation_cell',
     'privacy_policy',
+    'conference_video',
+    'comics',
+    'daisy_books',
 ]
 
 MIDDLEWARE = [
