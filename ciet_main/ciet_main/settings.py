@@ -102,9 +102,12 @@ INSTALLED_APPS = [
     'conference_video',
     'comics',
     'daisy_books',
+<<<<<<< HEAD
     'conference_video',
     'comics',
     'daisy_books',
+=======
+>>>>>>> 9e6ad373c6acfdd35b68ea83e885047878223c19
     'eContent_comp',
     'ec23',
     'finaleventec23',
@@ -112,12 +115,7 @@ INSTALLED_APPS = [
     'registrationec23',
     'entriesec23',
     'galleryec23',
-<<<<<<< HEAD
-=======
     'online_course',
-
-
->>>>>>> 0cb936e6d9195784d6a747932c31a82c2b5d90ee
 ]
 
 MIDDLEWARE = [
