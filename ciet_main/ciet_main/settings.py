@@ -102,12 +102,6 @@ INSTALLED_APPS = [
     'conference_video',
     'comics',
     'daisy_books',
-<<<<<<< HEAD
-    'conference_video',
-    'comics',
-    'daisy_books',
-=======
->>>>>>> 9e6ad373c6acfdd35b68ea83e885047878223c19
     'eContent_comp',
     'ec23',
     'finaleventec23',
