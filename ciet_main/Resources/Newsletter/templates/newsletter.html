@@ -2,44 +2,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletters</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/newsletter.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletters</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/newsletter.css' %}">
 </head>
 <body>
-    {% include "partials/navbar.html" %}
 
-    <div class="container">
-        <h1>Newsletters</h1>
-        <div class="guidelines">
-            <p>Volume VI, Issue 3, 1 July- 30 September 2022</p>
-            <p>Volume VI, Issue 2, 1 April- 30 June 2022</p>
-            <p>Volume VI, Issue 1, 1 January- 31 March 2022</p>
-            <p>Volume V, Issue 4, 1 October - 31 December 2021</p>
-            <p>Volume V, Issue 3, 1 July - 30 September 2021</p>
-            <p>Volume V, Issue 2, 1 April - 30 June 2021</p>
-            <p>Volume V, Issue 1, 1 January - 31 March 2021</p>
-            <p>Volume IV, Issue 4, 1 October- 31 December 2020</p>
-            <p>Volume IV, Issue 2, 1 July- 30 September 2020</p>
-            <p>Volume IV, Issue 2, 1 April- 30 June 2020</p>
-            <p>Volume IV, Issue 1, 1 January- 31 March 2020</p>
-            <p>Volume III, Issue 4, 1 October- 31 December 2019</p>
-            <p>Volume III, Issue 3, 1 July- 30 September 2019</p>
-            <p>Volume III, Issue 2, 1 April- 30 June 2019</p>
-           
-            
-        </div>   
+  {% include "partials/navbar.html" %}
+
+  <div class="container">
+    <div class="page-head"><h1 class="page-title">Newsletters</h1></div>
+    <div class="newsletter-grid">
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/October_to_December_2024.pdf" class="newsletter-card">
+        <img src="{% static 'images/octobertodec.jpg' %}" alt="Newsletter Vol VI, Issue 4, 1 October - 31 December 2024">
+        <div class="newsletter-info">Volume VIII, Issue 4, 1 October - 31 December 2024</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/July_to_September_2024.pdf" class="newsletter-card">
+        <img src="{% static 'images/VIII_issue_3july_24.png' %}" alt="Newsletter Vol VI, Issue 3, 1 July - 30 September 2024">
+        <div class="newsletter-info">Volume VIII, Issue 3, 1 July - 30 September 2024</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/Newsletter_April_to_June_2024_first.pdf" class="newsletter-card">
+        <img src="{% static 'images/April-june024.png' %}" alt="Newsletter Vol VI, Issue 2, 1 April - 30 June 2024">
+        <div class="newsletter-info">Volume VIII, Issue 2, 1 April - 30 June 2024</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/Newsletter_Jan-march_2024_first_Draft.pdf" class="newsletter-card">
+        <img src="{% static 'images/jan-march24.png' %}" alt="Newsletter Vol VI, Issue 1, 1 January - 31 March 2024">
+        <div class="newsletter-info">Volume VIII, Issue 1, 1 Janurary - 31 March 2024</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Journalspdf/Newsletter_%20October%20-%20December,%202023%20Final.pdf" class="newsletter-card">
+        <img src="{% static 'images/N1.png' %}" alt="Newsletter Vol V, Issue 4, 1 October - 31 December 2023">
+        <div class="newsletter-info">Volume VII, Issue 4, 1 Octuber- 31 December 2023</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Journalspdf/Newsletter_July%20-%20September,%202023.pdf" class="newsletter-card">
+        <img src="{% static 'images/N3.png' %}" alt="Newsletter Vol V, Issue 3, 1 July - 30 September 2023">
+        <div class="newsletter-info">Volume VII, Issue 3, 1 July - 30 September 2023</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Journalspdf/Newsletter_April-%20June%20%202023%20Final.pdf" class="newsletter-card">
+        <img src="{% static 'images/N2.png' %}" alt="Newsletter Vol V, Issue 2, 1 April - 30 June 2023">
+        <div class="newsletter-info">Volume VII, Issue 2, 1 April- 30 June 2023</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/Newsletter_Jan-march%202023%20(1).pdf" class="newsletter-card">
+        <img src="{% static 'images/march23.jpg' %}" alt="Newsletter Vol V, Issue 1, 1 January - 31 March 2023">
+        <div class="newsletter-info">Volume VII, Issue 1, 1 Janurary - 31 March 2023</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/newsletterpdf/Newsletter_October-December%202022%20(1).pdf" class="newsletter-card">
+        <img src="{% static 'images/December22.jpg' %}" alt="Newsletter Vol IV, Issue 4, 1 October - 31 December 2022">
+        <div class="newsletter-info">Volume VI, Issue 4, 1 October - 31 December 2022</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/july_sept_2022.pdf" class="newsletter-card">
+        <img src="{% static 'images/NL_v6i3.jpg' %}" alt="Newsletter Vol IV, Issue 3, 1 July - 30 September 2022">
+        <div class="newsletter-info">Volume VI, Issue 3, 1 July- 30 September 2022</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/apr_june_2022.pdf" class="newsletter-card">
+        <img src="{% static 'images/NL_v6i2.jpg' %}" alt="Newsletter Vol IV, Issue 2, 1 April - 30 June 2022">
+        <div class="newsletter-info">Volume VI, Issue 2, 1 April- 30 June 2022</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/jan_march_2022.pdf" class="newsletter-card">
+        <img src="{% static 'images/NL_v6i1.jpg' %}" alt="Newsletter Vol IV, Issue 1, 1 January - 31 March 2022">
+        <div class="newsletter-info">Volume VI, Issue 1, 1 January- 31 March 2022</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/oct_dec_2021.pdf" class="newsletter-card">
+        <img src="{% static 'images/NewsletterOct21-1.jpg' %}" alt="Newsletter Vol III, Issue 4, 1 October - 31 December 2021">
+        <div class="newsletter-info">Volume V, Issue 4, 1 October - 31 December 2021</div>
+      </a>
+      <a href="#" class="newsletter-card">
+        <img src="{% static 'images/NewsletterJuly-sep2021-2.jpg' %}" alt="Newsletter Vol III, Issue 3, 1 July - 30 September 2021">
+        <div class="newsletter-info">Volume V, Issue 3, 1 July - 30 September 2021</div>
+      </a>
+      <a href="#" class="newsletter-card">
+        <img src="{% static 'images/newsletter-july-2020-3.jpg' %}" alt="Newsletter Vol III, Issue 2, 1 April - 30 June 2021">
+        <div class="newsletter-info">Volume V, Issue 2, 1 April - 30 June 2021</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/jan_march_2021.pdf" class="newsletter-card">
+        <img src="{% static 'images/newsletter_jan21-4.jpg' %}" alt="Newsletter Vol III, Issue 1, 1 January - 31 March 2021">
+        <div class="newsletter-info">Volume V, Issue 1, 1 January - 31 March 2021</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/oct_dec_2020.pdf" class="newsletter-card">
+        <img src="{% static 'images/NewsLetterOct-Dec2020-5.jpg' %}" alt="Newsletter Vol II, Issue 4, 1 October - 31 December 2020">
+        <div class="newsletter-info">Volume IV, Issue 4, 1 October- 31 December 2020</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/july_sept_2020.pdf" class="newsletter-card">
+        <img src="{% static 'images/Newsletter_July-September-6.jpg' %}" alt="Newsletter Vol II, Issue 3, 1 July - 30 September 2020">
+        <div class="newsletter-info">Volume IV, Issue 2, 1 July- 30 September 2020</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/apr_june_2020.pdf" class="newsletter-card">
+        <img src="{% static 'images/NewsletterAprilJune-7.jpg' %}" alt="Newsletter Vol II, Issue 2, 1 April - 30 June 2020">
+        <div class="newsletter-info">Volume IV, Issue 2, 1 April- 30 June 2020</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/jan_march_2020.pdf" class="newsletter-card">
+        <img src="{% static 'images/NewsletterJanmarch-2020-8.jpg' %}" alt="Newsletter Vol II, Issue 1, 1 January - 31 March 2020">
+        <div class="newsletter-info">Volume IV, Issue 1, 1 January- 31 March 2020</div>
+      </a>
+      <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/newsletter/oct_dec_2019.pdf" class="newsletter-card">
+        <img src="{% static 'images/NewsletterDecember-9.jpg' %}" alt="Newsletter Vol I, Issue 4, 1 October - 31 December 2019">
+        <div class="newsletter-info">Volume III, Issue 4, 1 October- 31 December 2019</div>
+      </a>
     </div>
-    {% include "partials/footer.html" %}
-   
+  </div>
+
+  {% include 'partials/footer.html' %}
+
 </body>
 </html>

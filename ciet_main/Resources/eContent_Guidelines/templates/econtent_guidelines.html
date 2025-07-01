@@ -1,4 +1,4 @@
-{% load static %}
+{% comment %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,5 +27,36 @@
         
     </div>
     {% include "partials/footer.html" %}
+</body>
+</html> {% endcomment %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eContent Guidelines</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/econtent_guidelines.css" %}">
+</head>
+<body>
+
+    {% include "partials/navbar.html" %}
+
+    <header>
+        <h1>eContent Guidelines</h1>
+    </header>
+    <section class="resources">
+        
+        <div class="language-section">
+            
+            <div class="resource-grid">
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/econtent-guidelines/CWSN_E-Content_guidelines_2021_new.pdf"><img src="{% static "images/CWSN_E-Content_guidelines_2021_new.jpg" %}" alt="Be Safe in Cyber World (for Teachers)"><span>Guidelines for the Development of e-Content for Children with Disabilities</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/econtent-guidelines/GuidelinesforeContent3.pdf"><img src="{% static "images/GuidelinesforeContent3.jpg" %}" alt="Be Safe in Cyber World (for Students)"><span>Guidelines for Development of eContent for School Education Version-3.0</span></a>     
+    </section>
+
+    {% include "partials/footer.html" %}
+
 </body>
 </html>

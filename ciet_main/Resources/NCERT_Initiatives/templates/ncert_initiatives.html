@@ -1,47 +1,144 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop/Training</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/ncert_initiatives.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility in School Curriculum</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ncert_initiatives.css' %}">
 </head>
 <body>
 
-    {% include "partials/navbar.html" %}
+  {% include 'partials/navbar.html' %}
 
-<div class="training-container">
-    <p class="intro-text">
-        Efforts toward equitable education and inclusive education aim to address educational needs that arise as a result of belonging to SEDG's as well as those that arise despite having no association with SEDGs. Addressing the special educational needs demands availability of resources in multiple modes and flexibility in content delivery for personalized adaptive learning. Mentioned below are the major initiatives taken by NCERT for making education accessible to all including children belonging to SEDG's, recognized in NEP 2020.
-   </p>
-   <ul>
-    <li>ePathshala</li>
-    <li>Barkhaa</li>
-    <li>Teaching Learning Resources in Indian Sign Language</li>
-    <li>Accessibility Concerns in NCERT Textbooks</li>
-    <li>Audio Books</li>
-    <li>Priya-The Accessibility Warrior</li>
-    <li>Bhasha Sangam</li>
-    <li>Teachers support material on Inclusive Education</li>
-    <li>PMeVidya</li>
-    <li>DIKSHA</li>
-    <li>SWAYAM on MOOCs</li>
-    <li>NISHTHA</li>
-    <li>Augmented Reality / Virtual Reality</li>
-    <li>Tactile map Book</li>
-   </ul> 
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Accessibility in School Curriculum</h1>
+    </div>
+    
+    <p class="description">
+      Efforts toward equitable education and inclusive education aim to address educational needs that arise as a result of belonging to SEDGs as well as those that arise despite having no association with SEDGs. Addressing the special educational needs demands availability of resources in multiple modes and flexibility in content delivery for personalized adaptive learning. Mentioned below are the major initiatives taken by NCERT for making education accessible to all including children belonging to SEDGs, recognized in NEP 2020.
+    </p>
+
+    <div class="initiative-grid">
+      
+      <div class="initiative-item">
+        <a href="{% url 'epathshala' %}" class="initiative-circle">
+          <img src="{% static 'images/epathshala (1).jpg' %}" alt="ePathshala">
+        </a>
+        <span class="initiative-label">ePathshala</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'barkhaa' %}" class="initiative-circle">
+          <img src="{% static 'images/barkhaa.jpg' %}" alt="Barkha">
+        </a>
+        <span class="initiative-label">Barkha</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'special_econtent' %}" class="initiative-circle">
+          <img src="{% static 'images/sign lan.jpg' %}" alt="Teaching Learning Resources">
+        </a>
+        <span class="initiative-label">Teaching Learning Resources</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="https://ciet.ncert.gov.in/storage/app/public/files/13/6.pdf" class="initiative-circle">
+          <img src="{% static 'images/textbooks.jpg' %}" alt="Accessibility Concerns in NCERT Textbooks">
+        </a>
+        <span class="initiative-label">Accessibility Concerns in NCERT Textbooks</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'audio_books' %}" class="initiative-circle">
+          <img src="{% static 'images/audio (1).jpg' %}" alt="Audio Books">
+        </a>
+        <span class="initiative-label">Audio Books</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'priya_warrior' %}" class="initiative-circle">
+          <img src="{% static 'images/priya.jpg' %}" alt="Priya-The Accessibility Warrior">
+        </a>
+        <span class="initiative-label">Priya-The Accessibility Warrior</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="https://ciet.ncert.gov.in/bhasha" class="initiative-circle">
+          <img src="{% static 'images/bhasha sangam (1).jpg' %}" alt="Bhasha Sangam">
+        </a>
+        <span class="initiative-label">Bhasha Sangam</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'teachers_support' %}" class="initiative-circle">
+          <img src="{% static 'images/teachers support.jpg' %}" alt="Teachers support material on Inclusive Education">
+        </a>
+        <span class="initiative-label">Teachers support material on Inclusive Education</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'diksha' %}" class="initiative-circle">
+          <img src="{% static 'images/diksha1.jpg' %}" alt="DIKSHA">
+        </a>
+        <span class="initiative-label">DIKSHA</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'moocs_on_swayam' %}" class="initiative-circle">
+          <img src="{% static 'images/swayam.jpg' %}" alt="SWAYAM on MOOCs">
+        </a>
+        <span class="initiative-label">SWAYAM on MOOCs</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'pmevidya' %}" class="initiative-circle">
+          <img src="{% static 'images/evidya (1).jpg' %}" alt="PM eVidya">
+        </a>
+        <span class="initiative-label">PM eVidya</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'nishtha' %}" class="initiative-circle">
+          <img src="{% static 'images/nishtha.jpg' %}" alt="NISHTHA">
+        </a>
+        <span class="initiative-label">NISHTHA</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'ar_vr' %}" class="initiative-circle">
+          <img src="{% static 'images/AUGMENTED.jpg' %}" alt="Augmented Reality / Virtual Reality">
+        </a>
+        <span class="initiative-label">Augmented Reality / Virtual Reality</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="https://ciet.ncert.gov.in/tactile" class="initiative-circle">
+          <img src="{% static 'images/map book (2).jpg' %}" alt="Tactile map Book">
+        </a>
+        <span class="initiative-label">Tactile map Book</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'prashast' %}" class="initiative-circle">
+          <img src="{% static 'images/prashast.png' %}" alt="Prashast">
+        </a>
+        <span class="initiative-label">Prashast</span>
+      </div>
+
+      <div class="initiative-item">
+        <a href="{% url 'evidya_dth' %}" class="initiative-circle">
+          <img src="{% static 'images/isl31.png' %}" alt="PM eVidya DTH ISL">
+        </a>
+        <span class="initiative-label">PM eVidya DTH ISL</span>
+      </div>
+
+    </div>
   </div>
 
-{% include "partials/footer.html" %}
+  {% include 'partials/footer.html' %}
 
 </body>
 </html>

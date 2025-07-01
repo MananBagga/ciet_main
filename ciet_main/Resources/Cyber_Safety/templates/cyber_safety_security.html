@@ -4,65 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Safety</title>
+    <title>Cyber Safety & Security</title>
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <link rel="stylesheet" href="{% static "css/cyber_safety_security.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
 </head>
 <body>
+
     {% include "partials/navbar.html" %}
 
-    <div class="container">
-        <h1 class="page-title">CIET-NCERT Resources</h1>
-        
-        <section class="resource-section">
-            <h2 class="section-title">English</h2>
-            <ul class="resource-list">
-                <li>Be Safe in Cyber World (for Teachers)</li>
-                <li>Be Safe in Cyber World (for Students)</li>
-                <li>Basics of Cyber Safety & Security</li>
-                <li>Safe Online Learning in Times of COVID-19</li>
-                <li>Cyber Safety & Security Guideline for Parents</li>
-                <li>Cyber Safety and Security Guideline for School</li>
-                <li>Handbook on Digital Safety (For Children)</li>
-                <li>Pocket Book on Cyber Safety Tips</li>
-            </ul>
-        </section>
+    <header>
+        <h1>Cyber Safety & Security</h1>
+    </header>
+    <section class="resources">
+        <h2>CIET-NCERT Resources</h2>
+        <div class="language-section">
+            <h3>English</h3>
+            <div class="resource-grid">
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber_safety_for_teachers_new.pdf"><img src="{% static 'images/besafeincyberworldforteachers.png' %}" alt="Be Safe in Cyber World (for Teachers)"><span>Be Safe in Cyber World (for Teachers)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber_safety_for_Students_new.pdf"><img src="{% static 'images/besafeincyberworldforstudent.png' %}" alt="Be Safe in Cyber World (for Students)"><span>Be Safe in Cyber World (for Students)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber%20safety.pdf"><img src="{% static 'images/basicsofcybersafetyandsecurity.png' %}" alt="Basics of Cyber Safety & Security"><span>Basics of Cyber Safety & Security</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Safetolearn_English.pdf"><img src="{% static 'images/safeonlinelearningintimesofcovid-19english.png' %}" alt="Safe Online Learning in Times of COVID-19"><span>Safe Online Learning in Times of COVID-19</span></a>
+                <a href="#"><img src="{% static 'images/CYBER SAFETY and security guidline for parents.jpg' %}" alt="Cyber Safety & Security Guideline for Parents"><span>Cyber Safety & Security Guideline for Parents</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber_safety_for_schools_Eng.pdf"><img src="{% static 'images/cyber-safety-school.jpg' %}" alt="Cyber Safety and Security Guideline for School"><span>Cyber Safety and Security Guideline for School</span></a>
+                <a href="http://ciet.nic.in/flipbook/Final-E-Handbook-for-Children-Digital-Safety-2-/index.html#page=1"><img src="{% static 'images/digital-safety02.png' %}" alt="Handbook on Digital Safety (For Children)"><span>Handbook on Digital Safety (For Children)</span></a>
+                <a href="http://ciet.nic.in/flipbook/200-COPY-Cyber-Safety-Pocket-Book-EGLISH-W-3-5inch-X-H-5inch/index.html#page=1"><img src="{% static 'images/cyber-safety eng.png' %}" alt="Pocket Book on Cyber Safety Tips"><span>Pocket Book on Cyber Safety Tips</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/17/Nishtha/Cyber_Safety_and_Security.pdf"><img src="{% static "images/handbook_cyber_safety.jpg" %}" alt="Pocket Book on Cyber Safety Tips"><span>Cyber Safety and Security
+Students HandBook</span></a>
+            </div>
+        </div>
+        <div class="language-section">
+            <h3>Hindi</h3>
+            <div class="resource-grid">
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Safetolearn_Hindi.pdf"><img src="{% static 'images/safeonlinelearningintimesofcovid-19hindi.png' %}" alt="COVID-19 ke dauran surakshit tarike se online madhyam dwara siksha"><span>कोविड-19 के दौरान सुरक्षित तरीके से ऑनलाइन माध्यम द्वारा सीखना</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/besafeincyberworldforteachershindi.pdf"><img src="{% static 'images/besafeincyberworldforteachershindi.png' %}" alt="saarthak jagat me surdaksha (rishiko ke liye)"><span>साइबर जगत में सुरक्षा(शिक्षकों के लिए)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/besafeincyberworldforstudenthindi.pdf"><img src="{% static 'images/besafeincyberworldforstudenthindi.png' %}" alt="saarthak jagat me surdaksha (vibhaviyo ke liye)"><span>साइबर जगत में सुरक्षा(विद्यार्थियों के लिए)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber%20Safety%20and%20Security%20guidelines%20for%20School.pdf"><img src="{% static 'images/Cyber Safety and Security guidelines for School_hindi.png' %}" alt="saarthak jagat me surdaksha (vibhaviyo ki vishva- nirdesh)"><span>साइबर जगत में सुरक्षा (विद्यालयों के लिए दिशा-निर्देश)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Digital%20Parenting-Hindi_compressed-min%20(1).pdf"><img src="{% static "images/digital parenting-hindi.png" %}" alt="digital pareeksha (paraksha)"><span>डिजिटल पेरेंटिंग(परवरिश)</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/Cyber%20Safety%20For%20parents%20Hindi_V2.pdf"><img src="{% static 'images/cyber-safety-hindi.jpg' %}" alt="saarthak surdaksha (amfibhavako nirdesh)"><span>साइबर सुरक्षा के दिशानिर्देश (अभिभावकों हेतु)</span></a>
+                <a href="https://ciet.nic.in/flipbook/200-COPY-Cyber-Safety-Pocket-Book-HINDI-W-3-5inch-X-H-5inch/index.html#page=1"><img src="{% static "images/cyber-safetyhindi.png" %}" alt="saarthak surdaksha pocket book"><span>साइबर सुरक्षा सुझावों पर एक पॉकेट बुक</span></a>
+            </div>
+        </div>
+        <div class="language-section">
+            <h3>Other Resources</h3>
+            <div class="resource-grid">
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/cyber%20Safety%20Final%2031-10-2018.pdf"><img src="{% static 'images/HandbookforAdolescentsStudentsonCyberSecuritybyMinistryofHome Affairs.png' %}" alt="A Handbook for Adolescents/ Students on Cyber Safety"><span>A Handbook for Adolescents/ Students on Cyber Safety</span></a>
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/CyberAwarenessCyberSafeGirl.pdf"><img src="{% static 'images/CyberSafeGirl.jpg' %}" alt="Cyber SafeGirl 2.0"><span>Cyber SafeGirl 2.0</span></a>
+            </div>
+        </div>
+        <div class="language-section">
+            <h3>Weekly tip Calendar</h3>
+            <div class="resource-grid">
+                <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/cyber-safety/weeklytipcalendar.pdf"><img src="{% static "images/photo_2022-02-09_16-05-21.jpg" %}" alt="Safe Internet Day (PDF)"><span>Safe Internet Day (PDF)</span></a>
+                <a href="https://ciet.nic.in/safeinternet/mobile/index.html"><img src="{% static "images/photo_2022-02-09_16-05-21 (1).jpg" %}" alt="Safe Internet Day (Flipbook)"><span>Safe Internet Day (Flipbook)</span></a>
+            </div>
+        </div>
+    </section>
 
-        <section class="resource-section">
-            <h2 class="section-title">Hindi</h2>
-            <ul class="resource-list">
-                <li>कोविड-19 के दौरान सुरक्षित तरीके से ऑनलाइन माध्यम द्वारा सीखना</li>
-                <li>साइबर जगत में सुरक्षा (शिक्षकों के लिए)</li>
-                <li>साइबर जगत में सुरक्षा (विद्यार्थियों के लिए)</li>
-                <li>साइबर जगत में सुरक्षा (विद्यालयों के लिए दिशा-निर्देश)</li>
-                <li>डिजिटल पेरेंटिंग (परवरिश)</li>
-                <li>साइबर सुरक्षा के दिशानिर्देश (अभिभावकों हेतु)</li>
-            </ul>
-        </section>
-
-        <section class="resource-section">
-            <h2 class="section-title">Other Resources</h2>
-            <ul class="resource-list">
-                <li>A Handbook for Adolescents/ Students on Cyber Safety</li>
-                <li>Cyber Safe Girl</li>
-            </ul>
-        </section>
-
-        <section class="resource-section">
-            <h2 class="section-title">Weekly tip Calendar</h2>
-            <ul class="resource-list">
-                <li>Safe Internet Day (<a href="#" class="link">PDF</a>)</li>
-                <li>Safe Internet Day (<a href="#" class="link">Flipbook</a>)</li>
-            </ul>
-        </section>
-    </div>
     {% include "partials/footer.html" %}
+
 </body>
 </html>

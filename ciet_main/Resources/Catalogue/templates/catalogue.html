@@ -1,31 +1,46 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalouge</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/catalogue.css" %}">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/catalogue.css' %}" />
+  </head>
+  <body>
     {% include "partials/navbar.html" %}
 
-    <div class="container">
-        <h1>Catalouge</h1>
-        <div class="guidelines">
-            <p>CIET Catalogue 2018</p>
-            <p>CIET Catalogue 2014</p>
+    <header>
+      <h1>Catalogue</h1>
+    </header>
+
+    <section class="resources">
+      <div class="language-section">
+        <div class="resource-grid">
+          <a
+            href="https://ciet.ncert.gov.in/storage/app/public/files/14/catalogue/ciet_catalogue_2018.pdf"
+          >
+            <img
+              src="{% static "images/ciet_catalogue_2018.jpg" %}"
+              alt="Be Safe in Cyber World (for Teachers)"
+            />
+            <span>CIET Catalogue 2018</span>
+          </a>
+          <a
+            href="https://ciet.ncert.gov.in/storage/app/public/files/14/catalogue/catalogue2014.pdf"
+          >
+            <img
+              src="{% static "images/catalogue2014.jpg" %}"
+              alt="Be Safe in Cyber World (for Students)"
+            />
+            <span>CIET Catalogue 2014</span>
+          </a>
         </div>
-        
-    </div>
-    {% include "partials/footer.html" %}
-</body>
+      </div>
+    </section>
+
+    {% include "partials/navbar.html" %}
+  </body>
 </html>

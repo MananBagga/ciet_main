@@ -1,41 +1,90 @@
 .container {
-    position: relative;
-    min-height: 100vh;
-    overflow: hidden;
+  padding: 20px;
+  background-image: url('header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
-.container h1 {
-    text-align: center;
-    color: #d9534f;
-    font-size: 24px;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+.page-head{
+   background-image: linear-gradient(to right, rgb(213, 137, 75) , #eaab78);
 }
 
-.guidelines {
-    text-align: center;
-    margin-top: 50px;
+.page-title {
+  color: #ffffff;
+  font-size: 2.5em;
+  text-align: center;
+  /* margin-bottom: 10px; */
 }
 
-.guidelines p {
-    color: #333;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    margin: 10px 0;
+.breadcrumb {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.background-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    height: 300px;
-    background: url('https://via.placeholder.com/300') no-repeat bottom right;
-    background-size: contain;
-    opacity: 0.1;
-    z-index: -1;
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
+.newsletter-card {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
 
+.newsletter-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.newsletter-info {
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
+@media (max-width: 1024px) {
+  .page-title {
+    font-size: 2em;
+  }
+
+  .newsletter-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8em;
+  }
+
+  .newsletter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .newsletter-info {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.5em;
+  }
+
+  .newsletter-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .newsletter-info {
+    font-size: 0.8em;
+  }
+}

@@ -2,43 +2,219 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reports</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/reports.css" %}">
-</head>
-<body>
-
-    {% include "partials/navbar.html" %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/reports.css' %}" />
+  </head>
+  <body>
+    {% include 'partials/navbar.html' %}
 
     <div class="container">
-        <h1>Research, Training & Extension</h1>
-        <div class="guidelines">
-            <p><a href="#" class="report-link">Online Course on Action Research in Education - Report 2018-19</a></p>
-            <p><a href="#" class="report-link">Exam Helpline Report</a></p>   
-        </div> 
-        <h1>State Report Cards</h1>
-        <div class="guidelines">
+      <div class="header">
+        <h1>Reports</h1>
+      </div>
+      <div class="section">
+        <h2>Research, Training & Extension</h2>
+        <div class="report-grid">
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Reportpdf/Research_Cyber%20Safety_Students.pdf" class="report-card">
+            <img
+              src="{% static 'images/Research_Cyber Safety_Students.png' %}"
+              alt="A Study on the Awareness of Cyber Safety and Security among Secondary Stage Students"
+            />
+            <p>
+              A Study on the Awareness of Cyber Safety and Security among
+              Secondary Stage Students (Class IX to XII)
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Reportpdf/Research_Cyber%20Safety_Teacher.pdf" class="report-card">
+            <img
+              src="{% static 'images/Research_Cyber Safety_Teacher.png' %}"
+              alt="A Study on the Effectiveness of Cyber Safety and Security Awareness Package for Teachers"
+            />
+            <p>
+              A Study on the Effectiveness of Cyber Safety and Security
+              Awareness Package for Teachers
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Reportpdf/Research_DMS.pdf" class="report-card">
+            <img
+              src="{% static 'images/Research_DMS.png' %}"
+              alt="A Study on the Effectiveness of ICT Training on ICT Competency, Reaction towards ICT and Confidence in using ICT of Teachers of Demonstration Multipurpose Schools (DMS)"
+            />
+            <p>
+              A Study on the Effectiveness of ICT Training on ICT Competency,
+              Reaction towards ICT and Confidence in using ICT of Teachers of
+              Demonstration Multipurpose Schools (DMS)
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Reportpdf/Research_NISHTHA%20ET.pdf" class="report-card">
+            <img
+              src="{% static 'images/Research_NISHTHA_ET.png' %}"
+              alt="Additional Research Report 4"
+            />
+            <p>
+              Effectiveness of Foundations of Educational Technology Course on
+              ICT Knowledge, Attitude and Confidence of In-service Teachers and
+              Teacher Education
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/19/Reportpdf/Research_TPCI.pdf" class="report-card">
+            <img
+              src="{% static 'images/Research_TPCI.png' %}"
+              alt="Additional Research Report 5"
+            />
+            <p>
+              Effectiveness Of Techno-pedagogy Content Integration (tpci)
+              Package On Development Of Digital Competencies Of In-service
+              Teachers At Secondary Level
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/Report_of_Analysis_of_Trends_final.pdf" class="report-card">
+            <img
+              src="{% static 'images/Report_of_Analysis_of_Trends_final.jpg' %}"
+              alt="Additional Research Report 6"
+            />
+            <p>
+              Analysis of Trends in ICT in Education (ET Abstracts and
+              Researches on ICTs in Education)
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/Action_Research_Report.pdf" class="report-card">
+            <img
+              src="{% static 'images/Action_Research_Report.jpg' %}"
+              alt="Additional Research Report 7"
+            />
+            <p>
+              Online Course on Action Research in Education - Report 2018-19
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/Exam_Helpline_Report.pdf" class="report-card">
+            <img
+              src="{% static 'images/Exam_Helpline_Report.jpg' %}"
+              alt="Additional Research Report 8"
+            />
+            <p>Exam Helpline Report</p>
+          </a>
+        </div>
+      </div>
+      <div class="section">
+        <h2>State Report Cards</h2>
+        <div class="report-grid">
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Punjab.pdf" class="report-card">
+            <img
+              src="{% static 'images/PUNJAB.jpg' %}"
+              alt="ICT Report of Punjab"
+            />
             <p>ICT Report of Punjab</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Meghalaya.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Meghalaya.jpg' %}"
+              alt="ICT Report of Meghalaya"
+            />
             <p>ICT Report of Meghalaya</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Tamil_Nadu.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Tamil_Nadu.jpg' %}"
+              alt="ICT Report of Tamil Nadu"
+            />
             <p>ICT Report of Tamil Nadu</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Uttar_Predesh.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Uttar_Predesh.jpg' %}"
+              alt="ICT Report of Uttar Pradesh"
+            />
             <p>ICT Report of Uttar Pradesh</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_West_Bengal.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_West_Bengal.jpg' %}"
+              alt="ICT Report of West Bengal"
+            />
             <p>ICT Report of West Bengal</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICTReportofKarnataka.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Karnataka.jpg' %}"
+              alt="Additional State Report 6"
+            />
             <p>ICT Report of Karnataka</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICTReportofKVS.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_KVS.jpg' %}"
+              alt="Additional State Report 7"
+            />
             <p>ICT Report of Kendriya Vidyalaya Sangathan</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Assam.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Assam.jpg' %}"
+              alt="Additional State Report 8"
+            />
             <p>ICT Report of Assam</p>
-            <p>ICT@Schools Scheme Implementation in 10 States/UTs: A comparative analysis 2014</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICTEvaluationReport.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Evaluation_Report.jpg' %}"
+              alt="Additional State Report 9"
+            />
+            <p>
+              ICT@Schools Scheme Implementation in 10 States/UTs: A comparative
+              analysis 2014
+            </p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Sikkim.pdf" class="report-card">
+            <img
+              src="{% static 'images/SIKKIM.jpg' %}"
+              alt="Additional State Report 10"
+            />
             <p>ICT Report of Sikkim</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Himachal_Pradesh.pdf" class="report-card">
+            <img
+              src="{% static 'images/ICT_Report_of_Himachal_Pradesh.jpg' %}"
+              alt="Additional State Report 11"
+            />
             <p>ICT Report of Himachal Pradesh</p>
-           
-            
-        </div>    
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Mizoram.pdf" class="report-card">
+            <img
+              src="{% static 'images/MIZORAM.jpg' %}"
+              alt="Additional State Report 12"
+            />
+            <p>ICT Report of Mizoram</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_of_Chandigarh.pdf" class="report-card">
+            <img
+              src="{% static 'images/CHANDIGRAH.jpg' %}"
+              alt="Additional State Report 13"
+            />
+            <p>ICT Report of Chandigarh</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_Delhi.pdf" class="report-card">
+            <img
+              src="{% static 'images/DELHI.jpg' %}"
+              alt="Additional State Report 14"
+            />
+            <p>ICT Report of Delhi</p>
+          </a>
+          <a href="https://ciet.ncert.gov.in/storage/app/public/files/14/reports/ICT_Report_Rajasthan.pdf" class="report-card">
+            <img
+              src="{% static 'images/RAJASTHAN.jpg' %}"
+              alt="Additional State Report 15"
+            />
+            <p>ICT Report of RAJASTHAN</p>
+          </a>
+        </div>
+      </div>
     </div>
 
-    
-    </div>
-    {% include "partials/footer.html" %}
-</body>
+    {% include 'partials/footer.html' %}
+  </body>
 </html>
