@@ -9,95 +9,59 @@
   <link rel="stylesheet" href="{% static "css/online_course.css" %}">
 </head>
 <body>
-    {% include "partials/navbar.html" %}
+  {% include "partials/navbar.html" %}
   <div class="container">
     <div class="header">
-      <h1>Online courses</h1>
-      <p>Home > <a href="#" class="orange-link">Online courses</a></p>
+      
+      <h1>Online Courses</h1>
     </div>
     <div class="main-image">
-      <img src="https://via.placeholder.com/800x300" alt="Main Image" style="width: 100%; height: auto;">
+      <img src="{% static "images/oc1.jpg" %}" alt="Main Image">
     </div>
     <div class="content">
-      <div class="logo-section">
-        <img src="https://via.placeholder.com/50x50" alt="Ministry Logo">
-        <img src="https://via.placeholder.com/50x50" alt="NCERT Logo">
-        <img src="https://via.placeholder.com/50x50" alt="DIKSHA Logo">
-      </div>
-      <h2>Join spear heading opportunities for CPD on DIKSHA</h2>
-      <h3>Offered by NCERT</h3>
-      <div class="card">
-        <div class="card-title">
-          <h2>Online Courses for Continuous Professional Development (CPD)</h2>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <span>1</span>
-            <p>Access DIKSHA portal or install DIKSHA mobile App</p>
-            <img src="https://via.placeholder.com/100x100" alt="QR Code 1">
-            <img src="https://via.placeholder.com/100x100" alt="QR Code 2">
+      <p>National Education Policy (NEP) 2020 in its para 5.15 and 5.16 lays down the need and standards for enabling opportunities for Continuous Professional Development (CPD) of school heads and teachers in order to enhance and enrich this human resource, as they are the most fundamental pillar of the education system. This recommendation of the NEP emphasises on generating the need for self improvement and staying abreast with the latest innovations and advances in their profession. To achieve the desired target of seeking 50 hours of CPD, multiple modes of training have been suggested by the policy, including in the form of local, regional, state, national, and international workshops as well as online teacher development modules. In this context, National Council of Educational Research and Training (NCERT) is offering online CPD courses to help teachers gain the best in the given time they have at a pace of their own, as per their interests and convenience.</p>
+    </div>
+    <div class="diksha-section">
+      <h2>Courses on Diksha</h2>
+      <ol>
+        <li>Access DIKSHA portal or install DIKSHA mobile app.
+          <div class="qr-codes">
+            <div class="qr-code">
+              <img src="{% static "images/oc2.png" %}" alt="DIKSHA Portal QR">
+              <p>DIKSHA portal</p>
+            </div>
+            <div class="qr-code">
+              <img src="{% static "images/oc3.png" %}" alt="DIKSHA Mobile App QR">
+              <p>DIKSHA mobile app</p>
+            </div>
           </div>
-          <div class="step">
-            <span>2</span>
-            <p class="orange-link">Register on DIKSHA with mail ID/ Mobile number</p>
-          </div>
-          <div class="step">
-            <span>3</span>
-            <p>Enroll in the course using the course link or by scanning the QR Code</p>
-          </div>
-          <div class="step">
-            <span>4</span>
-            <p>Learn through all the resources, take up the assignment and get certified</p>
-          </div>
-        </div>
-        <p>For further information visit: <a href="#" class="orange-link">https://ciet.ncert.gov.in/onlinecourses</a></p>
-        <p>For queries mail at: <a href="#" class="orange-link">course.helpdesk@ciet.ncert.in</a> or call on Tollfree number: <a href="#" class="orange-link">8800440559</a></p>
-      </div>
-      <div class="description">
-        <p>National Education Policy (NEP) 2020 in its para 5.15 and 5.16 lays down the need and standards for enabling opportunities for Continuous Professional Development (CPD) of school heads and teachers in order to enhance and enrich this human resource, as they are the most fundamental pillar of the education system. This recommendation of the NEP emphasises on generating the need for self improvement and staying abreast with the latest innovations and advances in their profession. To achieve the desired target of seeking 50 hours of CPD, multiple modes of training have been suggested by the policy, including in the form of local, regional, state, national, and international workshops as well as online teacher development modules. In this context, National Council of Educational Research and Training (NCERT) is offering online CPD courses to help teachers gain the best in the given time they have at a pace of their own, as per their interests and convenience.</p>
-      </div>
-      <div class="subheader">
-        <h2>Online Courses</h2>
-      </div>
-      <div class="diksha-section">
-        <h3>Courses on Diksha</h3>
-        <ol>
-          <li>Access DIKSHA portal or install DIKSHA mobile app.</li>
-          <li>If you are using DIKSHA for first time for doing courses, register on DIKSHA (Registration need to be done only once in the DIKSHA portal or mobile app)</li>
-          <li>Login with your ID and password</li>
-          <li>Click on the following link or scan QR code given below and access the course</li>
-          <li>Enroll in the course</li>
-          <li>Access the resources given in the courses and learn through the resources</li>
-          <li>Take up the assignment, score 70% and above and get certified</li>
-          <li>Download the certificate from your profile page</li>
-          <li>For further information on accessing the course and certification refer to the guideline.</li>
-        </ol>
-        <p><a href="#" class="orange-link">https://ciet.ncert.gov.in/storage/app/public/files/17/Workshop_and_training_files/cyth/User_guidelines_for_DIKSHA_Portal.pdf</a></p>
-        <div class="qr-codes">
-          <img src="https://via.placeholder.com/100x100" alt="DIKSHA Portal QR">
-          <img src="https://via.placeholder.com/100x100" alt="DIKSHA App QR">
-        </div>
-      </div>
-      <div class="subheader">
-        <h2>Online Courses</h2>
-      </div>
-      <div class swayam-section">
-        <h3>Courses on Swayam</h3>
-        <ul>
-          <li>Register on <a href="#" class="orange-link">https://swayam.gov.in</a></li>
-          <li>Access the course by clicking on the course link</li>
-          <li>Enroll in the course for FREE</li>
-          <li>Learn the content and complete all activities</li>
-          <li>Take up the final assessment and get certified</li>
-        </ul>
-        <p>Click here for more: <a href="#" class="orange-link">https://ciet.ncert.gov.in/initiative/moocs-on-swayam</a></p>
-      </div>
-      <div class="course-links">
-        <a href="#" class="course-link"><img src="https://via.placeholder.com/100x100" alt="NISHTHA FLN"></a>
-        <a href="#" class="course-link"><img src="https://via.placeholder.com/100x100" alt="NISHTHA ECCE"></a>
-        <a href="#" class="course-link"><img src="https://via.placeholder.com/100x100" alt="General CPD"></a>
-        <a href="#" class="course-link"><img src="https://via.placeholder.com/100x100" alt="Nano Courses"></a>
-      </div>
+        </li>
+        <li>If you are using DIKSHA for first time for doing courses, register on DIKSHA (Registration need to be done only once in the DIKSHA portal or mobile app)</li>
+        <li>Login with your ID and password</li>
+        <li>Click on the following course link or scan QR code given below and access the course</li>
+        <li>Enroll in the course</li>
+        <li>Access the resources given in the courses and learn through the resources</li>
+        <li>Take up the assignment, score 70% and above and get certified</li>
+        <li>Download the certificate from your profile page</li>
+        <li>For further information on accessing the course and certification refer to the guideline.<br><a href="https://ciet.ncert.gov.in/storage/app/public/files/17/Workshop_and_training_files/cyth/User_guidelines_for_DIKSHA_Portal.pdf">https://ciet.ncert.gov.in/storage/app/public/files/17/Workshop_and_training_files/cyth/User_guidelines_for_DIKSHA_Portal.pdf</a></li>
+      </ol>
+    </div>
+    <div class="course-types">
+      <a href="#"><img src="{% static "images/oc4.png" %}" alt="NISHTHA FLN Courses"></a>
+      <a href="#"><img src="{% static "images/oc5.png" %}" alt="NISHTHA ECCE Courses"></a>
+      <a href="#"><img src="{% static "images/oc6.png" %}" alt="General CPD Courses"></a>
+      <a href="#"><img src="{% static "images/oc7.jpg" %}" alt="Nanocourses"></a>
+    </div>
+    <div class="swayam-section">
+      <h2>Courses on Swayam</h2>
+      <ul>
+        <li>Register on https://swayam.gov.in</li>
+        <li>Access the course by clicking on the course link</li>
+        <li>Enroll in the course for FREE.</li>
+        <li>Learn the content and complete all activities</li>
+        <li>Take up the final assessment and get certified</li>
+      </ul>
+      <p>Click here for more: <a href="https://ciet.ncert.gov.in/initiative/moocs-on-swayam">https://ciet.ncert.gov.in/initiative/moocs-on-swayam</a></p>
     </div>
   </div>
   {% include "partials/footer.html" %}

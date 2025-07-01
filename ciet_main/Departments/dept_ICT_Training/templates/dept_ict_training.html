@@ -213,16 +213,6 @@
 
     {% include 'partials/footer.html' %}
 
-    <script>
-        function showContent(section) {
-            const sections = ['training', 'archive', 'reports'];
-            sections.forEach(s => {
-                const content = document.getElementById(`${s}-content`);
-                if (content) {
-                    content.style.display = s === section ? 'block' : 'none';
-                }
-            });
-        }
-    </script>
+<script src="{% static "js/dept_ict_training.js" %}"></script>
 </body>
 </html>

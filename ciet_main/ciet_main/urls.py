@@ -120,7 +120,7 @@ urlpatterns = [
     path('', include('Resources.Alternative_Academic_Calender.urls')),
     path('', include('screen_reader_access.urls')),
     path('', include('Departments.administration_accounts.urls')),
-    path('l', include('Library.urls')),
+    path('', include('Library.urls')),
     path('', include('cyber_jaagrookta.urls')),
     path('', include('digital_creativity.urls')),
     path('', include('pmevidya.urls')),
@@ -161,4 +161,5 @@ urlpatterns = [
     path('', include('entriesec23.urls')),
     path('', include('galleryec23.urls')),
     path('', include('online_course.urls')),
+    path('', include('satellite.urls')),
 ]

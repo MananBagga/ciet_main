@@ -2011,6 +2011,13 @@ carousel-container .nav-arrow.prev-arrow {
   margin-left: 5px;
   font-family: monospace;
 }
+.footer-links a{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+}
 
 /* Footer Bottom Bar */
 .footer-bottom {

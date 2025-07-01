@@ -110,6 +110,7 @@ INSTALLED_APPS = [
     'entriesec23',
     'galleryec23',
     'online_course',
+    'satellite',
 ]
 
 MIDDLEWARE = [

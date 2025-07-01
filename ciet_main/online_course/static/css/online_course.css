@@ -1,194 +1,159 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  .header h1 {
-    color: #fff;
-    background-color: #f28c38;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .header p {
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .orange-link {
-    color: #f28c38;
-    text-decoration: none;
-  }
-  
-  .main-image {
-    background-color: #a3c9d3;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .logo-section {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  
-  .logo-section img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .content h2 {
-    color: #fff;
-    background-color: #1a4a5e;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .content h3 {
-    color: #fff;
-    background-color: #1a4a5e;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  .card {
-    background-color: #e0f0f5;
-    padding: 20px;
-    margin: 10px 0;
-  }
-  
-  .card-title h2 {
-    color: #800080;
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .step {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .step span {
-    background-color: #f28c38;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .step .orange-link {
-    margin: 0;
-  }
-  
-  .qr-codes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .qr-codes img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .description {
-    margin: 10px 0;
-  }
-  
-  .subheader h2 {
-    color: #fff;
-    background-color: #f28c38;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .diksha-section, .swayam-section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px 0;
-  }
-  
-  .course-links {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .course-link img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #f28c38;
-  }
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.header a {
+  color: #666;
+  text-decoration: none;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.header h1 {
+  color: #ff4500;
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1.5rem;
+  background-color: #f0f0f0;
+  margin: 1rem 0;
+}
+
+.diksha-section {
+  padding: 1.5rem;
+  background-color: #e0f0f8;
+}
+
+.diksha-section h2 {
+  color: #ff4500;
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.qr-codes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.qr-code img {
+  width: min(150px, 40vw);
+  height: min(150px, 40vw);
+}
+
+.qr-code p {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.diksha-section ol {
+  padding-left: 1.5rem;
+}
+
+.diksha-section li {
+  margin-bottom: 0.75rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.course-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.course-types img {
+  width: min(100px, 25vw);
+  height: min(100px, 25vw);
+  border-radius: 50%;
+  border: 2px solid #ff4500;
+}
+
+.swayam-section {
+  padding: 1.5rem;
+  background-color: #f0f0f0;
+}
+
+.swayam-section h2 {
+  color: #ff4500;
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.swayam-section ul {
+  padding-left: 1.5rem;
+}
+
+.swayam-section li {
+  margin-bottom: 0.75rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.swayam-section a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+/* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
-  .logo-section {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .logo-section img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .course-links {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-
-  .course-link img {
-    width: 80px;
-    height: 80px;
+  .container {
+    padding: 0 10px;
   }
 
   .qr-codes {
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .qr-codes img {
-    width: 80px;
-    height: 80px;
+  .course-types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr-code img {
+    width: min(120px, 35vw);
+    height: min(120px, 35vw);
+  }
+
+  .course-types img {
+    width: min(80px, 20vw);
+    height: min(80px, 20vw);
   }
 }
 
 @media (max-width: 480px) {
   .header h1 {
-    font-size: 1.2em;
-    padding: 8px;
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
   }
 
-  .content h2,
-  .content h3,
-  .card-title h2,
-  .subheader h2 {
-    font-size: 1.1em;
-    padding: 8px;
+  .diksha-section h2,
+  .swayam-section h2 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
   }
 
-  .course-link img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .qr-codes img {
-    width: 60px;
-    height: 60px;
+  .content,
+  .diksha-section,
+  .swayam-section {
+    padding: 1rem;
   }
 }

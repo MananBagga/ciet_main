@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satellite Network</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"> <link
+    rel="stylesheet" href="{% static "css/satellite.css" %}">
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+    <div class="container"><h1>Satellite Network</h1></div>
+    <div class="box">
+      <header></header>
+      <main>
+        <h2>Satellite Network</h2>
+        <p>
+          EDUSAT, a satellite launched on 20th September 2004, is the first
+          Indian satellite built exclusively for serving educational sector
+          offering an interactive satellite-based distance education system for
+          the country. CIET (NCERT) is shouldering the responsibility of
+          utilizing EDUSAT for school education system through a national
+          network. CIET has got a Ku-band Sub Hub along with 100 terminals at
+          various locations including, Regional Institutes of Education (RIEs),
+          Demonstration and Multipurpose Experimental Schools (DMSS) attached
+          with RIEs, Pandit Sunderlal Sharma Central Institute of Vocational
+          Education (PSSCIVE), State Institute of Educational Technology
+          (SIETs), office at the head quarter, regional offices and some schools
+          under Kendriya Vidyalaya Sangathan (KVS), Navodaya Vidyalaya Samiti
+          (NVS), National Institute of Open Schooling (NIOS) and Central Board
+          of Secondary Education (CBSE). State councils of Educational research
+          and Training (SCERTs) and State Institute of Education (SIEs).
+        </p>
+        <p>
+          The EDUSAT has the potential of its use for conventional radio and
+          television broadcast, interactive radio and television (phone-in and
+          video on demand), exchange of data, audio, video and computer
+          conferencing and web-based education.
+        </p>
+        <p>
+          <a
+            href="https://ciet.ncert.gov.in/storage/app/public/files/13/Edusat_Center.pdf"
+            class="link"
+            >EDUSAT Centers-SITs (Satellite Interactive Terminals) List</a
+          >
+        </p>
+      </main>
+    </div>
+    {% include "partials/footer.html" %}
+  </body>
+</html>

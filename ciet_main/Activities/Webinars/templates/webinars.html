@@ -3,172 +3,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webinar Page</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/webinars.css" %}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinar on ICT Tools</title>
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/webinars.css" %}">
 </head>
 <body>
-
     {% include "partials/navbar.html" %}
-
-    <div class="container">
-        <div class="header">
-            <h1>Fight COVID-19: Join us on Webinar</h1>
-            <p>
-                To fight COVID-19, enabling learning from Home and Practice Social Distancing, CIET-NCERT is organizing a month-long Webinar starting from 07 April, 2020 for the enrichment and professional development of the students, teachers, teacher educators and researchers. The webinar intends to cover various themes related to Educational Technology (ET) and Information and Communication Technology (ICT) in education. The webinar will encompass topics related to creation and dissemination of e-contents, Content-Pedagogy-Technology integration, use of ICT in teaching-learning and assessment, OER, use of various ICT tools, creation of AR/VR contents, mobile app and AI based platforms etc. Being a premier institution working in the field of ET and ICT for school education and teacher education, CIET invites the learners to join us in the Webinar which will be held daily. This series of interactive sessions will hopefully be a stepping stone in the enhancement of knowledge and skill of those working in the field of education.
-            </p>
+  <div class="webinar-container">
+    
+    <div class="content">
+     
+      <h1>Webinar on ICT Tools</h1>
+      <div class="main-content">
+        <div class="left-section">
+          <h2>Fight COVID-19: Join us on Webinar</h2>
+          <p>To fight COVID-19, enabling learning from Home and Practice Social Distancing, CIET- NCERT is organizing a month-long Webinar starting from 07 April, 2020 for the enrichment and professional development of students, teachers, teacher educators and researchers. The webinar intends to cover various themes related to Educational Technology (ET) and Information and Communication Technology (ICT) in education. The webinar will encompass topics related to creation and dissemination of e-content, Content-Pedagogy-Technology integration, use of ICT in teaching-learning and assessment, OER, use of various ICT tools, creation of AR/VR contents, mobile app and AI based platforms etc. Being a premier institution working in the field of ET and ICT for school education and teacher education, CIET invites the learners to join us in the Webinar which will be held daily. This series of interactive sessions will hopefully be a stepping stone in the enhancement of knowledge and skill of those working in the field of education.</p>
         </div>
-        <div class="how-to-join">
-            <h2>How to join Webinar?</h2>
-            <p>
-                JOIN US for the live webinar from 04:00 pm to 05:00 pm, Monday to Friday on NCERT OFFICIAL YouTube channel. Subscribe the channel for regular notification. You can watch the webinar telecast through:
-            </p>
-            <ul>
-                <li>PM eVidhya Channel</li>
-                <li>DD FreeDish #128</li>
-                <li>DishTV #950</li>
-                <li>TataSky #756</li>
-                <li>Airtel #440</li>
-                <li>Videocon #477</li>
-                <li>Sundirect #793 and</li>
-                <li>Jio TV Mobile app</li>
-            </ul>
-            <p>
-                Webinar will be conducted in English and Hindi. For further queries contact training@ciet.nic.in
-            </p>
+        <div class="right-section">
+          <h2>How to join Webinar?</h2>
+          <p>Join us for the live webinar from 04:00 pm to 05:00 pm, Monday to Friday on 'NCERT OFFICIAL' YouTube channel. Subscribe the channel for regular notification. You can watch this webinar telecast through</p>
+          <ul>
+            <li>PM eVidya Channel</li>
+            <li>DD FreeDish #128</li>
+            <li>DishTV #950</li>
+            <li>TataSky #756</li>
+            <li>Airtel #440</li>
+            <li>Videocon #477</li>
+            <li>Sundirect #793 and</li>
+            <li>Jio TV Mobile app</li>
+          </ul>
+          <p>Webinar will be conducted in English and Hindi. For further queries contact training@ciet.nic.in</p>
         </div>
-        <div class="webinar-section">
-            <h2 class="section-title">Upcoming Webinars</h2>
-            <div class="no-webinar">
-                <p>No Webinar Found..</p>
-                <div class="pagination">
-                    <button class="prev"><</button>
-                    <button class="page active">1</button>
-                    <button class="next">></button>
-                </div>
-            </div>
-        </div>
-        <div class="webinar-section">
-            <h2 class="section-title">Ongoing Webinars</h2>
-            <div class="no-webinar">
-                <p>No Webinar Found..</p>
-                <div class="pagination">
-                    <button class="prev"><</button>
-                    <button class="page active">1</button>
-                    <button class="next">></button>
-                </div>
-            </div>
-        </div>
-        <div class="webinar-section">
-            <h2 class="section-title">Past Webinars</h2>
-            <div class="webinar-grid" id="webinar-grid"></div>
-            <div class="pagination" id="pagination">
-                <button class="prev" onclick="changePage(-1)"><</button>
-                <button class="page active" onclick="goToPage(1)">1</button>
-                <button class="page" onclick="goToPage(2)">2</button>
-                <button class="page" onclick="goToPage(3)">3</button>
-                <button class="page" onclick="goToPage(4)">4</button>
-                <button class="page" onclick="goToPage(5)">5</button>
-                <button class="page" onclick="goToPage(6)">6</button>
-                <button class="page" onclick="goToPage(7)">7</button>
-                <button class="page" onclick="goToPage(8)">8</button>
-                <button class="next" onclick="changePage(1)">></button>
-            </div>
-        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Resource Person</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>102</td>
+            <td>01 April 2025</td>
+            <td>Digital Pedagogy as a Lever for Improving Students' Learning: Role of School Leaders (English)</td>
+            <td>Dr. Angel Rathnabai, Associate Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>28 March 2025</td>
+            <td>दीक्षा (DIKSHA): एक रास्ता एक दिशा में चलें</td>
+            <td>डॉ. प्रवीण शर्मा, वरिष्ठ शैक्षिक सलाहकार, केन्द्रीय शिक्षक शिक्षा संस्थान, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>27 March 2025</td>
+            <td>प्रशस्त (PRASHAST)</td>
+            <td>डॉ. भारती कौशिक, प्रोफेसर, सीआईईटी-एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>99</td>
+            <td>26 March 2025</td>
+            <td>वर्चुअल कौशल प्रयोगशाला</td>
+            <td>डॉ. मुनेश चंद्र, आचार्य, पं.सु.श. केंद्रीय व्यावसायिक शिक्षा संस्थान, भोपाल</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>98</td>
+            <td>25 March 2025</td>
+            <td>ई-जादुई पिटारा का प्रभावी उपयोग</td>
+            <td>सुश्री श्वेता तिवारी, वरिष्ठ सलाहकार, केंद्रीय शैक्षिक प्रौद्योगिकी संस्थान, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>97</td>
+            <td>24 March 2025</td>
+            <td>अपनी शैक्षणिक पहचान जानें</td>
+            <td>डॉ. राजेश डी, एसोसिएट प्रोफेसर सीआईईटी-एनसीईआरटी, नई दिल्ली, श्री दीपेन्द्र ठाकुर, कंसल्टेंट सीआईईटी-एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>96</td>
+            <td>21 March 2025</td>
+            <td>DIKSHA: One Nation One Digital Platform</td>
+            <td>Dr.Prachi Sharma, Senior Academic Consultant, Central Institute of Educational Technology, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>95</td>
+            <td>20 March 2025</td>
+            <td>PRASHAST</td>
+            <td>Dr. Bharti Kaushik, Professor, CIET - NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>94</td>
+            <td>19 March 2025</td>
+            <td>Virtual Skill Lab</td>
+            <td>Dr. V.S. Mehrotra, Professor, Department of Agriculture and Animal Husbandry, PSS Central Institute of Vocational Education, Bhopal</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>93</td>
+            <td>18 March 2025</td>
+            <td>Effective Use of e-Jaadui Pitara</td>
+            <td>Dr. Upasana Ray, Associate Professor, Planning and Research Division, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>92</td>
+            <td>17 March 2025</td>
+            <td>Know Your Academic Identity</td>
+            <td>Dr. Rajesh D, Associate Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>91</td>
+            <td>15 March 2025</td>
+            <td>सोशल मीडिया सुरक्षा</td>
+            <td>मेजर विनीत कुमार,संस्थापक एवं वैश्विक अध्यक्ष,साइबर पीस फाउंडेशन</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>90</td>
+            <td>13 March 2025</td>
+            <td>डिजिटल गिरफ़्तारी</td>
+            <td>डॉ. दीपक कुमार,वरिष्ठ तकनीकी प्रबंधक,भारतीय साइबर अपराध समन्वय केंद्र (I4C), गृह मंत्रालय, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>89</td>
+            <td>12 March 2025</td>
+            <td>गेमिंग सुरक्षा</td>
+            <td>श्री साकेत कुमार झा, वैज्ञानिक 'डी', सी-डैक, पटना, बिहार</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>88</td>
+            <td>11 March 2025</td>
+            <td>साइबर सुरक्षा के संदर्भ में स्वास्थ्य एवं कल्याण</td>
+            <td>डॉ. यतन पाल सिंह बलहारा,प्रोफेसर (मनोचिकित्सा),एम्स, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>87</td>
+            <td>10 March 2025</td>
+            <td>एआई संचालित विश्व में साइबर सुरक्षा</td>
+            <td>डॉ. अर्जुन विट्ठलराव माने,सहायक प्राध्यापक (कंप्यूटर साइंस),शासकीय न्यायालयिक विज्ञान संस्थान, नागपुर, महाराष्ट्र	</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>86</td>
+            <td>7 March 2025</td>
+            <td>Social Media Safety</td>
+            <td>Maj. Vineet Kumar, Founder and Global President, CyberPeace Foundation</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>85</td>
+            <td>6 March 2025</td>
+            <td>Digital Arrest</td>
+            <td>Dr. Deepak Kumar, Senior Technical Manager, Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs (MHA), New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>84</td>
+            <td>5 March 2025</td>
+            <td>Gaming Security</td>
+            <td>Mr. M Jagadish Babu, Project Manager-ISEA, C-DAC, Hyderabad, Telangana</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>83</td>
+            <td>4 March 2025</td>
+            <td>Health and Wellness in Cyber Safety</td>
+            <td>Dr. Yatan Pal Singh Balhara, Professor of Psychiatry, AIIMS, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>82</td>
+            <td>3 March 2025</td>
+            <td>Cyber Safety in the AI-driven World</td>
+            <td>Dr. Arjun Vithalrao Mane Assistant Professor (Computer Science) Government Institute of Forensic Science, Nagpur, Maharashtra</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>81</td>
+            <td>28 February 2025</td>
+            <td>गूगल अर्थ: सामाजिक विज्ञान के लिए एक इंटरैक्टिव मानचित्रण संसाधन</td>
+            <td>डॉ. पुष्पेंद्र सिंह, उप प्रधानाचार्य, महाराजा अग्रसेन मॉडल स्कूल, पीतमपुरा, दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>27 February 2025</td>
+            <td>भुवन: सामाजिक विज्ञान के लिए एक अन्वेषणीय उपकरण</td>
+            <td>सुश्री नीतू सिंह मालिक, पीजीटी भूगोल एवं जियोस्पेशियल प्रौद्योगिकी, दिल्ली पब्लिक स्कूल, गाज़ियाबाद</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>79</td>
+            <td>26 February 2025</td>
+            <td>सामाजिक विज्ञान के लिए डिजिटल उपकरण</td>
+            <td>सुश्री संचिता घोष, विभागाध्यक्ष, इतिहास विभाग, संस्कृति स्कूल, डॉ. एस. राधाकृष्णन मार्ग, चाणक्यपुरी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>25 February 2025</td>
+            <td>सामाजिक विज्ञान के शिक्षण और अधिगम के लिए ऑडियो एवं वीडियो संसाधन</td>
+            <td>डॉ. उपासना राय, सह - प्राध्यापक, योजना एवं अनुसंधान प्रभाग, सीआईईटी, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>77</td>
+            <td>24 February 2025</td>
+            <td>सामाजिक विज्ञान के शिक्षण और अधिगम के लिए आईसीटी - नीतिगत परिप्रेक्ष्य, आवश्यकता और क्षेत्र</td>
+            <td>डॉ. तगराम कोंडल राव सह-प्राध्यापक केंद्रीय शैक्षिक प्रौद्योगिकी संस्थान एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>76</td>
+            <td>21 February 2025</td>
+            <td>Google Earth: An Interactive Mapping Resource for Social Sciences</td>
+            <td>Dr. Pushpendra Singh Vice Principal, Maharaja Agrasen Model School, Pitampura, Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td>20 February 2025</td>
+            <td>Bhuvan: An Exploratory Tool for Social Sciences</td>
+            <td>Ms. Neitu Singh Malik, PGT Geography & Geospatial Technology, Delhi Public School, Ghaziabad</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>74</td>
+            <td>19 February 2025</td>
+            <td>Digital Tools for Social Sciences</td>
+            <td>Ms. Sanchita Ghosh, HOD, History Department, Sanskriti School, Dr. S. Radhakrishnan Marg, Chanakyapuri, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>73</td>
+            <td>18 February 2025</td>
+            <td>Audio and Video Resources for the Teaching and Learning of Social Sciences</td>
+            <td>Dr. Upasana Ray Associate Professor Planning and Research Division, CIET, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>72</td>
+            <td>17 February 2025</td>
+            <td>ICT for Teaching and Learning of Social Sciences - Policy Perspectives, Need and Scope</td>
+            <td>Dr. Tagaram Kondala Rao, Associate Professor, Planning and Research Division, CIET, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>71</td>
+            <td>14 February 2025</td>
+            <td>मानसिक और शारीरिक स्वास्थ्य बनाए रखने में भूमिकाएँ और जिम्मेदारियाँ</td>
+            <td>डॉ. रेखा रानी, सहायक आचार्य, शैक्षिक मनोविज्ञान एवं शिक्षा आधार विभाग, एनसीईआरटी, नई दिल्ली, डॉ. नवीन कुमार मोक्टा, सहायक आचार्य, शैक्षिक मनोविज्ञान एवं शिक्षा आधार विभाग, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>13 February 2025</td>
+            <td>मानसिक स्वास्थ्य को बढ़ावा देने के लिए डिजिटल वेल-बीइंग टूल्स</td>
+            <td>डॉ. दीपाली नेगी, डीएम (नशा मनोचिकित्सा), निवासी, एम्स, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>12 February 2025</td>
+            <td>डिजिटल डिटॉक्स: प्रौद्योगिकी की लत से मुक्ति</td>
+            <td>सुश्री अलीशा अरोड़ा, सहायक प्रोफेसर, क्लिनिकल साइकोलॉजी, केंद्रीय मनोचिकित्सा संस्थान (CIP), रांची, झारखंड</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>11 February 2025</td>
+            <td>स्क्रीन टाइम: प्रभाव और प्रबंधन</td>
+            <td>डॉ. यतन पाल सिंह बलहारा, प्रोफेसर, मनोरोग विज्ञान, एम्स, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>10 February 2025</td>
+            <td>मानसिक कल्याण: नीति परिप्रेक्ष्य, आवश्यकता और क्षेत्र</td>
+            <td>डॉ. रेखा रानी, सहायक आचार्य, शैक्षिक मनोविज्ञान एवं शिक्षा आधार विभाग, एनसीईआरटी, नई दिल्ली, डॉ. नवीन कुमार मोक्टा, सहायक आचार्य, शैक्षिक मनोविज्ञान एवं शिक्षा आधार विभाग, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>7 February 2025</td>
+            <td>Roles and Responsibilities in Maintaining Mental and Physical Wellness</td>
+            <td>Prof. Gowramma I P, Head, Department of extension education, RIE, NCERT Mysuru, Karnataka</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>6 February 2025</td>
+            <td>Digital Well-being Tools for Fostering Mental Health</td>
+            <td>Dr. Deepali Negi, DM (Addiction Psychiatry) Resident, AIIMS, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>5 February 2025</td>
+            <td>Digital Detox: Overcoming Technology Addiction</td>
+            <td>Ms Alisha Arora, Assistant Professor of Clinical Psychology, CIP, Ranchi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>4 February 2025</td>
+            <td>Screen Time: Impact and Management</td>
+            <td>Dr. Yatan Pal Singh Balhara, Professor of Psychiatry, AIIMS, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>3 February 2025</td>
+            <td>Mental Wellness: Policy Perspectives, Need, and Scope</td>
+            <td>Dr. Sushmita Chakraborty, Assistant Professor, Department of Educational Psychology and Foundations of Education, NCERT, New Delhi, Dr. Ruchi, Assistant Professor, Department of Educational Psychology and Foundations of Education, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>24 January 2025</td>
+            <td>भाषाओं के शिक्षण और अधिगम में डिजिटल तकनीकों के उपयोग से जुड़ी चिंताएँ</td>
+            <td>डॉ. गंगा महतो, सहायक प्रोफेसर, क्षेत्रीय शिक्षा संस्थान (आरआईई), भोपाल</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>23 January 2025</td>
+            <td>भाषाओं के शिक्षण और अधिगम के लिए वर्चुअल लैब्स</td>
+            <td>डॉ. अमित रंजन, सहायक प्रोफेसर, सीआईईटी-एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>22 January 2025</td>
+            <td>भाषाओं के शिक्षण और अधिगम के लिए डिजिटल उपकरण</td>
+            <td>डॉ. रवीन्द्र कुमार, एसोसिएट प्रोफेसर, सीआईईटी-एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>21 January 2025</td>
+            <td>भाषाओं के शिक्षण और अधिगम के लिए ऑडियो और वीडियो संसाधन</td>
+            <td>डॉ. रिज़वानुल हक, सहायक प्रोफेसर, सीआईईटी-एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>20 January 2025</td>
+            <td>भाषाओं के शिक्षण और अधिगम के लिए आईसीटी - नीति परिप्रेक्ष्य, आवश्यकता और क्षेत्र</td>
+            <td>डॉ. रामानुजम मेगनाथन, प्रोफेसर, भाषा शिक्षा विभाग, एनसीईआरटी, नई दिल्ली, डॉ. वंदना शर्मा, सहायक प्रोफेसर, भाषा शिक्षा विभाग, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>17 January 2025</td>
+            <td>Concerns of Using Digital Technologies for the Teaching and Learning of Languages</td>
+            <td>Dr. Ganga Mahto, Assistant Professor, RIE, Bhopal</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>16 January 2025</td>
+            <td>Virtual Labs for the Teaching and Learning of Languages</td>
+            <td>Dr. Amit Ranjan, Assistant Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>15 January 2025</td>
+            <td>Digital Tools for the Teaching and Learning of Languages</td>
+            <td>Dr. Ravindra Kumar, Associate Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>14 January 2025</td>
+            <td>Audio and Video Resources for the Teaching and Learning of Languages</td>
+            <td>Dr. Rizvanul Haque, Assistant Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>13 January 2025</td>
+            <td>ICT for Teaching and Learning of Languages - Policy Perspectives, Need and Scope</td>
+            <td>Dr. Ramanujam Meganathan, Professor, Department of Education in Languages, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>10 January 2025</td>
+            <td>आपकी गोपनीयता की सुरक्षा: प्रमाणित साइबर स्वच्छता उपाय</td>
+            <td>श्री दवीत सिंह लोबाना, प्रोजेक्ट इंजीनियर सी-डैक, मोहाली, पंजाब</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>9 January 2025</td>
+            <td>साइबर स्वच्छता जांचसूची: आपकी डिजिटल उपस्थिति की सुरक्षा के चरण</td>
+            <td>सुश्री काजल कश्यप प्रोजेक्ट इंजीनियर सी-डैक, उत्तर प्रदेश</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>8 January 2025</td>
+            <td>मैलवेयर से फ़िशिंग: सुरक्षित रहने के लिए साइबर स्वच्छता अभ्यास</td>
+            <td>श्री दीपक उपाध्याय, सहायक प्रोफेसर, गुजरात प्रौद्योगिकी विश्वविद्यालय, अहमदाबाद, गुजरात</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>7 January 2025</td>
+            <td>साइबर स्वच्छता आवश्यकताएँ: डेटा और स्वयं की सुरक्षा</td>
+            <td>श्री प्रशांत श्रीवास्तव परियोजना अभियंता सी-डैक</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>6 January 2025</td>
+            <td>सुरक्षित रहें: साइबर स्वच्छता पर एक संपूर्ण मार्गदर्शिका</td>
+            <td>सुश्री सोनल प्रिया कमल, नॉलेज एसोसिएट सी-डैक, पटना, बिहार</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>3 January 2025</td>
+            <td>Guarding Your Privacy: Proven Cyber Hygiene Practices</td>
+            <td>Mr. Daveet Singh Lobana, Project Engineer C-DAC, Mohali, Punjab</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>2 January 2025</td>
+            <td>The Cyber Hygiene Checklist: Steps to Protect Your Digital Presence</td>
+            <td>Ms. Kanti Singh Sangher, Scientist E, C-DAC, Noida, UP</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>1 January 2025</td>
+            <td>Malware to Phishing: Cyber Hygiene Practices to Stay Protected</td>
+            <td>Dr. Sanjeev Kumar, Scientist-E, Centre for Development of Advanced Computing(C-DAC), Mohali, Punjab</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>31 December 2024</td>
+            <td>Cyber Hygiene Essentials: Protect Your Data, Protect Yourself</td>
+            <td>Dr. Balaji Rajendran, Scientist 'F', Centre for Development of Advanced Computing (C-DAC), Bangalore, Karnataka</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>30 December 2024</td>
+            <td>Stay Secure: A Comprehensive Guide to Cyber Hygiene</td>
+            <td>Dr. Sanjay Adiwal, Scientist 'E' Resilient Information Systems Engineering (RISE) C-DAC, Bengaluru</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>26 December 2024</td>
+            <td>विज्ञान के शिक्षण और अधिगम के लिए इमर्सिव प्रौद्योगिकियाँ</td>
+            <td>डॉ. मोहम्मद ममूर अली, सहायक प्रोफेसर, जामिया मिलिया इस्लामिया, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>25 December 2024</td>
+            <td>विज्ञान के शिक्षण और अधिगम के लिए मुक्त स्रोत सॉफ़्टवेयर (FOSS)</td>
+            <td>डॉ. मोहम्मद ममूर अली, सहायक प्रोफेसर, जामिया मिलिया इस्लामिया, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>24 December 2024</td>
+            <td>विज्ञान के शिक्षण एवं अधिगम के लिए ऑडियो और वीडियो संसाधन</td>
+            <td>डॉ. अरुण प्रताप सिकरवार, सह आचार्य, विज्ञान एवं गणित शिक्षा विभाग, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>23 December 2024</td>
+            <td>विज्ञान के शिक्षण एवं अधिगम के लिए आईसीटी - नीतिगत परिप्रेक्ष्य, आवश्यकता एवं क्षेत्र</td>
+            <td>डॉ. रुचि द्विवेदी, सहायक प्रोफेसर, सीआईईटी, एनसीईआरटी, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>20 December 2024</td>
+            <td>Digital Games and Apps for the Teaching and Learning of Science</td>
+            <td>Dr. Ajita Deshmukh, Assistant Professor, MIT-ADT University, Pune, Maharashtra</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>19 December 2024</td>
+            <td>Immersive Technologies for the Teaching and Learning of Science</td>
+            <td>Dr. Praveen Bobby Binjha, Associate Professor, CIET, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>18 December 2024</td>
+            <td>FOSS for the Teaching and Learning of Science</td>
+            <td>Mr. Bergin G., Post Graduate Teacher (Physics), GBHSS, Sayalgudi, Ramanathapuram, Tamil Nadu</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>17 December 2024</td>
+            <td>Audio and Video Resources for the Teaching and Learning of Science</td>
+            <td>Dr. Arun Pratap Sikarwar, Associate Professor, DESM, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>16 December 2024</td>
+            <td>ICT for Teaching and Learning of Science - Policy Perspectives, Need and Scope</td>
+            <td>Dr. Jipsy Malhotra, Assistant Professor, MPD, CIET, NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>13 December 2024</td>
+            <td>मोबाइल उपकरणों और IoT उपकरणों के लिए साइबर स्वच्छता</td>
+            <td>सुश्री निशा पांडे प्रोफेशनल इकोसिस्टम एक्सपर्ट, I4C, गृह मंत्रालय (एमएचए) नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>12 December 2024</td>
+            <td>IoT और मोबाइल उपकरणों का कानूनी पक्ष: नियमों और अनुपालन को समझना</td>
+            <td>श्री सत्येंद्र गुप्ता साइबर लॉ एक्सपर्ट, I4C, गृह मंत्रालय (MHA) नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>11 December 2024</td>
+            <td>IoT खतरा परिदृश्य: हाइपर-कनेक्टेड दुनिया में जोखिमों को समझना</td>
+            <td>श्री महेश कुमार गुप्ता साइबर अपराध शोधकर्ता, I4C, गृह मंत्रालय (MHA) नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>10 December 2024</td>
+            <td>IoT पारिस्थितिकी तंत्र: बुनियादी बातें, सिद्धांत और चुनौतियाँ</td>
+            <td>श्री रवि भूषण एग्जीक्यूटिव असिस्टेंट, I4C, गृह मंत्रालय (MHA) नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>9 December 2024</td>
+            <td>दोधारी तलवार - डिजिटल बम और IoT डिवाइस</td>
+            <td>डॉ. दीपक कुमार, सीनियर टेक्निकल मैनेजर, I4C, गृह मंत्रालय (MHA) नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>6 December 2024</td>
+            <td>Cyber Hygiene for Mobile Devices & IoT Device</td>
+            <td>Ms. Nisha, Professional Ecosystem Developer, I4C, Ministry of Home Affairs (MHA) New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>5 December 2024</td>
+            <td>Legal Landscape of IoT and Mobile Devices: Navigating Regulations and Compliance</td>
+            <td>Mr. Satyendra Cyber Law Expert, I4C, Ministry of Home Affairs (MHA) New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>4 December 2024</td>
+            <td>IoT Threat Landscape: Understanding Risks in a Hyper-Connected World</td>
+            <td>Mr. Mahesh Cyber Crime Researcher, I4C, Ministry of Home Affairs (MHA) New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>3 December 2024</td>
+            <td>IoT Ecosystem: Fundamentals, Principles and Challenges</td>
+            <td>Mr. Ravi Executive Assistant, I4C, Ministry of Home Affairs (MHA) New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>2 December 2024</td>
+            <td>The Double-Edged Sword - Digital Bomb & IoT Device</td>
+            <td>Dr. Deepak Kumar, Senior Technical Manager, I4C, Ministry of Home Affairs (MHA) New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>29 November 2024</td>
+            <td>एआई का नैतिक और जिम्मेदार उपयोग</td>
+            <td>सुश्री देविका मेहता, डिप्टी एडिटर, विश्वास न्यूज़/जागरण न्यू मीडिया, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>28 November 2024</td>
+            <td>समावेशी शिक्षा के लिए एआई</td>
+            <td>श्री जॉर्ज अब्राहम चीफ एग्जीक्यूटिव ऑफिसर स्कोर फाउंडेशन, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>27 November 2024</td>
+            <td>कक्षा में एआई उपकरण और तकनीकें</td>
+            <td>सुश्री देविका मेहता, डिप्टी एडिटर, विश्वास न्यूज़/जागरण न्यू मीडिया, नई दिल्ली</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>26 November 2024</td>
+            <td>शिक्षण और सीखने के उद्देश्यों के लिए जेनरेटिव एआई</td>
+            <td>डॉ. शशिकांत शंकर, सहायक प्रोफेसर, अहमदाबाद विश्वविद्यालय, गुजरात</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>25 November 2024</td>
+            <td>शिक्षा में एआई का परिचय और विकास</td>
+            <td>डॉ. पापिया उपाध्याय, सहायक प्रोफेसर, शिक्षा विद्यालय, नेताजी सुभाष ओपन यूनिवर्सिटी, पश्चिम बंगाल, कोलकाता</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>22 November 2024</td>
+            <td>Ethical and Responsible Use of AI</td>
+            <td>Prof. Cynthia Braezeal, Dean for Digital Learning, Massachusetts Institute of Technology, United States of America (USA), Ms. Daniella DiPaola, Research Scholar, Massachusetts Institute of Technology, United States of America (USA)</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>21 November 2024</td>
+            <td>AI for Inclusive Education</td>
+            <td>Mr. George Abraham, Chief Executive Officer, Score Foundation, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>20 November 2024</td>
+            <td>AI Tools and Techniques in Classroom</td>
+            <td>Dr. Nivash Jeevanandam, Senior Researcher, Ministry of Electronics and Information Technology, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>19 November 2024</td>
+            <td>Generative AI for Teaching and Learning Purposes</td>
+            <td>Dr. Shashi Kant Shankar, Assistant Professor, Ahmedabad University, Ahmedabad, Gujarat</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>18 November 2024</td>
+            <td>Introduction and Evolution of AI in Education</td>
+            <td>Dr. Basheerahmad Shadrach, Director, Commonwealth Educational Media Center for Asia (CEMCA), New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>15 November 2024</td>
+            <td>अभिभावकीय नियंत्रण और निगरानी</td>
+            <td>श्री दवीत सिंह लोबाना परियोजना अभियंता, सी-डैक, पंजाब</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>14 November 2024</td>
+            <td>ससाइबर बुलिंग, ऑनलाइन ग्रूमिंग और संबंधित खतरों के लिए सुरक्षा उपाय</td>
+            <td>सुश्री सोनल प्रिया कमल, नॉलेज एसोसिएट , सी-डैक, पटना, बिहार</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>13 November 2024</td>
+            <td>गेम सुरक्षा सुविधाओं की समझ</td>
+            <td>श्री साकेत कुमार झा, वैज्ञानिक डी, सी-डैक, पटना, बिहार</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>12 November 2024</td>
+            <td>सुरक्षित गेमिंग अभ्यास</td>
+            <td>श्री शुभम त्रिपाठी, परियोजना अभियंता, सी-डैक, नोएडा, उत्तर प्रदेश</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>11 November 2024</td>
+            <td>ऑनलाइन गेमिंग में साइबर खतरें</td>
+            <td>श्री दीपक उपाध्याय, सहायक प्रोफेसर, गुजरात प्रौद्योगिकी विश्वविद्यालय, अहमदाबाद, गुजरात</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>8 November 2024</td>
+            <td>Parental Controls and Monitoring</td>
+            <td>Mr. Daveet Singh Lobana, Project Engineer CDAC, Punjab</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>7 November 2024</td>
+            <td>Cyber bullying, online grooming and related threats with security measures</td>
+            <td>Ms. P. Simi Content Lead ISEA, CDAC, Hyderabad</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>6 November 2024</td>
+            <td>Understanding Game Security Features</td>
+            <td>Ms. Imlirenla Longkumer, Senior Teaching Faculty (STF), NIELIT, Chuchuyimlang, Nagaland</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>5 November 2024</td>
+            <td>Safe Gaming Practices</td>
+            <td>Mr. Shubham Tripathi, Project Engineer, CDAC, Noida, Uttar Pradesh</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>4 November 2024</td>
+            <td>Cyber Threats in Online Gaming</td>
+            <td>Mr. Vipul Kumar, Project Associate, CDAC, Bangalore</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1 November 2024</td>
+            <td>Digital Initiative: MOOCs on SWAYAM for School Education</td>
+            <td>Dr. Angel Rathnabai, Assistant Professor, CIET-NCERT, New Delhi</td>
+            <td><a href="#">PPT</a> | <a href="#">Video</a></td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
     </div>
-
-    {% include "partials/footer.html" %}
-
-    <script>
-        const webinarsPerPage = 100;
-        const totalPages = 8;
-        let currentPage = 1;
-        const totalWebinars = (webinarsPerPage * (totalPages - 1)) + 1; // 701 webinars (100 per page for 7 pages + 1 on the 8th)
-
-        function generateWebinarCards(page) {
-            const webinarGrid = document.getElementById('webinar-grid');
-            webinarGrid.innerHTML = '';
-
-            // Calculate the number of cards for the current page
-            let cardsOnPage = webinarsPerPage;
-            if (page === totalPages) {
-                cardsOnPage = 1; // Only 1 card on the 8th page
-            }
-
-            // Calculate the starting index for the webinars on this page
-            const startIndex = (page - 1) * webinarsPerPage;
-            const endIndex = Math.min(startIndex + cardsOnPage, totalWebinars);
-
-            // Starting date: 29 July 2022
-            const startDate = new Date('2022-07-29');
-
-            for (let i = startIndex; i < endIndex; i++) {
-                const webinarDate = new Date(startDate);
-                webinarDate.setDate(startDate.getDate() - i);
-
-                const card = document.createElement('div');
-                card.className = 'webinar-card';
-
-                const dateBadge = document.createElement('div');
-                dateBadge.className = 'date-badge';
-                dateBadge.textContent = webinarDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
-
-                const title = document.createElement('h3');
-                title.textContent = `Webinar Title ${i + 1}`;
-
-                const description = document.createElement('p');
-                description.textContent = 'Speaker Name, Designation, Organization';
-
-                const icons = document.createElement('div');
-                icons.className = 'icons';
-                icons.innerHTML = '<button class="icon pdf"></button><button class="icon video"></button>';
-
-                card.appendChild(dateBadge);
-                card.appendChild(title);
-                card.appendChild(description);
-                card.appendChild(icons);
-                webinarGrid.appendChild(card);
-            }
-        }
-
-        function updatePagination() {
-            const pages = document.querySelectorAll('#pagination .page');
-            pages.forEach((page, index) => {
-                const pageNumber = index + 1;
-                page.classList.toggle('active', pageNumber === currentPage);
-            });
-
-            const prevButton = document.querySelector('#pagination .prev');
-            const nextButton = document.querySelector('#pagination .next');
-            prevButton.disabled = currentPage === 1;
-            nextButton.disabled = currentPage === totalPages;
-        }
-
-        function goToPage(page) {
-            currentPage = page;
-            generateWebinarCards(currentPage);
-            updatePagination();
-        }
-
-        function changePage(direction) {
-            const newPage = currentPage + direction;
-            if (newPage < 1 || newPage > totalPages) return;
-            currentPage = newPage;
-            generateWebinarCards(currentPage);
-            updatePagination();
-        }
-
-        generateWebinarCards(currentPage);
-        updatePagination();
-    </script>
+  </div>
+  {% include "partials/footer.html" %}
 </body>
 </html>

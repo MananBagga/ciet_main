@@ -105,21 +105,8 @@
       <p>Joint Director, Educational Technology (CIET),<br>NCERT, Sri Aurobindo Marg, New Delhi-110016<br>Email: translation.cell@ciet.nic.in</p>
     </section>
   </main>
-  <script>
-    document.querySelectorAll('.activity-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelectorAll('.content-area').forEach(area => area.style.display = 'none');
-        document.getElementById(button.getAttribute('data-content')).style.display = 'block';
-      });
-    });
-
-    document.querySelectorAll('.pub-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelectorAll('.pub-content').forEach(content => content.style.display = 'none');
-        document.getElementById(button.getAttribute('data-content')).style.display = 'block';
-      });
-    });
-  </script>
+  
+  <script src="{% static "js/translation_cell.js" %}"></script>
   {% include "partials/footer.html" %}
 </body>
 </html>
