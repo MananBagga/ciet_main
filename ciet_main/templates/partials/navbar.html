@@ -1,6 +1,8 @@
 {% load static %}
 <div class="topbar">
   <div class="topbar-left">
+    <span class="date-icon">&#128339;</span>
+    <span class="date-text" id="current-time"></span>
     <span class="date-icon">&#128197;</span>
     <span class="date-text" id="current-date"></span>
   </div>
@@ -78,7 +80,16 @@
         onchange="if (this.value) window.location.href=this.value;"
       >
         <option selected disabled>Initiatives</option>
-        <option value="{% url 'majorProjects' %}">Major Projects</option>
+        <option value="{% url 'majorProjects' %}">List of Initiatives</option>
+        <option value="{% url 'pmevidya' %}">PMeVidya</option>
+        <option value="https://epathshala.nic.in/">ePathshala</option>
+        <option value="https://www.diksha.gov.in/">DIKSHA</option>
+        <option value="https://itpd.ncert.gov.in/">NISHTHA</option>
+        <option value="{% url "moocs_on_swayam" %}">MOOCs on Swayam</option>
+        <option value="{% url "ncf_tech" %}">NCF Tech Platform</option>
+        <option value="https://ictcurriculum.gov.in/">ICT Curriculum</option>
+        <option value="https://ictcurriculum.gov.in/">ICT Curriculum</option>
+        <option value="{% url "school_curriculum" %}">Accessibility in School Curriculum</option>
         <option value="{% url 'pac_projects' %}">PAC Projects</option>
         <option value="{% url 'pab_projects' %}">PAB Projects</option>
         <option value="{% url 'translation_cell' %}">Translation Cell</option>

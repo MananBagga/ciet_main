@@ -313,14 +313,22 @@ document.addEventListener("DOMContentLoaded", () => {
   applyFontSize(); // Set default font size on load
 
   // Date Display
-  const dateElement = document.getElementById("current-date");
-  if (dateElement) {
-    const today = new Date();
-    const options = { day: "2-digit", month: "short", year: "numeric" };
-    dateElement.textContent = today
-      .toLocaleDateString("en-GB", options)
-      .replace(/ /g, "/");
-  }
+  // const dateElement = document.getElementById("current-date");
+  // if (dateElement) {
+  //   const today = new Date();
+  //   const options = { day: "2-digit", month: "2-digit", year: "numeric" };
+  //   dateElement.textContent = today
+  //     .toLocaleDateString("en-GB", options)
+  //     .replace(/ /g, "/");
+  // }
+
+  function updateClock() {
+  const now = new Date();
+  document.getElementById("current-time").textContent = now.toLocaleTimeString();
+  document.getElementById("current-date").textContent = now.toLocaleDateString();
+}
+setInterval(updateClock, 1000);
+updateClock();
 
   // Navbar Toggle
   const navbarToggle = document.getElementById("navbar-toggle");
