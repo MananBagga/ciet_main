@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextArrow = document.querySelector(".next-arrow");
   const dots = document.querySelectorAll(".slider-pagination .dot");
 
-  if (!sliderInner || sliderItems.length === 0) {
-    console.warn("Slider not initialized. Missing sliderInner or slider items.");
-    return;
-  }
+  // if (!sliderInner || sliderItems.length === 0) {
+  //   console.warn("Slider not initialized. Missing sliderInner or slider items.");
+  //   return;
+  // }
+  if (!sliderInner) return;
 
   sliderInner.style.transform = "translateX(0%)";
 
@@ -79,15 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const carouselTrack = document.querySelector(".carousel-track");
-    if (!carouselTrack) return console.warn("Carousel track not found.");
+    if (!carouselTrack) return;
+    // if (!carouselTrack) return console.warn("Carousel track not found.");
 
     const carouselLinks = Array.from(carouselTrack.querySelectorAll("a"));
     const carouselItems = carouselLinks.map(link => link.querySelector(".carousel-item")).filter(Boolean);
 
-    if (carouselItems.length === 0) {
-        console.warn("No valid carousel items found.");
-        return;
-    }
+    // if (carouselItems.length === 0) {
+    //     console.warn("No valid carousel items found.");
+    //     return;
+    // }
 
     const prevBtn = document.querySelector(".prev-arrow");
     const nextBtn = document.querySelector(".next-arrow");
@@ -245,10 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const noAnnouncementMessage = document.querySelector('.no-announcement-message');
 
-    if (!filterButtons.length || !noAnnouncementMessage) {
-        console.warn("Filter buttons or announcement message container not found.");
-        return;
-    }
+    // if (!filterButtons.length || !noAnnouncementMessage) {
+    //     console.warn("Filter buttons or announcement message container not found.");
+    //     return;
+    // }
+    if (!noAnnouncementMessage) return; 
 
     const announcementsData = {
         all: "No Announcement Found..",
@@ -278,65 +281,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
           
+document.addEventListener("DOMContentLoaded", () => {
+  // Font Size Control
+  const body = document.body;
+  const textSizeButtons = document.querySelectorAll(".text-size-btn");
+  const defaultFontSize = 16; // Default body font size in px
+  let currentStep = 0; // 0 = default, -3 to +4 range allowed
 
-          const body = document.body;
-          const textSizeButtons = document.querySelectorAll(".text-size-btn");
-          const defaultFontSize = 16; // Default body font size in px
-          let currentStep = 0; // 0 = default, -3 to +4 range allowed
+  const applyFontSize = () => {
+    const newSize = defaultFontSize + currentStep * 2; // Change font by steps of 2px
+    body.style.fontSize = newSize + "px";
+  };
 
-          const applyFontSize = () => {
-            const newSize = defaultFontSize + currentStep * 2; // Change font by steps of 2px
-            body.style.fontSize = newSize + "px";
-          };
+  textSizeButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const action = btn.dataset.action;
 
-          textSizeButtons.forEach((btn) => {
-            btn.addEventListener("click", (e) => {
-              e.preventDefault();
-              const action = btn.dataset.action;
+      if (action === "decrease" && currentStep > -3) {
+        currentStep--;
+      } else if (action === "increase" && currentStep < 4) {
+        currentStep++;
+      } else if (action === "normal") {
+        currentStep = 0;
+      }
 
-              if (action === "decrease" && currentStep > -3) {
-                currentStep--;
-              } else if (action === "increase" && currentStep < 4) {
-                currentStep++;
-              } else if (action === "normal") {
-                currentStep = 0;
-              }
+      applyFontSize();
+    });
+  });
 
-              applyFontSize();
-            });
-          });
+  applyFontSize(); // Set default font size on load
 
-          // Set default on load
-          window.addEventListener("DOMContentLoaded", () => {
-            body.style.fontSize = defaultFontSize + "px";
-          });
+  // Date Display
+  const dateElement = document.getElementById("current-date");
+  if (dateElement) {
+    const today = new Date();
+    const options = { day: "2-digit", month: "short", year: "numeric" };
+    dateElement.textContent = today
+      .toLocaleDateString("en-GB", options)
+      .replace(/ /g, "/");
+  }
 
+  // Navbar Toggle
+  const navbarToggle = document.getElementById("navbar-toggle");
+  const navbarItems = document.getElementById("navbar-items");
+  if (navbarToggle && navbarItems) {
+    navbarToggle.addEventListener("click", () => {
+      navbarItems.classList.toggle("show");
+    });
+  }
 
-          
-
-          document.addEventListener("DOMContentLoaded", function () {
-                  const dateElement = document.getElementById("current-date");
-                  if (dateElement) {
-                    const today = new Date();
-                    const options = { day: "2-digit", month: "short", year: "numeric" };
-                    dateElement.textContent = today
-                      .toLocaleDateString("en-GB", options)
-                      .replace(/ /g, "/");
-                  }
-          });
-
-        const navbarToggle = document.getElementById("navbar-toggle");
-      const navbarItems = document.getElementById("navbar-items");
-      navbarToggle.addEventListener("click", () => {
-        navbarItems.classList.toggle("show");
-      });
-
-      document.addEventListener("DOMContentLoaded", () => {
-    const topbarToggle = document.getElementById("topbar-toggle");
-    const topbarRight = document.getElementById("topbar-right");
-
+  // Topbar Toggle
+  const topbarToggle = document.getElementById("topbar-toggle");
+  const topbarRight = document.getElementById("topbar-right");
+  if (topbarToggle && topbarRight) {
     topbarToggle.addEventListener("click", () => {
       topbarRight.classList.toggle("show");
     });
+  }
+});
+
+function showTab(tabId) {
+  // Hide all tab contents
+  document.querySelectorAll(".tab-content").forEach((tab) => {
+    tab.classList.remove("active");
   });
+
+  // Remove active class from all buttons
+  document.querySelectorAll(".tab-button").forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).classList.add("active");
+
+  // Add active class to the clicked button
+  document
+    .querySelector(`button[onclick="showTab('${tabId}')"]`)
+    .classList.add("active");
+}
+
+
 

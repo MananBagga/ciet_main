@@ -1,5 +1,5 @@
 .nishtha-container {
-    background-image: url('{% static "images/nishtha_bg.jpg" %}');
+    /* background-image: url('{% static "images/nishtha_bg.jpg" %}'); */
     background-size: cover;
     background-position: center;
     padding: 20px;

@@ -1,6 +1,6 @@
 .container {
   padding: 20px;
-  background-image: url('header-bg.jpg');
+  /* background-image: url('header-bg.jpg'); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;

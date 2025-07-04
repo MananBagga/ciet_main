@@ -1,5 +1,5 @@
 .moocs-container {
-    background-image: url('{% static "images/moocs_swayam_bg.jpg" %}');
+    /* background-image: url('{% static "images/moocs_swayam_bg.jpg" %}'); */
     background-size: cover;
     background-position: center;
     padding: 20px;

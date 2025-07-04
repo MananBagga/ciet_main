@@ -727,7 +727,7 @@
           >
         </div>
         <div class="profile-card">
-          <img src="{% static "images/B_Lyngdoh.jpg" %}" alt="Sh. Rakesh
+          <img src="{% static "images/B_Lyngdoh.jpeg" %}" alt="Sh. Rakesh
           Kumar" class="profile-image">
           <h3>Sh. B. Lyngdoh</h3>
           <p>Asstt.Engineer. Gr. A</p>
@@ -742,7 +742,7 @@
           <a href="#" class="view-profile-button">View Profile</a>
         </div>
         <div class="profile-card">
-          <img src="{% static "images/Sanyam_Kumar_Asstt_Engineer_Gr_1.jpg" %}" alt="Ms. Ritu Bora"
+          <img src="{% static "images/Sanyam_Kumar_Asstt_Engineer_Gr_A.jpg" %}" alt="Ms. Ritu Bora"
           class="profile-image">
           <h3>Sh. Sanyam Kumar</h3>
           <p>Asstt Engineer<br />+91-11-26864801-10 (117)</p>
@@ -761,7 +761,7 @@
           >
         </div>
         <div class="profile-card">
-          <img src="{% static "images/placeholder.jpeg" %}" alt="Sh.
+          <img src="{% static "images/placeholder.jpg" %}" alt="Sh.
           Rakesh Kumar" class="profile-image">
           <h3>Smt. Poonam Sharma</h3>
           <p>APC</p>
@@ -777,7 +777,7 @@
           <a href="#" class="view-profile-button">View Profile</a>
         </div>
         <div class="profile-card">
-          <img src="{% static "images/Daleep_Kumar.jpg" %}" alt="Ms. Ritu Bora"
+          <img src="{% static "images/Daleep_Kumar.jpeg" %}" alt="Ms. Ritu Bora"
           class="profile-image">
           <h3>Sh. Daleep Kumar.</h3>
           <p>Asstt. Engg. Gr. B</p>
@@ -825,7 +825,7 @@
           <a href="#" class="view-profile-button">View Profile</a>
         </div>
         <div class="profile-card">
-          <img src="{% static "images/CHANDRA_BHUSHAN_KUMAR_TECHNICIAN.jpg" %}" alt="Sh. Rakesh Kumar"
+          <img src="{% static "images/CHANDRA_BHUSHAN_KUMAR_TECHNICIAN.png" %}" alt="Sh. Rakesh Kumar"
           class="profile-image">
           <h3>Sh. Chandra Bhushan Kumar</h3>
           <p>Technician Grade I</p>
@@ -860,27 +860,6 @@
     </div>
 
     {% include 'partials/footer.html' %}
-
-    <script>
-      function showTab(tabId) {
-        // Hide all tab contents
-        document.querySelectorAll(".tab-content").forEach((tab) => {
-          tab.classList.remove("active");
-        });
-
-        // Remove active class from all buttons
-        document.querySelectorAll(".tab-button").forEach((button) => {
-          button.classList.remove("active");
-        });
-
-        // Show the selected tab content
-        document.getElementById(tabId).classList.add("active");
-
-        // Add active class to the clicked button
-        document
-          .querySelector(`button[onclick="showTab('${tabId}')"]`)
-          .classList.add("active");
-      }
-    </script>
+    <script src="{% static 'js/people.js' %}"></script>
   </body>
 </html>

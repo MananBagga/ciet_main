@@ -1,5 +1,5 @@
 .pm-evidya-container {
-    background-image: url('{% static "images/pm_evidya_bg.jpg" %}');
+    /* background-image: url('{% static "images/pm_evidya_bg.jpg" %}'); */
     background-size: cover;
     background-position: center;
     padding: 20px;

@@ -58,7 +58,7 @@
 
         <section id="ijet-content" class="ijet-content">
             <div class="container">
-              <p><a href="{% url "journals" %}">Indian Journal of Educational Technology(IJET)</a> - An online open access journal, Indian Journal of Educational Technology (IJET) ISSN 2581-8325, is published by CIET, bi-annually in English. The journal is a peer-reviewed journal which is listed in UGC’s CARE List-Group I. The first issue of the journal was published on CIET’s website in January 2019 and since then it is regularly being published with a wide reach among researchers, teachers, teacher educators and other stakeholders all across India .</p>
+              <p><a href="https://journals.ncert.gov.in/IJET">Indian Journal of Educational Technology(IJET)</a> - An online open access journal, Indian Journal of Educational Technology (IJET) ISSN 2581-8325, is published by CIET, bi-annually in English. The journal is a peer-reviewed journal which is listed in UGC’s CARE List-Group I. The first issue of the journal was published on CIET’s website in January 2019 and since then it is regularly being published with a wide reach among researchers, teachers, teacher educators and other stakeholders all across India .</p>
              
             </div>
         </section>
@@ -77,7 +77,7 @@
 
         <section id="pm-evidya-content" class="pm-evidya-content" style="display: none;">
             <div class="container">
-                <p>PM eVIDYA Cell - PM eVIDYA is a Program was announced by the Hon’ble Finance Minister, Government of India (GoI) on 17 May 2020 as part of Atma Nirbhar Bharat Abhiyaan. PM eVIDYA initiative aims to facilitate technology-driven education with equity post COVID-19. It offers multi-modal access to digital/online education for school and higher education. The constituents of the mega initiative include: DIKSHA as One Nation-One Digital Platform, 12 DTH TV Channels as One Class One Channel, SWAYAM courses in MOOCs format, <a href="#">Educational eContents for DIVYANG on DAISY</a> and in <a href="#">Sign language</a>, Community Radio and Podcast and <a href="https://swayamprabha.gov.in/index.php/channel_profile/profile/22">IIT-PAL for IIT/JEE Preparation.</a></p>
+                <p>PM eVIDYA Cell - PM eVIDYA is a Program was announced by the Hon’ble Finance Minister, Government of India (GoI) on 17 May 2020 as part of Atma Nirbhar Bharat Abhiyaan. PM eVIDYA initiative aims to facilitate technology-driven education with equity post COVID-19. It offers multi-modal access to digital/online education for school and higher education. The constituents of the mega initiative include: DIKSHA as One Nation-One Digital Platform, 12 DTH TV Channels as One Class One Channel, SWAYAM courses in MOOCs format, <a href="{% url "daisy_books" %}">Educational eContents for DIVYANG on DAISY</a> and in <a href="{% url "special_econtent" %}">Sign language</a>, Community Radio and Podcast and <a href="https://swayamprabha.gov.in/index.php/channel_profile/profile/22">IIT-PAL for IIT/JEE Preparation.</a></p>
             </div>
         </section>
 
@@ -169,9 +169,9 @@
                     <img src="{% static "images/AICE3_PRD.jpg" %}" alt="Gallery Image 5">
                     <img src="{% static "images/EBMIJET_PRD.jpg" %}" alt="Gallery Image 6">
                     <img src="{% static "images/summer_camp3_PRD.jpg" %}" alt="Gallery Image 7">
+                    {% comment %} <img src="{% static "#" %}" alt="Gallery Image 7">
                     <img src="{% static "#" %}" alt="Gallery Image 7">
-                    <img src="{% static "#" %}" alt="Gallery Image 7">
-                    <img src="{% static "#" %}" alt="Gallery Image 7">
+                    <img src="{% static "#" %}" alt="Gallery Image 7"> {% endcomment %}
                     </div>
             </div>
         </section>

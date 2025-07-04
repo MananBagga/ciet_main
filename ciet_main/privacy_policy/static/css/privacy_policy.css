@@ -1,5 +1,5 @@
 .privacy-banner {
-    background: url("{% static 'path/to/your/banner/image.jpg' %}") center/cover no-repeat;
+    /* background: url("{% static 'path/to/your/banner/image.jpg' %}") center/cover no-repeat; */
     text-align: center;
     padding: 40px 0;
     color: #e15a2a;

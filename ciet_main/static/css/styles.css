@@ -151,6 +151,7 @@ body {
 
 
 .nav-select {
+  width: 129px;
   border: none;
   outline: none;
   font-family: "Montserrat", sans-serif;
@@ -160,11 +161,12 @@ body {
   line-height: 24px;
   color: black;
   background: none;
-  border: none;
-  outline: none;
   text-decoration: none;
   cursor: pointer;
-  padding: 5px 10px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  text-align: left;
 }
 
 .navbar {
@@ -230,6 +232,7 @@ body {
   position: relative;
   padding: 5px 0;
   transition: color 0.2s ease;
+  text-align: center;
 }
 
 .nav-link option{

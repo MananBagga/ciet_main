@@ -1,5 +1,5 @@
 .ncf-container {
-    background-image: url('{% static "images/ncf_tech_platform_bg.jpg" %}');
+    /* background-image: url('{% static "images/ncf_tech_platform_bg.jpg" %}'); */
     background-size: cover;
     background-position: center;
     padding: 20px;
