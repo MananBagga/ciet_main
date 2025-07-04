@@ -7,6 +7,12 @@
     border-bottom: 2px solid #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .table-header .col1, .table-row .col1 {
     width: 10%;
     text-align: center;

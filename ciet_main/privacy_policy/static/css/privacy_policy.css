@@ -19,6 +19,8 @@
     max-width: 800px;
     margin: auto auto;
     padding: 0 20px;
+    min-height: 70vh;
+    height: auto;
 }
 
 .privacy-container p {

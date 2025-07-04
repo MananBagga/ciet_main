@@ -1,6 +1,7 @@
 .resources {
     padding: 20px;
     text-align: center;
+    height: 70vh;
 }
 
 .resources h2 {
@@ -61,6 +62,7 @@ header {
 header h1 {
     font-size: 32px;
     margin: 0;
+    color: #e15a2a;
 }
 
 header p {

@@ -1815,6 +1815,7 @@ carousel-container .nav-arrow.prev-arrow {
   background-color: transparent; 
   text-align: center; 
   margin-top: 40px; 
+  height: 70vh;
 }
 
 .filter-buttons {

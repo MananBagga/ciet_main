@@ -7,6 +7,11 @@
     margin: 0 auto;
     padding: 20px;
   }
+
+  .title h1 {
+    color: #e15a2a;
+    text-align: center;
+  }
   
   .event-container p {
     margin: 0 0 20px 0;

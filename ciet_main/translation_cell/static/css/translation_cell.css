@@ -3,6 +3,16 @@
     justify-content: space-between;
     margin: 20px;
   }
+
+header h1 {
+  color: #e15a2a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
   
   .overview, .activities {
     width: 48%;
